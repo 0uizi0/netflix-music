@@ -13,20 +13,6 @@ a {
   text-decoration: none;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-ul, ol {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
 body {
   font-family: "Noto Sans KR", sans-serif;
   color: #ffffff;
@@ -89,4 +75,4 @@ header img {
   background-image: url("../img/netflix_logo/nav_logo/netflixMusic_default-login.png");
   background-size: cover;
   background-position: center;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=headerStyle.css.map */

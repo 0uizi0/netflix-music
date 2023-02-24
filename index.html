@@ -1,19 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Netflix Music</title>
-</head>
-<body>
+
+    <!-- FontAwsome -->
+    <script
+      src="https://kit.fontawesome.com/c37ef34cf6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- main js -->
+    <script defer src="./js/main.js"></script>
+
+    <!-- main css -->
+    <link rel="stylesheet" href="./scss/style.css" />
+  </head>
+  <body>
     <!-- header -->
     <header>
-        <div class="inner">
-            <div class="menu">
+      <div class="inner">
+        <!-- 로고 -->
+        <a class="header__logo" href="#">
+          <img
+            src="./img/netflix_logo/nav_logo/netflixMusic_logo@2x.png"
+            alt="로고 이미지"
+          />
+        </a>
 
-            </div>
+        <!-- MENUS -->
+        <div class="menus">
+          <a href="#">신규앨범</a>
+          <a href="#">차트</a>
+          <a href="#">장르</a>
         </div>
+
+        <!-- 서칭 및 로그인 외-->
+        <div class="ex-menu">
+          <a href="#" class="search-icon"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></a>
+          <a href="#" class="pop-up"><i class="fa-solid fa-bell"></i></a>
+          <a href="#"><div class="login"></div></a>
+        </div>
+        <!-- <div class="menu"></div> -->
+      </div>
     </header>
 
     <section>
@@ -21,23 +54,17 @@
     </section>
     <!-- section -->
     <section>
-        <div class="inner">
-            <div class="section1">
-
-            </div>
-            <div class="section2">
-                
-            </div>
-        </div>
+      <div class="inner">
+        <div class="section1"></div>
+        <div class="section2"></div>
+      </div>
     </section>
-    
+
     <!-- footer -->
     <footer>
-        <div class="inner">
-            <div class="copyright">
-
-            </div>
-        </div>
+      <div class="inner">
+        <div class="copyright"></div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
