@@ -124,15 +124,19 @@ header img {
   color: #fff;
 }
 
-.inner .section2 {
+.inner {
   position: relative;
+}
+.inner .section2 {
+  position: absolute;
   border: 3px solid orange;
   margin-top: -7%;
   line-height: 1.5;
+  z-index: 3;
+  top: 800px;
 }
 .inner .section2 .main .main-title {
   border: 1px solid red;
-  background-color: red;
   font-size: 35px;
 }
 .inner .section2 .sub .sub__detail .title {
