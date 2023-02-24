@@ -121,4 +121,81 @@ header img {
 .section1 .swiper .swiper-slide .main-title {
   font-size: 80px;
   color: #fff;
+}
+
+.inner .section2 {
+  position: relative;
+  border: 3px solid orange;
+  margin-top: -7%;
+  line-height: 1.5;
+}
+.inner .section2 .main .main-title {
+  border: 1px solid red;
+  background-color: red;
+  font-size: 35px;
+}
+.inner .section2 .sub .sub__detail .title {
+  border: 1px solid blueviolet;
+  font-size: 25px;
+  line-height: 2;
+}
+.inner .section2 .sub .sub__detail .albums {
+  border: 1px solid blue;
+  height: 250px;
+  display: flex;
+}
+.inner .section2 .sub .sub__detail .albums .box {
+  position: relative;
+  border: 1px solid red;
+  border-radius: 7%;
+  width: 250px;
+  margin-right: 20px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  height: 100%;
+  transform: scale(1);
+}
+.inner .section2 .sub .sub__detail .albums .box .detail {
+  display: none;
+}
+.inner .section2 .sub .sub__detail .albums .box:hover {
+  border: 3px solid black;
+  transform: scale(1.2);
+  background-color: yellow;
+  height: 300px;
+  overflow: hidden;
+}
+.inner .section2 .sub .sub__detail .albums .box:hover .detail {
+  display: block;
+  background-color: red;
+  bottom: 0;
+  position: absolute;
+  height: 50%;
+  width: 100%;
+}
+.inner .section2 .sub .sub__detail .albums .box:hover .detail .buttons,
+.inner .section2 .sub .sub__detail .albums .box:hover .detail .tags {
+  display: flex;
+  text-align: center;
+  border: 1px solid green;
+  padding: 10px;
+}
+.inner .section2 .sub .sub__detail .albums .box:hover .detail .buttons .btn,
+.inner .section2 .sub .sub__detail .albums .box:hover .detail .tags .btn {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.inner .section2 .sub .sub__detail .albums .box:hover .detail .buttons .btn.more,
+.inner .section2 .sub .sub__detail .albums .box:hover .detail .tags .btn.more {
+  position: absolute;
+  right: 10px;
+}
+.inner .section2 .sub .sub__detail .albums .box:hover .detail .buttons .tag,
+.inner .section2 .sub .sub__detail .albums .box:hover .detail .tags .tag {
+  width: 50px;
+  height: 30px;
+  border: 1px solid yellow;
 }/*# sourceMappingURL=style.css.map */
