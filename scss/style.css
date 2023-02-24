@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -10,4 +11,82 @@ ul, ol {
 
 a {
   text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #ffffff;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 55px;
+  display: flex;
+  background-color: #000000;
+  padding: 10px 20px;
+}
+header .header__logo {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  margin-left: 10px;
+}
+header img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 35%;
+}
+
+.menus {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 150px;
+  display: flex;
+  width: 200px;
+  justify-content: space-around;
+  margin-left: 20px;
+}
+.menus a {
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.ex-menu {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  width: 150px;
+}
+.ex-menu a {
+  color: #ffffff;
+}
+.ex-menu .login {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background-image: url("../img/netflix_logo/nav_logo/netflixMusic_default-login.png");
+  background-size: cover;
+  background-position: center;
 }/*# sourceMappingURL=style.css.map */
