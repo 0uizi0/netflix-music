@@ -17,6 +17,11 @@
 
     <!-- main css -->
     <link rel="stylesheet" href="./scss/style.css" />
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script defer src="./js/swiper.js"></script>
   </head>
   <body>
     <!-- header -->
@@ -51,8 +56,27 @@
 
     <!-- section -->
     <section>
-      <div class="inner">
-        <div class="section1"></div>
+      <div class="inner main-inner">
+        <div class="section1">
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <h1 class="main-title">
+                테스트 타이틀
+                </h1>
+              </div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+            </div>
+            <!-- Swiper buttn -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
         <div class="section2"></div>
       </div>
     </section>
