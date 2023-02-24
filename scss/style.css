@@ -39,6 +39,7 @@ header {
   display: flex;
   background-color: #000000;
   padding: 10px 20px;
+  z-index: 999;
 }
 header .header__logo {
   display: inline-block;
