@@ -1,4 +1,4 @@
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".bannerSwiper", {
   cssMode: true,
   navigation: {
     nextEl: ".swiper-button-next",
@@ -15,10 +15,6 @@ var swiper2 = new Swiper(".albums", {
   cssMode: true,
   slidesPerView: 7,
   spaceBetween: 20,
-  centeredSlides: true,
-  loop: true,
-  // color: white,
-  // top: 10,
 
   navigation: {
     nextEl: ".swiper-button-next",

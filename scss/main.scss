@@ -1,14 +1,16 @@
 @import "main_banner";
+
 body {
   background-color: black;
 }
+
 .inner {
   position: relative;
   width: 100%;
 
   .section2 {
     position: relative;
-    top: 615px;
+    top: 590px;
     left: 0;
     width: 100%;
     height: 700px;
@@ -26,7 +28,6 @@ body {
         .title {
           font-size: 25px;
           line-height: 2;
-          height: 44px;
         }
         .albums {
           height: 230px;
@@ -36,10 +37,9 @@ body {
             margin-right: 20px;
             display: flex;
 
-            .test {
+            .album-box {
               min-width: 230px;
               height: 230px;
-              opacity: 0.5;
               border-radius: 15px;
               background-image: url(../img/main_album/main_album1.png);
               background-size: cover;
