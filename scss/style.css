@@ -210,6 +210,7 @@ body {
 }
 .inner .section2 .sub .sub__detail .albums {
   height: 230px;
+  cursor: pointer;
 }
 .inner .section2 .sub .sub__detail .albums .swiper-slide {
   min-width: 230px;
@@ -229,5 +230,9 @@ body {
 .inner .section2 .sub .sub__detail .swiper-button-next {
   top: 200px;
   color: white;
+  opacity: 0;
+}
+.inner .section2 .sub:hover .swiper-button-prev,
+.inner .section2 .sub:hover .swiper-button-next {
   opacity: 0.5;
 }/*# sourceMappingURL=style.css.map */

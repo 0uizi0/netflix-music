@@ -31,6 +31,7 @@ body {
         }
         .albums {
           height: 230px;
+          cursor: pointer;
 
           .swiper-slide {
             min-width: 230px;
@@ -52,6 +53,12 @@ body {
         .swiper-button-next {
           top: 200px;
           color: white;
+          opacity: 0;
+        }
+      }
+      &:hover {
+        .swiper-button-prev,
+        .swiper-button-next {
           opacity: 0.5;
         }
       }
