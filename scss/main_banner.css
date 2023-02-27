@@ -15,7 +15,7 @@
   color: #dedede;
 }
 .section1 .bannerSwiper .swiper-pagination-bullet-active {
-  background-color: #E50914 !important;
+  background-color: #e50914 !important;
 }
 .section1 .bannerSwiper .swiper-slide {
   padding: 0 75px;
@@ -76,7 +76,7 @@
   border: none;
 }
 .section1 .bannerSwiper .swiper-slide .banner-box .btn-box .btn--play {
-  background-color: #E50914;
+  background-color: #e50914;
   color: #fff;
   margin-right: 6px;
 }
