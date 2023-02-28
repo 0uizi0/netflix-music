@@ -1,18 +1,30 @@
 // modal
 const modal = document.getElementById("modal");
-const arr = document.querySelectorAll(".swiper-slide");
-for(let i=0; i<arr.length; i++){
-    let btnModal = arr[i].querySelector(".album-box");   
-    btnModal[i].addEventListener("click", e => {
-        console.log(e.target);
+const btnModal = document.querySelectorAll(".album-box");
+const albumImg = document.querySelector(".content-image");
+
+for(let i=0; i<btnModal.length; i++){
+    btnModal[i].addEventListener("click", function(e) {
         modal.style.display = "flex"
-        // document.querySelector("body").style.background="rgba(8,8,8,0.75)";
         document.querySelector(".section-inner").style.opacity="0.5";
-        // console.log(document.querySelector(".section-inner"));
         audioConatiner.style.opacity = "1";
         audioConatiner.classList.remove("hidden");
-      }) 
+    
+        
+        const clickImage = e.target.style.backgroundImage;
+        const img = document.createElement("img");
+        img.src=clickImage;
+        img.src = img.src.substring(32,62);
+        // console.log(img.src);
+
+        albumImg.append(img);
+
+    }) 
 }
+
+// modal img
+
+
 
 // let btnModal = document.querySelector(".album-box");
 
@@ -21,9 +33,10 @@ for(let i=0; i<arr.length; i++){
 const closeBtn = modal.querySelector(".close-area");
 closeBtn.addEventListener("click", e => {
   modal.style.display = "none"
-  // document.querySelector("body").style.backgroundColor="";
   document.querySelector(".section-inner").style.opacity="1";
   audioConatiner.classList.add("hidden");
+  albumImg.innerHTML="";
+  console.log(albumImg.childElementCount);
 })
 
 
@@ -36,7 +49,6 @@ const playBtn = document.querySelector(".play");
 
 const audio = document.createElement("audio");
 playBtn.addEventListener("click",function(e){
-    // console.log("play");
     
     console.log(playBtn.parentNode.parentNode);
     audio.setAttribute("src", "./js/cardio.mp3");
