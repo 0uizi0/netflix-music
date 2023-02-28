@@ -28,6 +28,9 @@
     <!-- main css -->
     <link rel="stylesheet" href="./scss/style.css" />  
 
+   <!-- 가이드임시 -->
+   <link rel="stylesheet" href="./scss/headerStyle.css" />
+
     <!-- swiper -->
     <link
       rel="stylesheet"
@@ -63,9 +66,65 @@
           <input type="text" class="search" id="no-hidden"/>
           <a href="#" class="search__icon"><i class="fa-solid fa-magnifying-glass"></i></a>
           <a href="#" class="pop-up"><i class="fa-solid fa-bell"></i></a>
-          <a href="#"><div class="login"></div></a>
+          <div class="login">
+            <!-- LOGIN-MOADL & POP-UP -->
+            <div class="login__submenus">
+              <span class="material-symbols-outlined" id="login__submenus__deco">arrow_drop_down</span>
+              
+              <div class="login__contents__contain">
+                <ul class="login__submenus__list">
+                  <li class="submenus__first">
+                    <ul>
+                      <li>
+                        <div class="login-sub icon1"></div>
+                        <p>프로필1</p>
+                      </li>
+                      <li>
+                        <div class="login-sub icon2"></div>
+                        <p>프로필2</p>
+                      </li>
+                      <li>
+                        <div class="login-sub icon3"></div>
+                        <p>프로필3</p>
+                      </li>
+                      <li>
+                        <div class="login-sub icon4"></div>
+                        <p>프로필4</p>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="submenus__second">
+                    <ul>
+                      <li>
+                        <span class="material-symbols-outlined" id="pen-icon">edit</span>
+                        <p>프로필 관리</p>
+                      </li>
+                      <li>
+                        <span class="material-symbols-outlined" id="switch_account">switch_account</span>
+                        <p>프로필 이전</p>
+                      </li>
+                      <li>
+                        <span class="material-symbols-outlined" id="account">person</span>
+                        <p>계정</p>
+                      </li>
+                      <li>
+                        <span class="material-symbols-outlined"id="question">help</span>
+                        <p>고객 센터</p>
+                      </li>
+                    </ul>
+                  </li>
+                  
+                  <li class="submenus__third">
+                    <div class="logout__logo"></div>
+                    <a class="logoout__text" href="#">뮤직에서 로그아웃</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <span class="material-symbols-outlined" id="login__arrow">arrow_drop_down</span>
         </div>
-        <!-- <div class="menu"></div> -->
       </div>
     </header>
 

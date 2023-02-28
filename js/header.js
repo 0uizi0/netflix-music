@@ -14,3 +14,12 @@
       $(".search").removeAttr("placeholder", "노래제목,  가수,  장르");
     }
   })
+
+for (let i = 1; i <= 4; i += 1) {
+  let profileIcons = document.querySelector(`.icon${i}`);
+  profileIcons.setAttribute("style", `background-image: url("../img/netflix_logo/nav_logo/netflixMusic_default-login${i}.png")`);
+}
+
+// $(".login").mouseover(() => {
+//   $(".login__submenus")
+// })
