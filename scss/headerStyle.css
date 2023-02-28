@@ -18,6 +18,10 @@ body {
   color: #ffffff;
 }
 
+input {
+  all: unset;
+}
+
 header {
   position: relative;
   width: 100%;
@@ -59,19 +63,73 @@ header img {
 
 .ex-menu {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   right: 20px;
-  width: 150px;
+  width: 300px;
+  height: 30px;
+}
+.ex-menu .search {
+  position: absolute;
+  top: 50%;
+  right: 120px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 25px;
+  z-index: 1;
+  margin-right: 20px;
+  transition: 0.5s;
+  transform-origin: right;
+  transition-timing-function: ease;
+  z-index: 1;
+  color: #ffffff;
+  font-size: 15px;
+  text-indent: 2rem;
+}
+.ex-menu .search::-moz-placeholder {
+  font-size: 12px;
+  text-align: left;
+}
+.ex-menu .search::placeholder {
+  font-size: 12px;
+  text-align: left;
+}
+.ex-menu .search.on {
+  width: 160px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #ffffff;
+}
+.ex-menu .search__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 160px;
+  transition: 0.5s;
+  transform-origin: right;
+  transition-timing-function: ease;
+  z-index: 3;
+}
+.ex-menu .search__icon.on {
+  left: 6px;
+}
+.ex-menu .pop-up {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 78px;
 }
 .ex-menu a {
   color: #ffffff;
 }
 .ex-menu .login {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   width: 30px;
   height: 30px;
+  right: 10px;
   border-radius: 5px;
   background-image: url("../img/netflix_logo/nav_logo/netflixMusic_default-login.png");
   background-size: cover;

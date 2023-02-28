@@ -18,11 +18,15 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
     />
 
+    <!-- Jquery -->
+    <script defer src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <!-- main js -->
     <script defer src="./js/main.js"></script>
+    <!-- HEADER JS -->
+    <script defer src="./js/header.js"></script>
 
     <!-- main css -->
-    <link rel="stylesheet" href="./scss/style.css" />
+    <link rel="stylesheet" href="./scss/style.css" />  
 
     <!-- swiper -->
     <link
@@ -56,9 +60,8 @@
 
         <!-- 서칭 및 로그인 외-->
         <div class="ex-menu">
-          <a href="#" class="search-icon"
-            ><i class="fa-solid fa-magnifying-glass"></i
-          ></a>
+          <input type="text" class="search" id="no-hidden"/>
+          <a href="#" class="search__icon"><i class="fa-solid fa-magnifying-glass"></i></a>
           <a href="#" class="pop-up"><i class="fa-solid fa-bell"></i></a>
           <a href="#"><div class="login"></div></a>
         </div>
