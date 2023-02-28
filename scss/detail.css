@@ -19,7 +19,7 @@ section #modal .modal-window {
   border-radius: 10px;
   border: 1px solid black;
   width: 850px;
-  top: 20px;
+  top: 300px;
   position: absolute;
   padding: 70px 60px 70px 60px;
 }
@@ -124,6 +124,7 @@ section .audio-container {
   width: 100%;
   z-index: 999;
   position: absolute;
+  bottom: -420px;
   height: 80px;
   background-color: #131313;
 }
