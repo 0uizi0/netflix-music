@@ -244,7 +244,6 @@ body {
 .inner {
   position: relative;
   width: 100%;
-  height: 100%;
 }
 .inner .section2 {
   position: relative;
@@ -370,7 +369,7 @@ section #modal {
   height: 100%;
   position: absolute;
   left: 0;
-  top: 0px;
+  top: 100px;
   z-index: 999;
   flex-direction: column;
   align-items: center;
@@ -381,7 +380,8 @@ section #modal .modal-window {
   border-radius: 10px;
   border: 1px solid black;
   width: 850px;
-  position: relative;
+  top: 300px;
+  position: absolute;
   padding: 70px 60px 70px 60px;
 }
 section #modal .modal-window .close-area {
@@ -485,7 +485,7 @@ section .audio-container {
   width: 100%;
   z-index: 999;
   position: absolute;
-  bottom: 20px;
+  bottom: -420px;
   height: 80px;
   background-color: #131313;
 }
