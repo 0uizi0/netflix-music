@@ -79,43 +79,36 @@
   color: #888;
 }
 
-.hidden {
-  display: none;
-}
 
-.audio-container {
-  width: 100%;
-  z-index: 999;
-  position: fixed;
-  bottom: 0;
-  height: 80px;
-  background-color: #131313;
-}
-.audio-container .progress-container {
-  background-color: #fff;
-  width: 100%;
-  border-radius: a 5px;
-  cursor: pointer;
-}
-.audio-container .progress-container .progress {
-  background-color: red;
-  height: 4px;
-  width: 30%;
-  border-radius: 5px;
-  transition: width 0.1s linear;
-}
-.audio-container ul.control {
-  width: 200px;
-  height: 100%;
-  color: white;
+.swiperChart-zone {
+  position: relative;
+  width: 100vw;
+  height: 300px;
   display: flex;
-  justify-content: space-around;
-  line-height: 80px;
-  margin: auto;
+  align-items: center;
 }
-.audio-container ul.control li {
+.swiperChart-zone .swiperChart__container {
+  position: absolute;
+  width: 100vw;
+  height: 300px;
+  bottom: 0;
+}
+.swiperChart-zone .swiperChart__container .swiper-wrapper .swiper-slide {
+  display: flex;
+  align-items: center;
+}
+.swiperChart-zone .swiperChart__container .swiper-wrapper .album-box {
+  width: 200px;
+  height: 200px;
+  display: block;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: inherit;
+  border-radius: 15px;
+  transition: 0.5s;
+  transform-origin: center;
   cursor: pointer;
-}
-.audio-container ul.control li.play {
-  transform: scale(2);
+  z-index: 1;
 }/*# sourceMappingURL=chart.css.map */

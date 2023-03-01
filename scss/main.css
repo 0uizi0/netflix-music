@@ -87,6 +87,7 @@
 
 body {
   background-color: black;
+  overflow-x: hidden;
 }
 
 .inner {
@@ -130,9 +131,8 @@ body {
   background-color: #fff;
   color: black;
 }
-.inner .section2 .sub .sub__detail .title {
-  font-size: 25px;
-  line-height: 2;
+.inner .section2 .sub .sub__detail .genre-zone {
+  margin-top: 35px;
 }
 .inner .section2 .sub .sub__detail .swiper-zone {
   position: relative;
@@ -143,13 +143,14 @@ body {
 }
 .inner .section2 .sub .sub__detail .swiper-zone .albums {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   height: 300px;
   bottom: 0;
 }
 .inner .section2 .sub .sub__detail .swiper-zone .albums .swiper-wrapper .swiper-slide {
   display: flex;
   align-items: center;
+  margin-right: 0px !important;
 }
 .inner .section2 .sub .sub__detail .swiper-zone .albums .swiper-wrapper .swiper-slide:hover {
   transform: scale(1.5);
@@ -179,6 +180,12 @@ body {
   top: 250px;
   color: white;
   opacity: 0.8;
+}
+.inner .section2 .sub .sub__detail .swiper-button-prev {
+  left: -25px;
+}
+.inner .section2 .sub .sub__detail .swiper-button-next {
+  right: -55px;
 }
 .inner .section2 .sub .sub__detail .swiper-button-prev.a,
 .inner .section2 .sub .sub__detail .swiper-button-next.a {

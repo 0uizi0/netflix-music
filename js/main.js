@@ -45,6 +45,8 @@ for (let i = 0; i < len; i++) {
   const pic = slide[i];
   if (i < 100) {
     pic.setAttribute("data-item", `${arryAlbum[i].item}`); //추가한 코드
+    pic.setAttribute("id", `${arryAlbum[i].name}`);
+    pic.setAttribute("name", `${arryAlbum[i].name}`);
     pic.style.backgroundImage = `url("../img/main_album/main_album${arryAlbum[i].img}.png")`;
     pic.style.boxShadow = `0px 0px 1px #e6e6e6`;
   }
@@ -83,6 +85,16 @@ $(document).ready(function () {
     $(this).addClass("active");
 
     let dataFilter = $(this).attr("data-filter");
+
+    let genreZone = document.querySelector(".genre-zone");
+    genreZone.textContent = "";
+    let genre = document.createElement("p");
+    genre.textContent = $(this)[0].outerText;
+    genre.setAttribute(
+      "style",
+      "text-align: left; font: normal normal bold 24px/29px Pretendard;"
+    );
+    genreZone.append(genre);
 
     for (let i = 0; i < swiperSlide.length; i++) {
       // 스와이퍼 슬라이드(모두) 초기 설정 (hide 클래스: O, active 클래스: X)
