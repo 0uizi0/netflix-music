@@ -26,18 +26,27 @@ for(let i = 0; i < albumNumLen; i++){
 //chart-hover선택
 const albumListAll = document.querySelectorAll(".chart-list") //리스트 목록 랩
 const albumHoverAll = document.querySelectorAll(".chart-list .--album-img .beforeHover");//hover
+//chart-list 클릭 시 하단 플레이어 show 
+const audioPlay = document.querySelector(".chart-list-audio"); //chart-list-audio
 
-// console.log(albumListAll,albumHover);
 
 for (let i = 0; i < albumListAll.length; i++){
   albumListAll[i].addEventListener("mouseover", function(){
     albumHoverAll[i].setAttribute("style","display:block;");
-    // console.log(albumHoverAll[i]);
-  })
+  });
   albumListAll[i].addEventListener("mouseout", function(){
     albumHoverAll[i].setAttribute("style","display:none;");
-  })
+  });
+  albumHoverAll[i].addEventListener("click",function(){
+    audioPlay.classList.remove("hidden");
+    audioPlay.setAttribute("style","display:block;");
+  });
 }
+
+
+
+
+
 
 
 
