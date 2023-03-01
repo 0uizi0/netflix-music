@@ -17,15 +17,17 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
     />
-
-    <!-- main js -->
+    <!-- Jquery 항상 상위에-->
+    <script defer src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"> </script>
+    <!-- HEADER JS -->
+    <script defer src="./js/header.js"></script>
+    
+    <!-- chart main js -->
     <script defer src="./js/chart.js"></script>
 
     <!-- main css -->
     <link rel="stylesheet" href="./scss/style.css" />
-    <!-- 임시가이드 -->
-    <link rel="stylesheet" href="./scss/chart.css" />
-
+   
     <!-- swiper -->
     <link
       rel="stylesheet"
@@ -38,9 +40,11 @@
 
     <!-- 스와이퍼JS -->
     <script defer src="./js/swiper.js"></script>
+
   </head>
   <body>
-    <!-- header -->
+    <!-- <div class="inner-black-guide"></div> -->
+     <!-- header -->
     <header>
       <div class="inner">
         <!-- 로고 -->
@@ -60,12 +64,98 @@
 
         <!-- 서칭 및 로그인 외-->
         <div class="ex-menu">
-          <a href="#" class="search-icon"
-            ><i class="fa-solid fa-magnifying-glass"></i
-          ></a>
-          <a href="#" class="pop-up"><i class="fa-solid fa-bell"></i></a>
-          <a href="#"><div class="login"></div></a>
+          <input type="text" class="search" id="no-hidden" />
+          <a href="javascript:void(0)" class="search__icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+
+          <!-- POP-UP -->
+          <div href="#" class="pop-up">
+            <i class="fa-solid fa-bell"></i>
+            <div class="pop-up__contain">
+              <span class="material-symbols-outlined" id="pop-up__deco"
+                >arrow_drop_down</span
+              >
+              <div class="pop-up__board">최근 알림 메시지가 없습니다.</div>
+            </div>
+          </div>
+
+          <!-- LOGIN 영역 -->
+          <div class="login">
+            <!-- LOGIN-MOADL & POP-UP -->
+            <div class="login__submenus">
+              <span class="material-symbols-outlined" id="login__submenus__deco"
+                >arrow_drop_down</span
+              >
+
+              <div class="login__contents__contain">
+                <ul class="login__submenus__list">
+                  <li class="submenus__first">
+                    <ul>
+                      <li>
+                        <div class="login-sub icon1"></div>
+                        <p>프로필1</p>
+                      </li>
+                      <li>
+                        <div class="login-sub icon2"></div>
+                        <p>프로필2</p>
+                      </li>
+                      <li>
+                        <div class="login-sub icon3"></div>
+                        <p>프로필3</p>
+                      </li>
+                      <li>
+                        <div class="login-sub icon4"></div>
+                        <p>프로필4</p>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="submenus__second">
+                    <ul>
+                      <li>
+                        <span class="material-symbols-outlined" id="pen-icon"
+                          >edit</span
+                        >
+                        <p>프로필 관리</p>
+                      </li>
+                      <li>
+                        <span
+                          class="material-symbols-outlined"
+                          id="switch_account"
+                          >switch_account</span
+                        >
+                        <p>프로필 이전</p>
+                      </li>
+                      <li>
+                        <span class="material-symbols-outlined" id="account"
+                          >person</span
+                        >
+                        <p>계정</p>
+                      </li>
+                      <li>
+                        <span class="material-symbols-outlined" id="question"
+                          >help</span
+                        >
+                        <p>고객 센터</p>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="submenus__third">
+                    <div class="logout__logo"></div>
+                    <a class="logoout__text" href="#">뮤직에서 로그아웃</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <span class="material-symbols-outlined" id="login__arrow"
+            >arrow_drop_down</span
+          >
         </div>
+      </div>
+    </header>
         <!-- <div class="menu"></div> -->
       </div>
     </header>
@@ -418,6 +508,303 @@
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
     </div>
+    
+   <!-- each Topic Top 10rank -->
+   <!-- 1. 국내 급상승 -->
+    <section class="swiperChart-zone inner">
+      <p>국내 급상승</p>
+      <div class="swiper-container swiperChart__container albums">
+        <div class="swiper-wrapper Chart-wrapper">
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">1</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">2</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">3</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">4</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">5</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">6</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">7</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">8</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">9</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">10</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+         <!-- 국내 급상승랭크 버튼 -->
+      <div class="swiper-button-prev chartBtn0"></div>
+      <div class="swiper-button-next chartBtn0"></div>
+    </section>
+
+    <!-- 2. 해외 급상승 -->
+    <section class="swiperChart-zone inner">
+      <p>해외 급상승</p>
+      <div class="swiper-container swiperChart__container albums">
+        <div class="swiper-wrapper Chart-wrapper">
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">1</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">2</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">3</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">4</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">5</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">6</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">7</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">8</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">9</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">10</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+         <!-- 해외 급상승랭크 버튼 -->
+      <div class="swiper-button-prev chartBtn1"></div>
+      <div class="swiper-button-next chartBtn1"></div>
+    </section>
+
+          <!-- 3. 국내 인기 순위 -->
+    <section class="swiperChart-zone inner">
+      <p>국내 인기 순위</p>
+      <div class="swiper-container swiperChart__container albums">
+        <div class="swiper-wrapper Chart-wrapper">
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">1</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">2</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">3</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">4</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">5</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">6</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">7</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">8</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">9</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">10</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+          <!-- 국내 인기 순위 급상승랭크 버튼 -->
+      <div class="swiper-button-prev chartBtn1"></div>
+      <div class="swiper-button-next chartBtn1"></div>
+    </section>
+
+    <!-- 4. 해외 인기 순위 -->
+    <section class="swiperChart-zone inner">
+      <p>해외 인기 순위</p>
+      <div class="swiper-container swiperChart__container albums">
+        <div class="swiper-wrapper Chart-wrapper">
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">1</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">2</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">3</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">4</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">5</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">6</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">7</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">8</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">9</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rank-wrapper">
+              <p class="rank">10</p>
+              <div class="album-box"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+          <!-- 해외 인기 순위 급상승랭크 버튼 -->
+      <div class="swiper-button-prev chartBtn1"></div>
+      <div class="swiper-button-next chartBtn1"></div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="inner">
+        <div class="copyright"></div>
+      </div>
+    </footer>
+
 
     <!-- audio-container  -->
     <section>
@@ -439,57 +826,5 @@
         </div>
       </div>
     </section>
-    
-   <!-- each Topic Top 10rank -->
-   <!-- 1. 국내급상승 -->
-    <section class="swiperChart-zone">
-      <div class="swiperChart__container albums">
-        <div class="swiper-wrapper Chart-wrapper">
-          <div class="swiper-slide">
-            <div class="rank-wrapper">
-              <p class="rank">1</p>
-              <div class="album-box"></div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="album-box"></div>
-          </div>
-          <div class="swiper-slide">
-            <div class="album-box"></div>
-          </div>
-          <div class="swiper-slide">
-            <div class="album-box"></div>
-          </div>
-          <div class="swiper-slide">
-            <div class="album-box"></div>
-          </div>
-          <div class="swiper-slide">
-            <div class="album-box"></div>
-          </div>
-          <div class="swiper-slide">
-            <div class="album-box"></div>
-          </div>
-          <div class="swiper-slide">
-            <div class="album-box"></div>
-          </div>
-          <div class="swiper-slide">
-            <div class="album-box"></div>
-          </div>
-          <div class="swiper-slide">
-            <div class="album-box"></div>
-          </div>
-        </div>
-      </div>
-         <!-- 국내급상승랭크 버튼 -->
-      <div class="swiper-button-prev chartBtn"></div>
-      <div class="swiper-button-next chartBtn"></div>
-    </section>
-
-    <!-- footer -->
-    <footer>
-      <div class="inner">
-        <div class="copyright"></div>
-      </div>
-    </footer>
   </body>
 </html>
