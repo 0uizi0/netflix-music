@@ -1,3 +1,36 @@
+let arryAlbum = [
+  { img: "1", name: "나쁜X", item: "dance" },
+  { img: "2", name: "Love or Die", item: "kpop" },
+  { img: "3", name: "Hype boy", item: "kpop" },
+  { img: "4", name: "A&W", item: "pop" },
+  { img: "5", name: "ditto", item: "kpop" },
+  { img: "6", name: "죽일 놈 (Guilty)", item: "hiphop" },
+  { img: "7", name: "그라데이션", item: "kpop" },
+  { img: "8", name: "VILLAIN DIES", item: "kpop" },
+  { img: "9", name: "Teddy Bear", item: "dance" },
+  { img: "10", name: "After Like", item: "kpop" },
+  { img: "11", name: "오르트구름", item: "kpop" },
+  { img: "12", name: "자격지심 (Feat. ZICO)", item: "hiphop" },
+  { img: "13", name: "85mm", item: "classic" },
+  { img: "14", name: "캔디", item: "kpop" },
+  { img: "15", name: "Nxde", item: "kpop" },
+  { img: "16", name: "Pink Venom", item: "kpop" },
+  { img: "17", name: "It's Not Unusual", item: "classic" },
+  { img: "18", name: "건물 사이에 피어난 장미 (Rose Blossom)", item: "dance" },
+  { img: "19", name: "I Feel Like Dancing", item: "pop" },
+  { img: "20", name: "Best Disaster", item: "pop" },
+  { img: "21", name: "The River", item: "classic" },
+  { img: "22", name: "TRUSTFALL", item: "pop" },
+  { img: "23", name: "NOT SORRY (Feat. pH-1) (Prod. by Slom)", item: "hiphop" },
+  { img: "24", name: "괴짜 (Freak)", item: "hiphop" },
+  { img: "25", name: "연애소설 (Feat. 아이유)", item: "hiphop" },
+  { img: "26", name: "Right Here (Feat. Benny Sings)", item: "pop" },
+  { img: "27", name: "파이팅 해야지 (Feat. 이영지)", item: "dance" },
+  { img: "28", name: "ANTIFRAGILE", item: "dance" },
+  { img: "29", name: "WHEN I MOVE", item: "dance" },
+  { img: "30", name: "SMILEY (Feat. BIBI)", item: "dance" },
+];
+
 //chart-albumimg
 const albumWrap = document.querySelector(".inner");
 const albumImg = document.querySelectorAll(".chart-list .--album-img");//앨범 이미지
@@ -39,8 +72,4 @@ for (let i = 0; i < albumListAll.length; i++){
   })
 }
 
-
-
-
-
-
+//Top10 랭크 스와이퍼
