@@ -19,7 +19,7 @@
     />
 
     <!-- main js -->
-    <script defer src="./js/main.js"></script>
+    <script defer src="./js/chart.js"></script>
 
     <!-- main css -->
     <link rel="stylesheet" href="./scss/style.css" />
@@ -65,90 +65,357 @@
         <!-- <div class="menu"></div> -->
       </div>
     </header>
-
-    <div class="chart-wrap" style="border: 1px solid red">
+    <div class="top-title">
       <div class="inner">
         <div class="title">차트</div>
-        <div class="row">
-          <div class="chart-list">
-            <div class="--album-img"></div>
-            <div class="--num">1</div>
-            <div class="--text-box">
-              <p class="album-title">Ditto</p>
-              <p class="album-sub-title">NewJeans</p>
-            </div>
-          </div>
-          <div class="chart-list">
-            <div class="--album-img"></div>
-            <div class="--num">1</div>
-            <div class="--text-box">
-              <p class="album-title">Ditto</p>
-              <p class="album-sub-title">NewJeans</p>
-            </div>
-          </div>
-          <div class="chart-list">
-            <div class="--album-img"></div>
-            <div class="--num">1</div>
-            <div class="--text-box">
-              <p class="album-title">Ditto</p>
-              <p class="album-sub-title">NewJeans</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="chart-list">
-            <div class="--album-img"></div>
-            <div class="--num">1</div>
-            <div class="--text-box">
-              <p class="album-title">Ditto</p>
-              <p class="album-sub-title">NewJeans</p>
-            </div>
-          </div>
-          <div class="chart-list">
-            <div class="--album-img"></div>
-            <div class="--num">1</div>
-            <div class="--text-box">
-              <p class="album-title">Ditto</p>
-              <p class="album-sub-title">NewJeans</p>
-            </div>
-          </div>
-          <div class="chart-list">
-            <div class="--album-img"></div>
-            <div class="--num">1</div>
-            <div class="--text-box">
-              <p class="album-title">Ditto</p>
-              <p class="album-sub-title">NewJeans</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="chart-list">
-            <div class="--album-img"></div>
-            <div class="--num">1</div>
-            <div class="--text-box">
-              <p class="album-title">Ditto</p>
-              <p class="album-sub-title">NewJeans</p>
-            </div>
-          </div>
-          <div class="chart-list">
-            <div class="--album-img"></div>
-            <div class="--num">1</div>
-            <div class="--text-box">
-              <p class="album-title">Ditto</p>
-              <p class="album-sub-title">NewJeans</p>
-            </div>
-          </div>
-          <div class="chart-list">
-            <div class="--album-img"></div>
-            <div class="--num">1</div>
-            <div class="--text-box">
-              <p class="album-title">Ditto</p>
-              <p class="album-sub-title">NewJeans</p>
-            </div>
-          </div>
-        </div>
+      </div>
     </div>
+    
+    <!-- Swiper -->
+    <div class="swiper bannerSwiper chartSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="chart-wrap">
+            <div class="inner">
+              <div class="row">
+                <div class="col">
+
+                  <div class="chart-list">
+                    <div class="--album-img">
+                      <div class="beforeHover"></div>
+                    </div>
+                    <div class="--num"></div>
+                    <div class="--text-box">
+                      <p class="album-title">Ditto</p>
+                      <p class="album-sub-title">NewJeans</p>
+                    </div>
+                  </div>
+
+                  <div class="chart-list">
+                    <div class="--album-img">
+                      <div class="beforeHover"></div>
+                    </div>
+                    <div class="--num"></div>
+                    <div class="--text-box">
+                      <p class="album-title">Ditto</p>
+                      <p class="album-sub-title">NewJeans</p>
+                    </div>
+                  </div>
+
+                  <div class="chart-list">
+                    <div class="--album-img">
+                      <div class="beforeHover"></div>
+                    </div>
+                    <div class="--num"></div>
+                    <div class="--text-box">
+                      <p class="album-title">Ditto</p>
+                      <p class="album-sub-title">NewJeans</p>
+                    </div>
+                  </div>
+
+                  <div class="chart-list">
+                    <div class="--album-img">
+                      <div class="beforeHover"></div>
+                    </div>
+                    <div class="--num"></div>
+                    <div class="--text-box">
+                      <p class="album-title">Ditto</p>
+                      <p class="album-sub-title">NewJeans</p>
+                    </div>
+                  </div>
+
+                  <div class="chart-list">
+                    <div class="--album-img">
+                      <div class="beforeHover"></div>
+                    </div>
+                    <div class="--num"></div>
+                    <div class="--text-box">
+                      <p class="album-title">Ditto</p>
+                      <p class="album-sub-title">NewJeans</p>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col">
+                  <div class="chart-list">
+                    <div class="--album-img">
+                      <div class="beforeHover"></div>
+                    </div>
+                    <div class="--num"></div>
+                    <div class="--text-box">
+                      <p class="album-title">Ditto</p>
+                      <p class="album-sub-title">NewJeans</p>
+                    </div>
+                  </div>
+
+                  <div class="chart-list">
+                    <div class="--album-img">
+                      <div class="beforeHover"></div>
+                    </div>
+                    <div class="--num"></div>
+                    <div class="--text-box">
+                      <p class="album-title">Ditto</p>
+                      <p class="album-sub-title">NewJeans</p>
+                    </div>
+                  </div>
+                  <div class="chart-list">
+                    <div class="--album-img">
+                      <div class="beforeHover"></div>
+                    </div>
+                    <div class="--num"></div>
+                    <div class="--text-box">
+                      <p class="album-title">Ditto</p>
+                      <p class="album-sub-title">NewJeans</p>
+                    </div>
+                  </div>
+                  <div class="chart-list">
+                    <div class="--album-img">
+                      <div class="beforeHover"></div>
+                    </div>
+                    <div class="--num"></div>
+                    <div class="--text-box">
+                      <p class="album-title">Ditto</p>
+                      <p class="album-sub-title">NewJeans</p>
+                    </div>
+                  </div>
+                  <div class="chart-list">
+                    <div class="--album-img">
+                      <div class="beforeHover"></div>
+                    </div>
+                    <div class="--num"></div>
+                    <div class="--text-box">
+                      <p class="album-title">Ditto</p>
+                      <p class="album-sub-title">NewJeans</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="chart-list">
+                    <div class="--album-img">
+                      <div class="beforeHover"></div>
+                    </div>
+                    <div class="--num"></div>
+                    <div class="--text-box">
+                      <p class="album-title">Ditto</p>
+                      <p class="album-sub-title">NewJeans</p>
+                    </div>
+                  </div>
+                  <div class="chart-list">
+                    <div class="--album-img">
+                      <div class="beforeHover"></div>
+                    </div>
+                    <div class="--num"></div>
+                    <div class="--text-box">
+                      <p class="album-title">Ditto</p>
+                      <p class="album-sub-title">NewJeans</p>
+                    </div>
+                  </div>
+                  <div class="chart-list">
+                    <div class="--album-img">
+                      <div class="beforeHover"></div>
+                    </div>
+                    <div class="--num"></div>
+                    <div class="--text-box">
+                      <p class="album-title">Ditto</p>
+                      <p class="album-sub-title">NewJeans</p>
+                    </div>
+                  </div>
+                  <div class="chart-list">
+                    <div class="--album-img">
+                      <div class="beforeHover"></div>
+                    </div>
+                    <div class="--num"></div>
+                    <div class="--text-box">
+                      <p class="album-title">Ditto</p>
+                      <p class="album-sub-title">NewJeans</p>
+                    </div>
+                  </div>
+                  <div class="chart-list">
+                    <div class="--album-img">
+                      <div class="beforeHover"></div>
+                    </div>
+                    <div class="--num"></div>
+                    <div class="--text-box">
+                      <p class="album-title">Ditto</p>
+                      <p class="album-sub-title">NewJeans</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="chart-wrap">
+            <div class="inner">
+              <div class="row">
+                <div class="col">
+                  <div class="chart-list">
+                    <div class="--album-img">
+                      <div class="beforeHover"></div>
+                    </div>
+                    <div class="--num"></div>
+                    <div class="--text-box">
+                      <p class="album-title">Ditto</p>
+                      <p class="album-sub-title">NewJeans</p>
+                    </div>
+                  </div>
+                  <div class="chart-list">
+                    <div class="--album-img">
+                      <div class="beforeHover"></div>
+                    </div>
+                    <div class="--num"></div>
+                    <div class="--text-box">
+                      <p class="album-title">Ditto</p>
+                      <p class="album-sub-title">NewJeans</p>
+                    </div>
+                  </div>
+                  <div class="chart-list">
+                    <div class="--album-img">
+                      <div class="beforeHover"></div>
+                    </div>
+                    <div class="--num"></div>
+                    <div class="--text-box">
+                      <p class="album-title">Ditto</p>
+                      <p class="album-sub-title">NewJeans</p>
+                    </div>
+                  </div>
+                  <div class="chart-list">
+                    <div class="--album-img">
+                      <div class="beforeHover"></div>
+                    </div>
+                    <div class="--num"></div>
+                    <div class="--text-box">
+                      <p class="album-title">Ditto</p>
+                      <p class="album-sub-title">NewJeans</p>
+                    </div>
+                  </div>
+                  <div class="chart-list">
+                    <div class="--album-img">
+                      <div class="beforeHover"></div>
+                    </div>
+                    <div class="--num"></div>
+                    <div class="--text-box">
+                      <p class="album-title">Ditto</p>
+                      <p class="album-sub-title">NewJeans</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="chart-list">
+                    <div class="--album-img">
+                      <div class="beforeHover"></div>
+                    </div>
+                    <div class="--num"></div>
+                    <div class="--text-box">
+                      <p class="album-title">Ditto</p>
+                      <p class="album-sub-title">NewJeans</p>
+                    </div>
+                  </div>
+                  <div class="chart-list">
+                    <div class="--album-img">
+                      <div class="beforeHover"></div>
+                    </div>
+                    <div class="--num"></div>
+                    <div class="--text-box">
+                      <p class="album-title">Ditto</p>
+                      <p class="album-sub-title">NewJeans</p>
+                    </div>
+                  </div>
+                  <div class="chart-list">
+                    <div class="--album-img">
+                      <div class="beforeHover"></div>
+                    </div>
+                    <div class="--num"></div>
+                    <div class="--text-box">
+                      <p class="album-title">Ditto</p>
+                      <p class="album-sub-title">NewJeans</p>
+                    </div>
+                  </div>
+                  <div class="chart-list">
+                    <div class="--album-img">
+                      <div class="beforeHover"></div>
+                    </div>
+                    <div class="--num"></div>
+                    <div class="--text-box">
+                      <p class="album-title">Ditto</p>
+                      <p class="album-sub-title">NewJeans</p>
+                    </div>
+                  </div>
+                  <div class="chart-list">
+                    <div class="--album-img">
+                      <div class="beforeHover"></div>
+                    </div>
+                    <div class="--num"></div>
+                    <div class="--text-box">
+                      <p class="album-title">Ditto</p>
+                      <p class="album-sub-title">NewJeans</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="chart-list">
+                    <div class="--album-img">
+                      <div class="beforeHover"></div>
+                    </div>
+                    <div class="--num"></div>
+                    <div class="--text-box">
+                      <p class="album-title">Ditto</p>
+                      <p class="album-sub-title">NewJeans</p>
+                    </div>
+                  </div>
+                  <div class="chart-list">
+                    <div class="--album-img">
+                      <div class="beforeHover"></div>
+                    </div>
+                    <div class="--num"></div>
+                    <div class="--text-box">
+                      <p class="album-title">Ditto</p>
+                      <p class="album-sub-title">NewJeans</p>
+                    </div>
+                  </div>
+                  <div class="chart-list">
+                    <div class="--album-img">
+                      <div class="beforeHover"></div>
+                    </div>
+                    <div class="--num"></div>
+                    <div class="--text-box">
+                      <p class="album-title">Ditto</p>
+                      <p class="album-sub-title">NewJeans</p>
+                    </div>
+                  </div>
+                  <div class="chart-list">
+                    <div class="--album-img">
+                      <div class="beforeHover"></div>
+                    </div>
+                    <div class="--num"></div>
+                    <div class="--text-box">
+                      <p class="album-title">Ditto</p>
+                      <p class="album-sub-title">NewJeans</p>
+                    </div>
+                  </div>
+                  <div class="chart-list">
+                    <div class="--album-img">
+                      <div class="beforeHover"></div>
+                    </div>
+                    <div class="--num"></div>
+                    <div class="--text-box">
+                      <p class="album-title">Ditto</p>
+                      <p class="album-sub-title">NewJeans</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Swiper buttn -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
+
+    
 
     <!-- footer -->
     <footer>
