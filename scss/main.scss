@@ -73,6 +73,7 @@ body {
               .swiper-slide {
                 display: flex;
                 align-items: center;
+                margin-right: 0px !important;
 
                 &:hover {
                   transform: scale(1.5);
