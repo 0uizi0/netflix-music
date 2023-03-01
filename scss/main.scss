@@ -17,49 +17,106 @@ body {
     z-index: 2;
 
     .main {
-      margin-left: 75px;
       .main-title {
         font-size: 35px;
       }
     }
     .sub {
-      margin-left: 75px;
       .sub__detail {
+        position: relative;
+        padding: 20px;
+        width: 100%;
+        top: 100px;
+
+        ul {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+
+          li {
+            list-style: none;
+            padding: 12px 20px;
+            margin: 5px;
+            letter-spacing: 1px;
+            cursor: pointer;
+            border: 1px solid var(--unnamed-color-707070);
+            border: 1px solid #707070;
+            border-radius: 6px;
+            opacity: 1;
+
+            &.active {
+              background-color: #fff;
+              color: black;
+            }
+          }
+        }
+
         .title {
           font-size: 25px;
           line-height: 2;
         }
-        .albums {
-          height: 230px;
-          cursor: pointer;
 
-          .swiper-slide {
-            min-width: 230px;
-            margin-right: 20px;
-            display: flex;
-            align-items: center;
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-image: inherit;
-            border-radius: 15px;
+        .swiper-zone {
+          position: relative;
+          width: 100vw;
+          height: 300px;
+          display: flex;
+          align-items: center;
 
-            .album-box {
-              display: block;
+          .albums {
+            position: absolute;
+            width: 100vw;
+            height: 300px;
+            bottom: 0;
+
+            .swiper-wrapper {
+              .swiper-slide {
+                display: flex;
+                align-items: center;
+
+                &:hover {
+                  transform: scale(1.5);
+                  transition: 0.5s;
+                  z-index: 9;
+                }
+
+                &.hide {
+                  display: none;
+                }
+
+                .album-box {
+                  width: 200px;
+                  height: 200px;
+                  display: block;
+                  align-items: center;
+                  background-position: center;
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  background-image: inherit;
+                  border-radius: 15px;
+                  transition: 0.5s;
+                  transform-origin: center;
+                  cursor: pointer;
+                  z-index: 1;
+                }
+              }
             }
           }
         }
+
+        //버튼은 계속 복사해서 써야함
         .swiper-button-prev,
         .swiper-button-next {
-          top: 200px;
+          top: 250px;
           color: white;
-          opacity: 0;
+          opacity: 0.8;
         }
-      }
-      &:hover {
-        .swiper-button-prev,
-        .swiper-button-next {
-          opacity: 0.5;
+
+        .swiper-button-prev.a,
+        .swiper-button-next.a {
+          top: 600px;
+          color: white;
+          opacity: 0.8;
         }
       }
     }

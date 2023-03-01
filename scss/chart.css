@@ -1,0 +1,45 @@
+.chart-wrap {
+  margin-top: 100px;
+}
+.chart-wrap .inner {
+  padding: 0 75px;
+}
+.chart-wrap .inner .title {
+  font-size: 40px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 35px;
+}
+.chart-wrap .inner .row {
+  display: flex;
+}
+.chart-wrap .inner .row .chart-list {
+  display: flex;
+  border-bottom: 1px solid #292929;
+  width: 100%;
+  padding: 12px 0px;
+  margin-right: 20px;
+}
+.chart-wrap .inner .row .chart-list .--album-img {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 4px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/main_album/main_album1.png);
+}
+.chart-wrap .inner .row .chart-list .--num {
+  padding: 0px 15px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.chart-wrap .inner .row .chart-list .--text-box .album-title {
+  font-size: 18px;
+  font-weight: 500px;
+}
+.chart-wrap .inner .row .chart-list .--text-box .album-sub-title {
+  font-size: 15px;
+  color: #888;
+}/*# sourceMappingURL=chart.css.map */

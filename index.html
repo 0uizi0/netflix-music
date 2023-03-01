@@ -19,14 +19,20 @@
     />
 
     <!-- Jquery -->
-    <script defer src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
     <!-- main js -->
     <script defer src="./js/main.js"></script>
     <!-- HEADER JS -->
     <script defer src="./js/header.js"></script>
-
+    <!-- modal js -->
+    <script defer src="./js/modal.js"></script>
     <!-- main css -->
-    <link rel="stylesheet" href="./scss/style.css" />  
+    <link rel="stylesheet" href="./scss/style.css" />
 
    <!-- 가이드임시 -->
    <!-- <link rel="stylesheet" href="./scss/headerStyle.css" /> -->
@@ -63,24 +69,29 @@
 
         <!-- 서칭 및 로그인 외-->
         <div class="ex-menu">
+
           <input type="text" class="search" id="no-hidden"/>
           <a href="javascript:void(0)" class="search__icon"><i class="fa-solid fa-magnifying-glass"></i></a>
           
           <!-- POP-UP -->
           <div href="#" class="pop-up">
             <i class="fa-solid fa-bell"></i>
-             <div class="pop-up__contain">
-              <span class="material-symbols-outlined" id="pop-up__deco">arrow_drop_down</span>
+            <div class="pop-up__contain">
+              <span class="material-symbols-outlined" id="pop-up__deco"
+                >arrow_drop_down</span
+              >
               <div class="pop-up__board">최근 알림 메시지가 없습니다.</div>
-             </div>
+            </div>
           </div>
-          
+
           <!-- LOGIN 영역 -->
           <div class="login">
             <!-- LOGIN-MOADL & POP-UP -->
             <div class="login__submenus">
-              <span class="material-symbols-outlined" id="login__submenus__deco">arrow_drop_down</span>
-              
+              <span class="material-symbols-outlined" id="login__submenus__deco"
+                >arrow_drop_down</span
+              >
+
               <div class="login__contents__contain">
                 <ul class="login__submenus__list">
                   <li class="submenus__first">
@@ -107,24 +118,34 @@
                   <li class="submenus__second">
                     <ul>
                       <li>
-                        <span class="material-symbols-outlined" id="pen-icon">edit</span>
+                        <span class="material-symbols-outlined" id="pen-icon"
+                          >edit</span
+                        >
                         <p>프로필 관리</p>
                       </li>
                       <li>
-                        <span class="material-symbols-outlined" id="switch_account">switch_account</span>
+                        <span
+                          class="material-symbols-outlined"
+                          id="switch_account"
+                          >switch_account</span
+                        >
                         <p>프로필 이전</p>
                       </li>
                       <li>
-                        <span class="material-symbols-outlined" id="account">person</span>
+                        <span class="material-symbols-outlined" id="account"
+                          >person</span
+                        >
                         <p>계정</p>
                       </li>
                       <li>
-                        <span class="material-symbols-outlined"id="question">help</span>
+                        <span class="material-symbols-outlined" id="question"
+                          >help</span
+                        >
                         <p>고객 센터</p>
                       </li>
                     </ul>
                   </li>
-                  
+
                   <li class="submenus__third">
                     <div class="logout__logo"></div>
                     <a class="logoout__text" href="#">뮤직에서 로그아웃</a>
@@ -133,14 +154,16 @@
               </div>
             </div>
           </div>
-          <span class="material-symbols-outlined" id="login__arrow">arrow_drop_down</span>
+          <span class="material-symbols-outlined" id="login__arrow"
+            >arrow_drop_down</span
+          >
         </div>
       </div>
     </header>
 
     <!-- section -->
     <section>
-      <div class="inner">
+      <div class="inner section-inner">
         <div class="section1">
           <!-- Swiper -->
           <div class="swiper bannerSwiper">
@@ -244,50 +267,233 @@
             </div>
             <div class="sub">
               <div class="sub__detail">
-                <div class="title">해외</div>
+                <!-- filter BTN -->
+                <ul>
+                  <li class="list active" data-filter="all">All</li>
+                  <li class="list" data-filter="kpop">K-POP</li>
+                  <li class="list" data-filter="pop">POP</li>
+                  <li class="list" data-filter="hiphop">Hip-hop</li>
+                  <li class="list" data-filter="classic">Classic</li>
+                  <li class="list" data-filter="dance">Dance</li>
+                </ul>
                 <!-- 앨범 Swiper -->
-                <div class="swiper2 albums">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="album-box"></div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="album-box"></div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="album-box"></div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="album-box"></div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="album-box"></div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="album-box"></div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="album-box"></div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="album-box"></div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="album-box"></div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="album-box"></div>
+                <section class="swiper-zone">
+                  <div class="swiper2 albums">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <!-- 앨범 Swiper btn -->
+                </section>
+
+                <!-- <div class="title">POP</div> -->
+                <!-- <section class="swiper-zone">
+                  <div class="swiper2 albums">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="album-box" data-filter="pop"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box" data-filter="pop"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box" data-filter="pop"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box" data-filter="pop"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box" data-filter="pop"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box" data-filter="pop"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box" data-filter="pop"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box" data-filter="pop"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box" data-filter="pop"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box" data-filter="pop"></div>
+                      </div>
+                    </div>
+                  </div>
+                </section> -->
+
+                <!-- 앨범 Swiper btn1 -->
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
+                <!-- 앨범 Swiper btn2 -->
+                <!-- <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev a"></div>
+                <div class="swiper-button-next a"></div> -->
               </div>
             </div>
           </div>
         </div>
+      </div>
+
+      <!-- modal -->
+      <div id="modal" class="modal-overlay">
+        <div class="modal-window">
+          <div class="close-area">X</div>
+          <div class="content">
+            <div class="content-image">
+              <!-- <img class="image" src="img/main_album/main_album1.png" /> -->
+            </div>
+
+            <div class="content-text">
+              <h2>ALBUM</h2>
+              <div class="singer">singer</div>
+              <div class="year">2020. 02. 02</div>
+              <div class="explain">
+                IVE THE 2nd SINGLE ALBUM
+                <br />
+                <br />
+                - “사랑할 용기가 있다면?” ‘감히 뛰어들어’ 큐피드가 된 아이브,
+                Z세대의 사랑법 …더보기 - 데뷔 동시 ‘글로벌 수퍼 루키’, 주체적인
+                ‘Z세대 워너비’ 각인 - ‘우아하고 멋지게’ 무대를 런웨이처럼…완성형
+                비주얼+퍼포먼스
+              </div>
+            </div>
+          </div>
+
+          <div class="detail-button">
+            <div class="button1">button1</div>
+            <div class="button2">button2</div>
+          </div>
+
+          <div class="detail-track">
+            <div class="info">
+              <div class="title">title</div>
+              <div class="singer">singer</div>
+              <div class="time">time</div>
+            </div>
+            <div class="info">
+              <div class="title">title</div>
+              <div class="singer">singer</div>
+              <div class="time">time</div>
+            </div>
+            <div class="info">
+              <div class="title">title</div>
+              <div class="singer">singer</div>
+              <div class="time">time</div>
+            </div>
+            <div class="info">
+              <div class="title">title</div>
+              <div class="singer">singer</div>
+              <div class="time">time</div>
+            </div>
+            <div class="info">
+              <div class="title">title</div>
+              <div class="singer">singer</div>
+              <div class="time">time</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="audio-container hidden" id="audio-container">
+        <div class="progress-container">
+          <div class="progress"></div>
+        </div>
+        <ul class="control">
+          <li class="pause"><i class="fas fa-pause"></i></li>
+          <li class="play"><i class="fas fa-play"></i></li>
+          <li class="reload"><i class="fas fa-redo-alt"></i></li>
+        </ul>
       </div>
     </section>
 
