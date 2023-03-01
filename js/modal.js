@@ -1,4 +1,5 @@
 // modal
+
 const modal = document.getElementById("modal");
 const btnModal = document.querySelectorAll(".album-box");
 const albumImg = document.querySelector(".content-image");
@@ -9,12 +10,19 @@ for(let i=0; i<btnModal.length; i++){
         document.querySelector(".section-inner").style.opacity="0.5";
         audioConatiner.style.opacity = "1";
         audioConatiner.classList.remove("hidden");
-    
-        
         const clickImage = e.target.style.backgroundImage;
+        let imageName = e.target.id;
+        let test = e.target;
+        console.log(imageName);
+        console.log(test);
+        const singer = document.querySelector(".al-name");
+        singer.textContent = imageName;
+
+
         const img = document.createElement("img");
         img.src=clickImage;
-        img.src = img.src.substring(32,62);
+        img.src = img.src.substring(32,);
+        img.src = img.src.replace("%22)","");
         // console.log(img.src);
 
         albumImg.append(img);
@@ -36,7 +44,7 @@ closeBtn.addEventListener("click", e => {
   document.querySelector(".section-inner").style.opacity="1";
   audioConatiner.classList.add("hidden");
   albumImg.innerHTML="";
-  console.log(albumImg.childElementCount);
+  
 })
 
 
@@ -48,14 +56,18 @@ const audioConatiner = document.getElementById("audio-container");
 const playBtn = document.querySelector(".play");
 
 const audio = document.createElement("audio");
+
+const audioArr = ["cardio", "groove", "happy", "light", "lily", "limes", "pop", "swing"];
+
 playBtn.addEventListener("click",function(e){
     
     console.log(playBtn.parentNode.parentNode);
-    audio.setAttribute("src", "./js/cardio.mp3");
+    audio.setAttribute("src", `./music/${audioArr[Math.floor(Math.random()*8)]}.mp3`);
     audio.setAttribute("loop", "loop");
     playBtn.parentNode.parentNode.append(audio);
     audio.addEventListener("timeupdate", updateProgress);
     audio.play();
+    
 
 })
 
@@ -70,10 +82,13 @@ function updateProgress(e){
     progress.style.width = `${progressPer}%`;
 }
 function changeProgress(e){
+
     const width = e.target.clientWidth;
     const offsetx = e.target.offsetx;
     const duration = audio.duration;
-    audio.currentTime = (offsetx / width) * duration;
+    console.log(audio.duration);
+    audio.currentTime =(offsetx / width) * duration;
+    console.log(audio.currentTime);
 }
 
-progressContainer.addEventListener("click",changeProgress);
+progressContainer.addEventListener("click", changeProgress);
