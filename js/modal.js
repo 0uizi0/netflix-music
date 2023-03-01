@@ -12,9 +12,12 @@ for(let i=0; i<btnModal.length; i++){
         audioConatiner.classList.remove("hidden");
         const clickImage = e.target.style.backgroundImage;
         let imageName = e.target.id;
+        let test = e.target;
         console.log(imageName);
+        console.log(test);
         const singer = document.querySelector(".al-name");
         singer.textContent = imageName;
+
 
         const img = document.createElement("img");
         img.src=clickImage;
@@ -41,7 +44,7 @@ closeBtn.addEventListener("click", e => {
   document.querySelector(".section-inner").style.opacity="1";
   audioConatiner.classList.add("hidden");
   albumImg.innerHTML="";
-  console.log(albumImg.childElementCount);
+  
 })
 
 
@@ -54,14 +57,17 @@ const playBtn = document.querySelector(".play");
 
 const audio = document.createElement("audio");
 
+const audioArr = ["cardio", "groove", "happy", "light", "lily", "limes", "pop", "swing"];
+
 playBtn.addEventListener("click",function(e){
     
     console.log(playBtn.parentNode.parentNode);
-    audio.setAttribute("src", "./music/example.mp3");
+    audio.setAttribute("src", `./music/${audioArr[Math.floor(Math.random()*8)]}.mp3`);
     audio.setAttribute("loop", "loop");
     playBtn.parentNode.parentNode.append(audio);
     audio.addEventListener("timeupdate", updateProgress);
     audio.play();
+    
 
 })
 
@@ -80,7 +86,9 @@ function changeProgress(e){
     const width = e.target.clientWidth;
     const offsetx = e.target.offsetx;
     const duration = audio.duration;
-    audio.currentTime = (offsetx / width) * duration;
+    console.log(audio.duration);
+    audio.currentTime =(offsetx / width) * duration;
+    console.log(audio.currentTime);
 }
 
 progressContainer.addEventListener("click", changeProgress);
