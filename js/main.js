@@ -5,7 +5,7 @@ const len = slide.length;
 
 // const names = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
 let arryAlbum = [
-  { img: "1", name: "나쁜X", item: "dance"},
+  { img: "1", name: "나쁜X", item: "dance" },
   { img: "2", name: "Love or Die", item: "kpop" },
   { img: "3", name: "Hype boy", item: "kpop" },
   { img: "4", name: "A&W", item: "pop" },
@@ -45,8 +45,8 @@ for (let i = 0; i < len; i++) {
   const pic = slide[i];
   if (i < 100) {
     pic.setAttribute("data-item", `${arryAlbum[i].item}`); //추가한 코드
-    pic.setAttribute("id", `${arryAlbum[i].name}`); 
-    pic.setAttribute("name", `${arryAlbum[i].name}`); 
+    pic.setAttribute("id", `${arryAlbum[i].name}`);
+    pic.setAttribute("name", `${arryAlbum[i].name}`);
     pic.style.backgroundImage = `url("../img/main_album/main_album${arryAlbum[i].img}.png")`;
     pic.style.boxShadow = `0px 0px 1px #e6e6e6`;
   }
@@ -87,7 +87,7 @@ $(document).ready(function () {
     let dataFilter = $(this).attr("data-filter");
 
     let genreZone = document.querySelector(".genre-zone");
-
+    genreZone.textContent = "";
     let genre = document.createElement("p");
     genre.textContent = $(this)[0].outerText;
     genre.setAttribute(
