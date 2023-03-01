@@ -177,5 +177,22 @@ section {
           }
         }
       }
+      .audio-album{
+        position: absolute;
+        top: 19px;
+        left: 75px;
+        display: flex;
+        .audio-album-img{
+          width: 40px;
+          height: 40px;
+          background-color: #fff;
+          border-radius: 4px;
+          margin-right: 12px;
+        }
+        .album-sub-title{
+          font-size: 14px;
+          font-weight: 300;
+        }
+      }
     }
   }
