@@ -477,8 +477,8 @@ body {
   bottom: 0;
 }
 .inner .section2 .sub .sub__detail .swiper-zone .albums .swiper-wrapper .swiper-slide {
-  display: flex;
   align-items: center;
+  margin-top: 80px;
   margin-right: 0px !important;
 }
 .inner .section2 .sub .sub__detail .swiper-zone .albums .swiper-wrapper .swiper-slide:hover {
