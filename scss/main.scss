@@ -71,8 +71,9 @@ body {
 
             .swiper-wrapper {
               .swiper-slide {
-                display: flex;
+                // display: flex;
                 align-items: center;
+                margin-top: 80px;
                 margin-right: 0px !important;
 
                 &:hover {
@@ -105,10 +106,9 @@ body {
                     z-index: 10;
                     position: absolute;
                     bottom: 49px;
-                    left: -1px;
                     border-radius: 0 0 15px;
-                    width: 80%;
-                    height: 100%;
+                    width: 200px;
+                    height: 200px;
                     background: transparent
                       linear-gradient(180deg, #00000000 0%, #000000 100%) 0% 0%
                       no-repeat padding-box;
