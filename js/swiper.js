@@ -14,12 +14,12 @@ let swiper = new Swiper(".bannerSwiper", {
   keyboard: true,
 });
 
-for (let i = 0; i < albumAllSelect.length; i += 1){
+for (let i = 0; i < albumAllSelect.length; i += 1) {
   let swiper2 = new Swiper(albumAllSelect[i], {
     cssMode: true,
     slidesPerView: 7,
     spaceBetween: 20,
-  
+
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -27,20 +27,19 @@ for (let i = 0; i < albumAllSelect.length; i += 1){
     pagination: {
       el: ".swiper-pagination",
     },
-    mousewheel: true,
-    keyboard: true,
+    // mousewheel: true,
+    // keyboard: true,
   });
 }
 
-
 for (let i = 0; i < albumBoxEL.length; i += 1) {
-  let albumBoxTaget = albumBoxEL[i]
+  let albumBoxTaget = albumBoxEL[i];
   albumBoxTaget.addEventListener("mouseover", (e) => {
-  let eTarget = e.target;
-  eTarget.classList.add("on");
- })
+    let eTarget = e.target;
+    eTarget.classList.add("on");
+  });
   albumBoxTaget.addEventListener("mouseout", (e) => {
-  let eTarget = e.target;
-  eTarget.classList.remove("on");
-  })
+    let eTarget = e.target;
+    eTarget.classList.remove("on");
+  });
 }

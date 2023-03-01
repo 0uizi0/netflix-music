@@ -101,11 +101,34 @@ body {
   height: 700px;
   z-index: 2;
 }
-.inner .section2 .main {
-  margin-left: 75px;
-}
 .inner .section2 .main .main-title {
   font-size: 35px;
+}
+.inner .section2 .sub .sub__detail {
+  position: relative;
+  padding: 20px;
+  width: 100%;
+  top: 100px;
+}
+.inner .section2 .sub .sub__detail ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.inner .section2 .sub .sub__detail ul li {
+  list-style: none;
+  padding: 12px 20px;
+  margin: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: 1px solid var(--unnamed-color-707070);
+  border: 1px solid #707070;
+  border-radius: 6px;
+  opacity: 1;
+}
+.inner .section2 .sub .sub__detail ul li.active {
+  background-color: #fff;
+  color: black;
 }
 .inner .section2 .sub .sub__detail .title {
   font-size: 25px;
@@ -128,6 +151,14 @@ body {
   display: flex;
   align-items: center;
 }
+.inner .section2 .sub .sub__detail .swiper-zone .albums .swiper-wrapper .swiper-slide:hover {
+  transform: scale(1.5);
+  transition: 0.5s;
+  z-index: 9;
+}
+.inner .section2 .sub .sub__detail .swiper-zone .albums .swiper-wrapper .swiper-slide.hide {
+  display: none;
+}
 .inner .section2 .sub .sub__detail .swiper-zone .albums .swiper-wrapper .swiper-slide .album-box {
   width: 200px;
   height: 200px;
@@ -139,14 +170,9 @@ body {
   background-image: inherit;
   border-radius: 15px;
   transition: 0.5s;
-  transition-delay: 0.3s;
   transform-origin: center;
   cursor: pointer;
   z-index: 1;
-}
-.inner .section2 .sub .sub__detail .swiper-zone .albums .swiper-wrapper .swiper-slide .album-box.on {
-  transform: scale(1.5);
-  z-index: 999;
 }
 .inner .section2 .sub .sub__detail .swiper-button-prev,
 .inner .section2 .sub .sub__detail .swiper-button-next {
