@@ -19,14 +19,19 @@
     />
 
     <!-- Jquery -->
-    <script defer src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
     <!-- main js -->
     <script defer src="./js/main.js"></script>
     <!-- HEADER JS -->
     <script defer src="./js/header.js"></script>
 
     <!-- main css -->
-    <link rel="stylesheet" href="./scss/style.css" />  
+    <link rel="stylesheet" href="./scss/style.css" />
 
     <!-- swiper -->
     <link
@@ -60,8 +65,10 @@
 
         <!-- 서칭 및 로그인 외-->
         <div class="ex-menu">
-          <input type="text" class="search" id="no-hidden"/>
-          <a href="#" class="search__icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <input type="text" class="search" id="no-hidden" />
+          <a href="#" class="search__icon"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></a>
           <a href="#" class="pop-up"><i class="fa-solid fa-bell"></i></a>
           <a href="#"><div class="login"></div></a>
         </div>
@@ -175,7 +182,15 @@
             </div>
             <div class="sub">
               <div class="sub__detail">
-                <div class="title">K-POP</div>
+                <!-- filter BTN -->
+                <ul>
+                  <li class="list active" data-filter="all">All</li>
+                  <li class="list" data-filter="kpop">K-POP</li>
+                  <li class="list" data-filter="pop">POP</li>
+                  <li class="list" data-filter="hiphop">Hip-hop</li>
+                  <li class="list" data-filter="classic">Classic</li>
+                  <li class="list" data-filter="dance">Dance</li>
+                </ul>
                 <!-- 앨범 Swiper -->
                 <section class="swiper-zone">
                   <div class="swiper2 albums">
@@ -210,56 +225,117 @@
                       <div class="swiper-slide">
                         <div class="album-box"></div>
                       </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="album-box"></div>
+                      </div>
                     </div>
                   </div>
                 </section>
 
-                <div class="title">POP</div>
-                <section class="swiper-zone">
+                <!-- <div class="title">POP</div> -->
+                <!-- <section class="swiper-zone">
                   <div class="swiper2 albums">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
-                        <div class="album-box"></div>
+                        <div class="album-box" data-filter="pop"></div>
                       </div>
                       <div class="swiper-slide">
-                        <div class="album-box"></div>
+                        <div class="album-box" data-filter="pop"></div>
                       </div>
                       <div class="swiper-slide">
-                        <div class="album-box"></div>
+                        <div class="album-box" data-filter="pop"></div>
                       </div>
                       <div class="swiper-slide">
-                        <div class="album-box"></div>
+                        <div class="album-box" data-filter="pop"></div>
                       </div>
                       <div class="swiper-slide">
-                        <div class="album-box"></div>
+                        <div class="album-box" data-filter="pop"></div>
                       </div>
                       <div class="swiper-slide">
-                        <div class="album-box"></div>
+                        <div class="album-box" data-filter="pop"></div>
                       </div>
                       <div class="swiper-slide">
-                        <div class="album-box"></div>
+                        <div class="album-box" data-filter="pop"></div>
                       </div>
                       <div class="swiper-slide">
-                        <div class="album-box"></div>
+                        <div class="album-box" data-filter="pop"></div>
                       </div>
                       <div class="swiper-slide">
-                        <div class="album-box"></div>
+                        <div class="album-box" data-filter="pop"></div>
                       </div>
                       <div class="swiper-slide">
-                        <div class="album-box"></div>
+                        <div class="album-box" data-filter="pop"></div>
                       </div>
                     </div>
                   </div>
-                </section>
-                
+                </section> -->
+
                 <!-- 앨범 Swiper btn1 -->
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
                 <!-- 앨범 Swiper btn2 -->
-                <div class="swiper-pagination"></div>
+                <!-- <div class="swiper-pagination"></div>
                 <div class="swiper-button-prev a"></div>
-                <div class="swiper-button-next a"></div>              </div>
+                <div class="swiper-button-next a"></div> -->
+              </div>
             </div>
           </div>
         </div>
