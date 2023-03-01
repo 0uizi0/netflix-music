@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #ffffff;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  background-color: #000000;
+  color: #686868;
+  padding: 20px 200px;
+}
+footer .question {
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+footer .footer__menus {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer__menus ul {
+  padding: 0;
+  margin-bottom: 50px;
+}
+footer .footer__menus ul li {
+  margin-bottom: 15px;
+}
+footer .dropdown {
+  margin-bottom: 40px;
+}
+footer .dropdown .btn-secondary {
+  background-color: #000000;
+  border-color: #686868;
+  color: #686868;
+  padding: 15px 0px;
+  font-size: 20px;
+  width: 150px;
+  border-radius: 3px !important;
+  transition: 0.1s !important;
+}
+footer .dropdown .btn-secondary:hover {
+  background-color: #2d2d2d !important;
+}
+footer .dropdown .btn-secondary:active {
+  color: #686868;
+}
+footer .dropdown .dropdown-menu {
+  background-color: #000000;
+  border-color: #686868;
+}
+footer .dropdown .dropdown-menu li a {
+  color: #686868;
+}
+footer .dropdown .dropdown-menu li a:hover {
+  background-color: #2d2d2d !important;
+}/*# sourceMappingURL=footerStyle.css.map */
