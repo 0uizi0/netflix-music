@@ -147,19 +147,48 @@ body {
   height: 300px;
   bottom: 0;
 }
-.inner .section2 .sub .sub__detail .swiper-zone .albums .swiper-wrapper .swiper-slide {
+.inner
+  .section2
+  .sub
+  .sub__detail
+  .swiper-zone
+  .albums
+  .swiper-wrapper
+  .swiper-slide {
   display: flex;
   align-items: center;
 }
-.inner .section2 .sub .sub__detail .swiper-zone .albums .swiper-wrapper .swiper-slide:hover {
+.inner
+  .section2
+  .sub
+  .sub__detail
+  .swiper-zone
+  .albums
+  .swiper-wrapper
+  .swiper-slide:hover {
   transform: scale(1.5);
   transition: 0.5s;
   z-index: 9;
 }
-.inner .section2 .sub .sub__detail .swiper-zone .albums .swiper-wrapper .swiper-slide.hide {
+.inner
+  .section2
+  .sub
+  .sub__detail
+  .swiper-zone
+  .albums
+  .swiper-wrapper
+  .swiper-slide.hide {
   display: none;
 }
-.inner .section2 .sub .sub__detail .swiper-zone .albums .swiper-wrapper .swiper-slide .album-box {
+.inner
+  .section2
+  .sub
+  .sub__detail
+  .swiper-zone
+  .albums
+  .swiper-wrapper
+  .swiper-slide
+  .album-box {
   width: 200px;
   height: 200px;
   display: block;
@@ -185,4 +214,4 @@ body {
   top: 600px;
   color: white;
   opacity: 0.8;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
