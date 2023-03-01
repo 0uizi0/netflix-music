@@ -99,6 +99,19 @@ body {
                   transform-origin: center;
                   cursor: pointer;
                   z-index: 1;
+
+                  .beforeHover {
+                    z-index: 10;
+                    position: absolute;
+                    bottom: 49px;
+                    left: -1px;
+                    border-radius: 0 0 15px;
+                    width: 80%;
+                    height: 100%;
+                    background: transparent
+                      linear-gradient(180deg, #00000000 0%, #000000 100%) 0% 0%
+                      no-repeat padding-box;
+                  }
                 }
               }
             }
