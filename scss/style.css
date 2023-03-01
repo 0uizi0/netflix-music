@@ -144,9 +144,8 @@ body {
   background-color: #fff;
   color: black;
 }
-.inner .section2 .sub .sub__detail .title {
-  font-size: 25px;
-  line-height: 2;
+.inner .section2 .sub .sub__detail .genre-zone {
+  margin-top: 35px;
 }
 .inner .section2 .sub .sub__detail .swiper-zone {
   position: relative;
