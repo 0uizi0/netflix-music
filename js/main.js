@@ -84,6 +84,16 @@ $(document).ready(function () {
 
     let dataFilter = $(this).attr("data-filter");
 
+    let genreZone = document.querySelector(".genre-zone");
+
+    let genre = document.createElement("p");
+    genre.textContent = $(this)[0].outerText;
+    genre.setAttribute(
+      "style",
+      "text-align: left; font: normal normal bold 24px/29px Pretendard;"
+    );
+    genreZone.append(genre);
+
     for (let i = 0; i < swiperSlide.length; i++) {
       // 스와이퍼 슬라이드(모두) 초기 설정 (hide 클래스: O, active 클래스: X)
       swiperSlide[i].classList.add("hide");
