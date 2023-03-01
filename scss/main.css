@@ -155,6 +155,7 @@ body {
 .inner .section2 .sub .sub__detail .swiper-zone .albums .swiper-wrapper .swiper-slide:hover {
   transform: scale(1.5);
   transition: 0.5s;
+  transition-delay: 0.3s;
   z-index: 9;
 }
 .inner .section2 .sub .sub__detail .swiper-zone .albums .swiper-wrapper .swiper-slide.hide {

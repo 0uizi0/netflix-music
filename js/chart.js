@@ -1,3 +1,4 @@
+//데이터베이스
 let arryAlbum = [
   { img: "1", name: "나쁜X", item: "dance" },
   { img: "2", name: "Love or Die", item: "kpop" },
@@ -78,3 +79,17 @@ for (let i = 0; i < albumListAll.length; i++){
 
 
 //Top10 랭크 스와이퍼
+const slide = document.querySelectorAll(".rank-wrapper .album-box"); // 배열로 가지고 옴
+const len = slide.length;
+for (let i = 0; i < len; i++) {
+  // 해당 부분으로 인해서 따로 DOM 요소를 생성해 붙일 필요 X
+  // DOM을 만들어서 붙여주게 되면 최초 All 탭에서 항목이 안 보이는 경우가 생기므로 아래와 같이 처리
+
+  // 사진 부분 일괄 적용
+  const pic = slide[i];
+  if (i < 100) {
+    pic.setAttribute("data-item", `${arryAlbum[i].item}`); //추가한 코드
+    pic.style.backgroundImage = `url("../img/main_album/main_album${arryAlbum[i].img}.png")`;
+    pic.style.boxShadow = `0px 0px 1px #e6e6e6`;
+  }
+}

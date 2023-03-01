@@ -78,6 +78,7 @@ body {
                 &:hover {
                   transform: scale(1.5);
                   transition: 0.5s;
+                  transition-delay: 0.3s;
                   z-index: 9;
                 }
 

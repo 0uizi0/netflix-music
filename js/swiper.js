@@ -21,11 +21,11 @@ for (let i = 0; i < albumAllSelect.length; i += 1) {
     spaceBetween: 20,
 
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".swiper-button-next.chartBtn",
+      prevEl: ".swiper-button-prev.chartBtn",
     },
     pagination: {
-      el: ".swiper-pagination",
+      el: ".swiper-pagination.chartBullet",
     },
     // mousewheel: true,
     // keyboard: true,

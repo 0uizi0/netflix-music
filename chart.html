@@ -23,6 +23,8 @@
 
     <!-- main css -->
     <link rel="stylesheet" href="./scss/style.css" />
+    <!-- 임시가이드 -->
+    <link rel="stylesheet" href="./scss/chart.css" />
 
     <!-- swiper -->
     <link
@@ -33,6 +35,8 @@
       defer
       src="https://unpkg.com/swiper@8/swiper-bundle.min.js"
     ></script>
+
+    <!-- 스와이퍼JS -->
     <script defer src="./js/swiper.js"></script>
   </head>
   <body>
@@ -439,10 +443,13 @@
    <!-- each Topic Top 10rank -->
    <!-- 1. 국내급상승 -->
     <section class="swiperChart-zone">
-      <div class="swiperChart__container">
+      <div class="swiperChart__container albums">
         <div class="swiper-wrapper Chart-wrapper">
           <div class="swiper-slide">
-            <div class="album-box"></div>
+            <div class="rank-wrapper">
+              <p class="rank">1</p>
+              <div class="album-box"></div>
+            </div>
           </div>
           <div class="swiper-slide">
             <div class="album-box"></div>
@@ -473,11 +480,10 @@
           </div>
         </div>
       </div>
+         <!-- 국내급상승랭크 버튼 -->
+      <div class="swiper-button-prev chartBtn"></div>
+      <div class="swiper-button-next chartBtn"></div>
     </section>
-    <!-- 국내급상승랭크 버튼 -->
-    <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
 
     <!-- footer -->
     <footer>
