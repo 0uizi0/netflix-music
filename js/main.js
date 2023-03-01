@@ -43,7 +43,7 @@ for (let i = 0; i < len; i++) {
 
   // 사진 부분 일괄 적용
   const pic = slide[i];
-  if (i < 100) {
+  if (i < 30) {
     pic.setAttribute("data-item", `${arryAlbum[i].item}`); //추가한 코드
     pic.setAttribute("id", `${arryAlbum[i].name}`);
     pic.setAttribute("name", `${arryAlbum[i].name}`);

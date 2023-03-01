@@ -1,5 +1,6 @@
 let albumBoxEL = document.querySelectorAll(".album-box");
 let albumAllSelect = document.querySelectorAll(".albums");
+const rankWrpperEl = document.querySelectorAll(".swiperChart__container")
 
 let swiper = new Swiper(".bannerSwiper", {
   cssMode: true,
@@ -29,8 +30,27 @@ for (let i = 0; i < albumAllSelect.length; i += 1) {
     },
     // mousewheel: true,
     // keyboard: true,
+    slideToClickedSlide: false,
   });
 }
+
+
+for (let i = 0; i < rankWrpperEl.length; i += 1) {
+  let swiperChar0 = new Swiper(rankWrpperEl[i], {
+    direction: 'horizontal',
+    cssMode: true,
+    slidesPerView: 7,
+    spaceBetween: 50,
+    navigation: {
+      nextEl: `.swiper-button-next.chartBtn${i}`,
+      prevEl: `.swiper-button-prev.chartBtn${i}`,
+    },
+    mousewheel: true,
+    keyboard: true,
+    slideToClickedSlide: false,
+  });
+}
+
 
 for (let i = 0; i < albumBoxEL.length; i += 1) {
   let albumBoxTaget = albumBoxEL[i];

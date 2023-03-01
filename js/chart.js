@@ -87,9 +87,10 @@ for (let i = 0; i < len; i++) {
 
   // 사진 부분 일괄 적용
   const pic = slide[i];
-  if (i < 100) {
-    pic.setAttribute("data-item", `${arryAlbum[i].item}`); //추가한 코드
+  if (i < 30) {
     pic.style.backgroundImage = `url("../img/main_album/main_album${arryAlbum[i].img}.png")`;
     pic.style.boxShadow = `0px 0px 1px #e6e6e6`;
+  } else if (i >= 30) {
+    pic.style.backgroundImage = `url("../img/main_album/main_album${arryAlbum[i - 30].img}.png")`;
   }
 }

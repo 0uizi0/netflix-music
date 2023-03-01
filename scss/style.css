@@ -615,6 +615,11 @@ body {
   color: #888;
 }
 
+.swiperChart-zone.inner {
+  padding: 0px, 75px;
+  margin-top: 50px;
+}
+
 .swiperChart-zone {
   position: relative;
   width: 100vw;
@@ -622,19 +627,51 @@ body {
   display: flex;
   align-items: center;
 }
+.swiperChart-zone p {
+  position: absolute;
+  top: -10px;
+  font-size: 20px;
+}
 .swiperChart-zone .swiperChart__container {
   position: absolute;
-  width: 100vw;
+  width: calc(100vw - 75px - 75px);
   height: 300px;
-  bottom: 0;
+}
+.swiperChart-zone .swiperChart__container .swiper-wrapper {
+  gap: 100px;
 }
 .swiperChart-zone .swiperChart__container .swiper-wrapper .swiper-slide {
   display: flex;
   align-items: center;
 }
-.swiperChart-zone .swiperChart__container .swiper-wrapper .album-box {
-  width: 200px;
-  height: 200px;
+.swiperChart-zone .swiperChart__container .swiper-wrapper .swiper-slide.hide {
+  display: none;
+}
+.swiperChart-zone .swiperChart__container .swiper-wrapper .swiper-slide .rank-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiperChart-zone .swiperChart__container .swiper-wrapper .swiper-slide .rank-wrapper:hover > .album-box {
+  transform: scale(1.5);
+  transition: 0.5s;
+  transition-delay: 0.3s;
+  z-index: 9;
+}
+.swiperChart-zone .swiperChart__container .swiper-wrapper .swiper-slide .rank-wrapper .rank {
+  position: static;
+  font-size: 200px;
+  z-index: 1;
+  transform: translate(-5px, -5px);
+  -webkit-text-stroke: 5px rgb(245, 245, 245);
+  color: transparent;
+  font-weight: 900;
+}
+.swiperChart-zone .swiperChart__container .swiper-wrapper .swiper-slide .rank-wrapper .album-box {
+  position: static;
+  width: 170px;
+  height: 170px;
+  transform: translateX(-30px);
   display: block;
   align-items: center;
   background-position: center;
@@ -642,10 +679,16 @@ body {
   background-repeat: no-repeat;
   background-image: inherit;
   border-radius: 15px;
-  transition: 0.5s;
   transform-origin: center;
   cursor: pointer;
-  z-index: 1;
+  z-index: 2;
+}
+.swiperChart-zone .swiper-button-next, .swiperChart-zone .swiper-button-prev {
+  color: #dedede;
+}
+.swiperChart-zone .swiper-button-next.swiper-button-disabled,
+.swiperChart-zone .swiper-button-prev.swiper-button-disabled {
+  opacity: 0;
 }
 
 section {
