@@ -416,6 +416,7 @@ header img {
 
 body {
   background-color: black;
+  overflow-x: hidden;
 }
 
 .inner {
@@ -471,7 +472,7 @@ body {
 }
 .inner .section2 .sub .sub__detail .swiper-zone .albums {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   height: 300px;
   bottom: 0;
 }
@@ -508,6 +509,12 @@ body {
   top: 250px;
   color: white;
   opacity: 0.8;
+}
+.inner .section2 .sub .sub__detail .swiper-button-prev {
+  left: -25px;
+}
+.inner .section2 .sub .sub__detail .swiper-button-next {
+  right: -55px;
 }
 .inner .section2 .sub .sub__detail .swiper-button-prev.a,
 .inner .section2 .sub .sub__detail .swiper-button-next.a {
@@ -604,17 +611,17 @@ body {
   display: flex;
   align-items: center;
 }
-.swiperChart-zone .albums {
+.swiperChart-zone .swiperChart__container {
   position: absolute;
   width: 100vw;
   height: 300px;
   bottom: 0;
 }
-.swiperChart-zone .albums .swiper-wrapper .swiper-slide {
+.swiperChart-zone .swiperChart__container .swiper-wrapper .swiper-slide {
   display: flex;
   align-items: center;
 }
-.swiperChart-zone .albums .swiper-wrapper .album-box {
+.swiperChart-zone .swiperChart__container .swiper-wrapper .album-box {
   width: 200px;
   height: 200px;
   display: block;
@@ -649,7 +656,7 @@ section #modal .modal-window {
   background: #131313;
   border-radius: 20px;
   width: 750px;
-  top: 3.5%;
+  top: 5%;
   position: absolute;
   padding: 50px;
 }
@@ -774,7 +781,7 @@ section .audio-container .progress-container {
 section .audio-container .progress-container .progress {
   background-color: red;
   height: 4px;
-  width: 30%;
+  width: 0%;
   border-radius: 5px;
   transition: width 0.1s linear;
 }
