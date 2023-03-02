@@ -15,35 +15,34 @@ a {
 
 body {
   font-family: "Noto Sans KR", sans-serif;
-  color: #ffffff;
 }
 
 footer {
   position: relative;
-  width: 100%;
+  width: 100vw;
   background-color: #000000;
   color: #686868;
-  padding: 20px 200px;
+  padding: 30px 0px;
 }
-footer .question {
+footer .inner .question {
   margin-bottom: 40px;
   font-size: 20px;
 }
-footer .footer__menus {
+footer .inner .footer__menus {
   display: flex;
   justify-content: space-between;
 }
-footer .footer__menus ul {
+footer .inner .footer__menus ul {
   padding: 0;
   margin-bottom: 50px;
 }
-footer .footer__menus ul li {
+footer .inner .footer__menus ul li {
   margin-bottom: 15px;
 }
-footer .dropdown {
+footer .inner .dropdown {
   margin-bottom: 40px;
 }
-footer .dropdown .btn-secondary {
+footer .inner .dropdown .btn-secondary {
   background-color: #000000;
   border-color: #686868;
   color: #686868;
@@ -53,19 +52,19 @@ footer .dropdown .btn-secondary {
   border-radius: 3px !important;
   transition: 0.1s !important;
 }
-footer .dropdown .btn-secondary:hover {
+footer .inner .dropdown .btn-secondary:hover {
   background-color: #2d2d2d !important;
 }
-footer .dropdown .btn-secondary:active {
+footer .inner .dropdown .btn-secondary:active {
   color: #686868;
 }
-footer .dropdown .dropdown-menu {
+footer .inner .dropdown .dropdown-menu {
   background-color: #000000;
   border-color: #686868;
 }
-footer .dropdown .dropdown-menu li a {
+footer .inner .dropdown .dropdown-menu li a {
   color: #686868;
 }
-footer .dropdown .dropdown-menu li a:hover {
+footer .inner .dropdown .dropdown-menu li a:hover {
   background-color: #2d2d2d !important;
 }/*# sourceMappingURL=footerStyle.css.map */

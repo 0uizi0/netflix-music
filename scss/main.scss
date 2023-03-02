@@ -5,141 +5,146 @@ body {
   overflow-x: hidden;
 }
 
-.inner {
-  position: relative;
-  width: 100%;
+section {
 
-  .section2 {
+  .inner {
     position: relative;
-    top: 590px;
-    left: 0;
-    width: 100%;
-    height: 700px;
-    z-index: 2;
-
-    .main {
-      .main-title {
-        font-size: 35px;
+    width: 100vw;
+    height: 1500px;
+  
+    .section2 {
+      position: relative;
+      top: 590px;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 2;
+  
+      .main {
+        .main-title {
+          font-size: 35px;
+        }
       }
-    }
-    .sub {
-      .sub__detail {
-        position: relative;
-        padding: 20px;
-        width: 100%;
-        top: 100px;
-
-        ul {
-          display: flex;
-          align-items: center;
-          flex-wrap: wrap;
-
-          li {
-            list-style: none;
-            padding: 12px 20px;
-            margin: 5px;
-            letter-spacing: 1px;
-            cursor: pointer;
-            border: 1px solid var(--unnamed-color-707070);
-            border: 1px solid #707070;
-            border-radius: 6px;
-            opacity: 1;
-
-            &.active {
-              background-color: #fff;
-              color: black;
+      .sub {
+        .sub__detail {
+          position: relative;
+          padding: 20px;
+          width: 100%;
+          top: 100px;
+  
+          ul {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+  
+            li {
+              list-style: none;
+              padding: 12px 20px;
+              margin: 5px;
+              letter-spacing: 1px;
+              cursor: pointer;
+              border: 1px solid var(--unnamed-color-707070);
+              border: 1px solid #707070;
+              border-radius: 6px;
+              opacity: 1;
+  
+              &.active {
+                background-color: #fff;
+                color: black;
+              }
             }
           }
-        }
-
-        .genre-zone {
-          margin-top: 35px;
-        }
-
-        .swiper-zone {
-          position: relative;
-          width: 100vw;
-          height: 300px;
-          display: flex;
-          align-items: center;
-
-          .albums {
-            position: absolute;
-            width: 100%;
+  
+          .genre-zone {
+            margin-top: 35px;
+          }
+  
+          .swiper-zone {
+            position: relative;
+            width: 100vw;
             height: 300px;
-            bottom: 0;
-
-            .swiper-wrapper {
-              .swiper-slide {
-                // display: flex;
-                align-items: center;
-                margin-top: 80px;
-                margin-right: 0px !important;
-
-                &:hover {
-                  transform: scale(1.5);
-                  transition: 0.5s;
-                  transition-delay: 0.3s;
-                  z-index: 9;
-                }
-
-                &.hide {
-                  display: none;
-                }
-
-                .album-box {
-                  width: 200px;
-                  height: 200px;
-                  display: block;
+            display: flex;
+            align-items: center;
+  
+            .albums {
+              position: absolute;
+              width: 100%;
+              height: 300px;
+              bottom: 0;
+  
+              .swiper-wrapper {
+                .swiper-slide {
+                  // display: flex;
                   align-items: center;
-                  background-position: center;
-                  background-size: cover;
-                  background-repeat: no-repeat;
-                  background-image: inherit;
-                  border-radius: 15px;
-                  transition: 0.5s;
-                  transform-origin: center;
-                  cursor: pointer;
-                  z-index: 1;
-
-                  .beforeHover {
-                    z-index: 10;
-                    position: absolute;
-                    bottom: 49px;
-                    border-radius: 0 0 15px;
+                  margin-top: 80px;
+                  margin-right: 0px !important;
+  
+                  &:hover {
+                    transform: scale(1.5);
+                    transition: 0.5s;
+                    transition-delay: 0.3s;
+                    z-index: 9;
+                  }
+  
+                  &.hide {
+                    display: none;
+                  }
+  
+                  .album-box {
                     width: 200px;
                     height: 200px;
-                    background: transparent
-                      linear-gradient(180deg, #00000000 0%, #000000 100%) 0% 0%
-                      no-repeat padding-box;
+                    display: block;
+                    align-items: center;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-image: inherit;
+                    border-radius: 15px;
+                    transition: 0.5s;
+                    transform-origin: center;
+                    cursor: pointer;
+                    z-index: 1;
+  
+                    .beforeHover {
+                      z-index: 10;
+                      position: absolute;
+                      bottom: 49px;
+                      border-radius: 0 0 15px;
+                      width: 200px;
+                      height: 200px;
+                      background: transparent
+                        linear-gradient(180deg, #00000000 0%, #000000 100%) 0% 0%
+                        no-repeat padding-box;
+                    }
                   }
                 }
               }
             }
           }
-        }
-
-        //버튼은 계속 복사해서 써야함
-        .swiper-button-prev,
-        .swiper-button-next {
-          top: 250px;
-          color: white;
-          opacity: 0.8;
-        }
-        .swiper-button-prev {
-          left: -25px;
-        }
-        .swiper-button-next {
-          right: -55px;
-        }
-
-        .swiper-button-prev.a,
-        .swiper-button-next.a {
-          top: 600px;
-          color: white;
-          opacity: 0.8;
+  
+          //버튼은 계속 복사해서 써야함
+          .swiper-button-prev,
+          .swiper-button-next {
+            top: 250px;
+            color: white;
+            opacity: 0.8;
+          }
+          .swiper-button-prev {
+            left: -25px;
+          }
+          .swiper-button-next {
+            right: -55px;
+          }
+  
+          .swiper-button-prev.a,
+          .swiper-button-next.a {
+            top: 600px;
+            color: white;
+            opacity: 0.8;
+          }
         }
       }
     }
   }
+
 }

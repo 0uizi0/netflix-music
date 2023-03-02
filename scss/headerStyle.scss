@@ -224,7 +224,7 @@ header {
       .login__contents__contain {
         position: absolute;
         width: 200px;
-        height: 370px;
+        height: 430px;
         transform: translateX(-150px);
         margin-top: 20px;
         background-color: rgba($color: #000000, $alpha: 0.8);
@@ -234,6 +234,7 @@ header {
         border: 0.5px solid rgba($light-gray, $alpha: 1);
 
         .login__submenus__list {
+          padding-left: 0px;
 
           //첫번째 블록, 다수의 프로필
           .submenus__first {
@@ -241,6 +242,7 @@ header {
             padding-left: 20px;
             padding-right: 20px;
             padding-top: 10px;
+            transform: translateX(-25px);
             li {
               display: flex;
               align-items: center;
@@ -271,6 +273,7 @@ header {
           .submenus__second {
             padding-left: 20px;
             padding-right: 20px;
+            transform: translateX(-25px);
             
             li{
               display: flex;
