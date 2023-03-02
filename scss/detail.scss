@@ -126,9 +126,11 @@ section {
             justify-content: space-between;
             .track-title{
               color: #D1D1D1;
-              margin-left: 70px;
-
-              
+              margin-left: 20px;
+              &:hover{
+                text-decoration: underline;
+                cursor: pointer;
+              }
             }
             .track-singer{
               color: #D1D1D1;
