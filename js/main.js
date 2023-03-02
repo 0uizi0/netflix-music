@@ -140,7 +140,7 @@ let newArryAlbum = [
       { title: "두꺼비집 (One More Drink) (Feat. 0cd)", time: "03:52" },
       {
         title:
-          "잔돈은 됐어요 (Keep The Change) (Feat. Garie Of Leessang, Bumky Of Komplex)",
+          "잔돈은 됐어요 (Keep The Change)",
         time: "04:11",
       },
       { title: "죽일 놈 (Guilty)", time: "03:43" },
@@ -649,7 +649,6 @@ for (let i = 0; i < albumBox.length; i++) {
     const hoverBox = document.createElement("div");
     hoverBox.setAttribute("class", "hoverBox");
     albumBox[i].append(hoverBox);
-    console.log(e.target);
     hoverBox.textContent = `${e.target.getAttribute("name")}`;
   });
   albumBox[i].addEventListener("mouseout", function (e) {

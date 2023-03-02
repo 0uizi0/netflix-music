@@ -1,13 +1,11 @@
 // modal
-
-
-
-
 const modal = document.getElementById("modal");
 const modalWindow = document.querySelector(".modal-window");
 const btnModal = document.querySelectorAll(".album-box");
 const albumImg = document.querySelector(".content-image");
 const detailTrack= document.querySelector(".detail-track");
+const albumTitle = document.querySelector("p.album-title");
+const albumSubTitle = document.querySelector("p.album-sub-title");
 
 for(let i=0; i<btnModal.length; i++){
     btnModal[i].addEventListener("click", function(e) {
@@ -45,14 +43,25 @@ for(let i=0; i<btnModal.length; i++){
         infosub.textContent = infosubText;
 
         detailTrack.textContent="";
+        
 
-        
-        
+
         for(let j=0; j<e.target.getAttribute("track-len"); j++){
             const trackInfo = document.createElement("div");
             trackInfo.setAttribute("class", "track-info");
+            trackInfo.setAttribute("singer", singerText);
+
             const trackTitle = document.createElement("div");
             trackTitle.setAttribute("class", "track-title");
+            trackTitle.addEventListener("click", function(e){
+
+                albumTitle.textContent = e.target.textContent;
+                
+                albumSubTitle.textContent = e.target.parentNode.getAttribute("singer");
+                
+                
+            })
+
             const trackSinger = document.createElement("div");
             trackSinger.setAttribute("class", "track-singer");
             const trackTime = document.createElement("div");
@@ -62,15 +71,12 @@ for(let i=0; i<btnModal.length; i++){
             trackInfo.append(trackSinger);
             trackInfo.append(trackTime);
             detailTrack.children[j].querySelector(".track-title").textContent=e.target.getAttribute(`track-title${j}`);    
-            // detailTrack.children[j].querySelector(".track-singer").textContent=singerText;
             detailTrack.children[j].querySelector(".track-time").textContent=e.target.getAttribute(`track-time${j}`);    
         }
-        
-        
-        
-
     }) 
 }
+
+
 
 
 // for(let i=0; i<btnModal.length; i++){
@@ -107,6 +113,8 @@ closeBtn.addEventListener("click", e => {
   document.querySelector(".section-inner").style.opacity="1";
   audioConatiner.classList.add("hidden");
   albumImg.innerHTML="";
+  albumTitle.textContent ="";
+  albumSubTitle.textContent="";
   
 })
 

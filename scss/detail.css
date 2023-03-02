@@ -115,7 +115,11 @@ section #modal .modal-window .detail-track .track-info {
 }
 section #modal .modal-window .detail-track .track-info .track-title {
   color: #D1D1D1;
-  margin-left: 70px;
+  margin-left: 20px;
+}
+section #modal .modal-window .detail-track .track-info .track-title:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 section #modal .modal-window .detail-track .track-info .track-singer {
   color: #D1D1D1;
