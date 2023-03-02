@@ -522,8 +522,10 @@ section .inner .section2 .sub .sub__detail .swiper-zone .albums .swiper-wrapper 
   height: 200px;
   background: transparent linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%) 0% 0% no-repeat padding-box;
 }
+
 section .inner .section2 .sub .sub__detail .swiper-button-prev,
 section .inner .section2 .sub .sub__detail .swiper-button-next {
+
   top: 250px;
   color: white;
   opacity: 0.8;
@@ -806,26 +808,25 @@ section #modal .modal-window .detail-track {
   border-radius: 10px;
 }
 section #modal .modal-window .detail-track .track-info {
-  border: 1px white solid;
   position: relative;
   height: 44px;
   line-height: 44px;
   color: white;
   display: flex;
+  justify-content: space-between;
 }
 section #modal .modal-window .detail-track .track-info .track-title {
   color: #D1D1D1;
   margin-left: 70px;
-  margin-right: 280px;
 }
 section #modal .modal-window .detail-track .track-info .track-singer {
   color: #D1D1D1;
   opacity: 0.5;
-  margin-right: 50px;
 }
 section #modal .modal-window .detail-track .track-info .track-time {
   color: #D1D1D1;
   opacity: 0.8;
+  margin-right: 20px;
 }
 section .hidden {
   display: none;
