@@ -1,8 +1,13 @@
 // modal
 
+
+
+
 const modal = document.getElementById("modal");
+const modalWindow = document.querySelector(".modal-window");
 const btnModal = document.querySelectorAll(".album-box");
 const albumImg = document.querySelector(".content-image");
+const detailTrack= document.querySelector(".detail-track");
 
 for(let i=0; i<btnModal.length; i++){
     btnModal[i].addEventListener("click", function(e) {
@@ -11,24 +16,82 @@ for(let i=0; i<btnModal.length; i++){
         audioConatiner.style.opacity = "1";
         audioConatiner.classList.remove("hidden");
         const clickImage = e.target.style.backgroundImage;
-        let imageName = e.target.id;
-        let test = e.target;
-        console.log(imageName);
-        console.log(test);
-        const singer = document.querySelector(".al-name");
-        singer.textContent = imageName;
-
-
+        
         const img = document.createElement("img");
         img.src=clickImage;
         img.src = img.src.substring(32,);
         img.src = img.src.replace("%22)","");
-        // console.log(img.src);
-
         albumImg.append(img);
+        
+
+        let nameText = e.target.getAttribute("name");
+        const albumName = document.querySelector(".al-name");
+        albumName.textContent = nameText;
+
+        let singerText = e.target.getAttribute("artist");
+        const singer = document.querySelector(".singer");
+        singer.textContent = singerText;
+
+        let dateText = e.target.getAttribute("date");
+        const date = document.querySelector(".date");
+        date.textContent = dateText;
+
+        let infoText = e.target.getAttribute("info");
+        const info = document.querySelector(".info");
+        info.textContent = infoText;
+
+        let infosubText = e.target.getAttribute("info-sub");
+        const infosub = document.querySelector(".info-sub");
+        infosub.textContent = infosubText;
+
+        detailTrack.textContent="";
+
+        
+        
+        for(let j=0; j<e.target.getAttribute("track-len"); j++){
+            const trackInfo = document.createElement("div");
+            trackInfo.setAttribute("class", "track-info");
+            const trackTitle = document.createElement("div");
+            trackTitle.setAttribute("class", "track-title");
+            const trackSinger = document.createElement("div");
+            trackSinger.setAttribute("class", "track-singer");
+            const trackTime = document.createElement("div");
+            trackTime.setAttribute("class", "track-time");
+            detailTrack.append(trackInfo);
+            trackInfo.append(trackTitle);
+            trackInfo.append(trackSinger);
+            trackInfo.append(trackTime);
+            detailTrack.children[j].querySelector(".track-title").textContent=e.target.getAttribute(`track-title${j}`);    
+            // detailTrack.children[j].querySelector(".track-singer").textContent=singerText;
+            detailTrack.children[j].querySelector(".track-time").textContent=e.target.getAttribute(`track-time${j}`);    
+        }
+        
+        
+        
 
     }) 
 }
+
+
+// for(let i=0; i<btnModal.length; i++){
+//     btnModal[i].addEventListener("mouseover", function(e){
+//         btnModal[i].textContent = "";
+//         const test = document.createElement("div");
+//         test.setAttribute("class", "test");
+//         btnModal[i].append(test);
+//         test.textContent = i
+//     })
+//     btnModal[i].addEventListener("mouseout", function(e){
+//         btnModal[i].textContent = "";
+        
+//     })
+// }
+
+
+// btnModal.addEventListener("mouseout", function(e){
+//     btnModal.textContent = "";
+    
+// })
 
 // modal img
 

@@ -67,13 +67,18 @@ section {
               opacity: 0.8;
               margin-bottom: 8px;
             }
-            .year{
+            .date{
               opacity: 0.5;
               margin-bottom: 28px;
               font-size: 15px;
               font-weight: 300;
             }
-            .explain{
+            .info{
+              font-size: 14px;
+              font-weight: 300;
+              margin-bottom: 28px;
+            }
+            .info-sub{
               font-size: 14px;
               font-weight: 300;
             }
@@ -111,27 +116,30 @@ section {
           position: relative;
           border-radius: 10px;
           // top: 80px;
-          .info{
-            border: 1px white solid;
+          .track-info{
+            // border-bottom: 0.5px white solid;
             position: relative;
             height: 44px;
             line-height: 44px;
             color: white;
             display: flex;
-            .title{
+            justify-content: space-between;
+            .track-title{
               color: #D1D1D1;
               margin-left: 70px;
-              margin-right: 280px;
+
               
             }
-            .singer{
+            .track-singer{
               color: #D1D1D1;
               opacity: 0.5;
-              margin-right: 50px;
+              // margin-right: 50px;
             }
-            .time{
+            .track-time{
               color: #D1D1D1;
               opacity: 0.8;
+              margin-right: 20px;
+              
             }
           }
         }
