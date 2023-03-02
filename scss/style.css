@@ -513,19 +513,18 @@ section .inner .section2 .sub .sub__detail .swiper-zone .albums .swiper-wrapper 
   cursor: pointer;
   z-index: 1;
 }
-section .inner .section2 .sub .sub__detail .swiper-zone .albums .swiper-wrapper .swiper-slide .album-box .beforeHover {
-  z-index: 10;
-  position: absolute;
-  bottom: 49px;
-  border-radius: 0 0 15px;
+section .inner .section2 .sub .sub__detail .swiper-zone .albums .swiper-wrapper .swiper-slide .album-box .hoverBox {
   width: 200px;
-  height: 200px;
-  background: transparent linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 105%) 0% 0% no-repeat padding-box;
+  padding-left: 25px;
+  height: 40px;
+  bottom: 99px;
+  position: absolute;
+  font-size: small;
+  transition: 0.5s;
 }
-
 section .inner .section2 .sub .sub__detail .swiper-button-prev,
 section .inner .section2 .sub .sub__detail .swiper-button-next {
-
   top: 250px;
   color: white;
   opacity: 0.8;
