@@ -105,28 +105,16 @@ section {
                     cursor: pointer;
                     z-index: 1;
   
-                    .beforeHover {
-                      z-index: 10;
-                      position: absolute;
-                      bottom: 49px;
-                      border-radius: 0 0 15px;
-                      width: 200px;
-                      height: 200px;
-                      background: transparent
-                        linear-gradient(180deg, #00000000 0%, #000000 100%) 0% 0%
-                        no-repeat padding-box;
+                    .hoverBox {
+                    width: 200px;
+                    background: transparent
+                      linear-gradient(180deg, #00000000 0%, #000000 105%) 0% 0%
+                      no-repeat padding-box;
+                    height: 60px;
+                    bottom: 99px;
+                    position: absolute;
                     }
                   }
-                  // .test{
-                  //   position: absolute;
-                  //   width: 100px;
-                  //   height: 100px;
-                  //   bottom: 100px;
-                  //   color: black;
-                  //   background-color: orange;
-                  //   z-index: 100;
-
-                  // }
                 }
               }
             }

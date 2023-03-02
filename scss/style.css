@@ -513,14 +513,17 @@ section .inner .section2 .sub .sub__detail .swiper-zone .albums .swiper-wrapper 
   cursor: pointer;
   z-index: 1;
 }
-section .inner .section2 .sub .sub__detail .swiper-zone .albums .swiper-wrapper .swiper-slide .album-box .beforeHover {
+
+.inner .section2 .sub .sub__detail .swiper-zone .albums .swiper-wrapper .swiper-slide .album-box .hoverBox {
   z-index: 10;
   position: absolute;
   bottom: 49px;
   border-radius: 0 0 15px;
   width: 200px;
-  height: 200px;
-  background: transparent linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 105%) 0% 0% no-repeat padding-box;
+  height: 60px;
+  bottom: 99px;
+  position: absolute;
 }
 
 section .inner .section2 .sub .sub__detail .swiper-button-prev,
