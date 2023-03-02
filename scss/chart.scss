@@ -94,10 +94,12 @@
           .--text-box {
             .album-title {
               font-size: 17px;
-              font-weight: 500px;
+              font-weight: 500px !important;
+              margin-bottom: 0px !important;
             }
             .album-sub-title {
               font-size: 15px;
+              font-weight: 300;
               color: #888;
             }
           }
@@ -113,7 +115,7 @@
 
 .swiperChart-zone.inner {
   padding: 0px, 75px;
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 .swiperChart-zone {
@@ -127,6 +129,7 @@
     position: absolute;
     top: -10px;
     font-size: 20px;
+    font-weight: 500;
   }
 
   .swiperChart__container {
@@ -135,12 +138,13 @@
     height: 300px;
 
     .swiper-wrapper {
-      gap: 100px;
+      gap: 50px;
 
       .swiper-slide {
         display: flex;
         align-items: center;
-
+        min-width: 265px;
+        margin-right: 0px !important;
         &.hide {
           display: none;
         }
@@ -160,7 +164,7 @@
             font-size: 200px;
             z-index: 1;
             transform: translate(-5px, -5px);
-            -webkit-text-stroke: 5px rgb(245, 245, 245);
+            -webkit-text-stroke: 3px #6C6C6C;
             color: transparent;
             font-weight: 900;
             margin-bottom: 0px;

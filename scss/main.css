@@ -185,6 +185,7 @@ main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide .album-
   cursor: pointer;
   z-index: 1;
 }
+
 main .section3 .inner .swiper-button-prev.mainSwiper0,
 main .section3 .inner .swiper-button-next.mainSwiper0 {
   top: 150px;

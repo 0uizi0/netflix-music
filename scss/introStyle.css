@@ -185,7 +185,7 @@ body {
     left: 94px;
   }
   30% {
-    left: 40px;
+    left: 41px;
   }
   40% {
     left: 46px;
@@ -207,6 +207,7 @@ body {
   }
   100% {
     left: 92px;
+
   }
 }
 @keyframes random-position1 {
@@ -242,6 +243,7 @@ body {
   }
   100% {
     left: 4px;
+
   }
 }
 @keyframes random-position2 {
@@ -279,6 +281,7 @@ body {
     left: 78px;
   }
 }
+
 @keyframes random-position3 {
   0% {
     left: 8px;
@@ -314,8 +317,10 @@ body {
     left: 32px;
   }
 }
+
 @keyframes random-position4 {
   0% {
+
     left: 23px;
   }
   10% {
@@ -500,7 +505,7 @@ body {
     left: 88px;
   }
   30% {
-    left: 10px;
+    left: 25px;
   }
   40% {
     left: 92px;
