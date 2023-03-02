@@ -1,53 +1,54 @@
 //데이터베이스
 let arryAlbum = [
-  { img: "1", name: "나쁜X", item: "dance" },
-  { img: "2", name: "Love or Die", item: "kpop" },
-  { img: "3", name: "Hype boy", item: "kpop" },
-  { img: "4", name: "A&W", item: "pop" },
-  { img: "5", name: "ditto", item: "kpop" },
-  { img: "6", name: "죽일 놈 (Guilty)", item: "hiphop" },
-  { img: "7", name: "그라데이션", item: "kpop" },
-  { img: "8", name: "VILLAIN DIES", item: "kpop" },
-  { img: "9", name: "Teddy Bear", item: "dance" },
-  { img: "10", name: "After Like", item: "kpop" },
-  { img: "11", name: "오르트구름", item: "kpop" },
-  { img: "12", name: "자격지심 (Feat. ZICO)", item: "hiphop" },
-  { img: "13", name: "85mm", item: "classic" },
-  { img: "14", name: "캔디", item: "kpop" },
-  { img: "15", name: "Nxde", item: "kpop" },
-  { img: "16", name: "Pink Venom", item: "kpop" },
-  { img: "17", name: "It's Not Unusual", item: "classic" },
-  { img: "18", name: "건물 사이에 피어난 장미 (Rose Blossom)", item: "dance" },
-  { img: "19", name: "I Feel Like Dancing", item: "pop" },
-  { img: "20", name: "Best Disaster", item: "pop" },
-  { img: "21", name: "The River", item: "classic" },
-  { img: "22", name: "TRUSTFALL", item: "pop" },
-  { img: "23", name: "NOT SORRY (Feat. pH-1) (Prod. by Slom)", item: "hiphop" },
-  { img: "24", name: "괴짜 (Freak)", item: "hiphop" },
-  { img: "25", name: "연애소설 (Feat. 아이유)", item: "hiphop" },
-  { img: "26", name: "Right Here (Feat. Benny Sings)", item: "pop" },
-  { img: "27", name: "파이팅 해야지 (Feat. 이영지)", item: "dance" },
-  { img: "28", name: "ANTIFRAGILE", item: "dance" },
-  { img: "29", name: "WHEN I MOVE", item: "dance" },
-  { img: "30", name: "SMILEY (Feat. BIBI)", item: "dance" },
+  { img: "1", name: "나쁜X", item: "dance", artist: "비비(BIBI)" },
+  { img: "2", name: "Love or Die", item: "kpop" ,artist: "TNX"},
+  { img: "3", name: "Hype boy", item: "kpop" ,artist: "NewJeans"},
+  { img: "4", name: "A&W", item: "pop",artist: "Lana Del Rey" },
+  { img: "5", name: "ditto", item: "kpop",artist: "NewJeans" },
+  { img: "6", name: "죽일 놈 (Guilty)", item: "hiphop",artist: "다이나믹 듀오" },
+  { img: "7", name: "그라데이션", item: "kpop", artist: "10CM"},
+  { img: "8", name: "VILLAIN DIES", item: "kpop" ,artist: "(여자) 아이들"},
+  { img: "9", name: "Teddy Bear", item: "dance",artist: "STAYC" },
+  { img: "10", name: "After Like", item: "kpop",artist: "IVE" },
+  { img: "11", name: "오르트구름", item: "kpop" ,artist: "윤하"},
+  { img: "12", name: "자격지심 (Feat. ZICO)", item: "hiphop" ,artist: "BE'O"},
+  { img: "13", name: "85mm", item: "classic" ,artist: "Ludovico Einaudi(루도비코 에이나우디)"},
+  { img: "14", name: "캔디", item: "kpop",artist: "NCT DREAM" },
+  { img: "15", name: "Nxde", item: "kpop" ,artist: "(여자)아이들"},
+  { img: "16", name: "Pink Venom", item: "kpop" ,artist: "BLACKPINK"},
+  { img: "17", name: "It's Not Unusual", item: "classic" ,artist: "Hauser" },
+  { img: "18", name: "건물 사이에 피어난 장미 (Rose Blossom)", item: "dance",artist: "H1-KEY" },
+  { img: "19", name: "I Feel Like Dancing", item: "pop" ,artist: "Jason Mraz"},
+  { img: "20", name: "Best Disaster", item: "pop",artist: "Cuco" },
+  { img: "21", name: "The River", item: "classic" ,artist: "정재일"},
+  { img: "22", name: "TRUSTFALL", item: "pop" ,artist: "P!nk"},
+  { img: "23", name: "NOT SORRY (Feat. pH-1) (Prod. by Slom)", item: "hiphop",artist: "이영지" },
+  { img: "24", name: "괴짜 (Freak)", item: "hiphop",artist: "지코" },
+  { img: "25", name: "연애소설 (Feat. 아이유)", item: "hiphop" ,artist: "에픽하이"},
+  { img: "26", name: "Right Here (Feat. Benny Sings)", item: "pop" ,artist: "M.I.L.K"},
+  { img: "27", name: "파이팅 해야지 (Feat. 이영지)", item: "dance",artist: "부석순" },
+  { img: "28", name: "ANTIFRAGILE", item: "dance",artist: "LE SSERAFIM (르세라핌)"},
+  { img: "29", name: "WHEN I MOVE", item: "dance" ,artist: "카라"},
+  { img: "30", name: "SMILEY (Feat. BIBI)", item: "dance",artist: "YENA (최예나)" },
 ];
 
 //chart-albumimg
 const albumWrap = document.querySelector(".inner");
 const albumImg = document.querySelectorAll(".chart-list .--album-img");//앨범 이미지
-const names2 = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
 const albumLen = albumImg.length;
 
 for(let i = 0; i < albumLen; i++){
   const albumPic = albumImg[i];
-  if (i < 10){
-    albumPic.style.backgroundImage = `url("../img/main_album/main_album${names2[i]}.png")`;
-  } else if( i >= 10 && i < 20) {
-    albumPic.style.backgroundImage = `url("../img/main_album/main_album${names2[i - 10]}.png")`;
-  } else{
-    albumPic.style.backgroundImage = `url("../img/main_album/main_album${names2[i - 20]}.png")`;
-  }
+  albumPic.style.backgroundImage = `url("../img/main_album/main_album${i+1}.png")`;
+  const chartList = document.querySelectorAll(".chart-list");
+  chartList[i].querySelector(".--text-box").querySelector(".album-title").textContent = arryAlbum[i].name;
+  chartList[i].querySelector(".--text-box").querySelector(".album-sub-title").textContent = arryAlbum[i].artist;
+  // albumPic.addEventListener("click",function(e){
+  //   console.log(e.target.parentNode.parentNode.children[2].children[0]);
+  // })
 }
+
+
 
 //chart-num
 const albumNumAll = document.querySelectorAll(".chart-wrap .inner .--num");//숫자 모두 선택
