@@ -176,14 +176,12 @@ body {
   cursor: pointer;
   z-index: 1;
 }
-.inner .section2 .sub .sub__detail .swiper-zone .albums .swiper-wrapper .swiper-slide .album-box .beforeHover {
-  z-index: 10;
-  position: absolute;
-  bottom: 49px;
-  border-radius: 0 0 15px;
+.inner .section2 .sub .sub__detail .swiper-zone .albums .swiper-wrapper .swiper-slide .album-box .hoverBox {
   width: 200px;
-  height: 200px;
-  background: transparent linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 105%) 0% 0% no-repeat padding-box;
+  height: 60px;
+  bottom: 99px;
+  position: absolute;
 }
 .inner .section2 .sub .sub__detail .swiper-button-prev,
 .inner .section2 .sub .sub__detail .swiper-button-next {

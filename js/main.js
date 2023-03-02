@@ -704,3 +704,19 @@ $(document).ready(function () {
     }
   });
 });
+
+const albumBox = document.querySelectorAll(".album-box");
+
+for (let i = 0; i < albumBox.length; i++) {
+  albumBox[i].addEventListener("mouseover", function (e) {
+    albumBox[i].textContent = "";
+    const hoverBox = document.createElement("div");
+    hoverBox.setAttribute("class", "hoverBox");
+    albumBox[i].append(hoverBox);
+    console.log(e.target);
+    hoverBox.textContent = `${e.target.id} ${e.target.artist}`;
+  });
+  albumBox[i].addEventListener("mouseout", function (e) {
+    albumBox[i].textContent = "";
+  });
+}
