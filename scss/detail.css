@@ -1,8 +1,4 @@
-section {
-  width: 100%;
-  height: 100%;
-}
-section #modal {
+#modal {
   display: none;
   width: 100%;
   height: 100%;
@@ -13,7 +9,7 @@ section #modal {
   align-items: center;
   background: rgba(0, 0, 0, 0.5);
 }
-section #modal .modal-window {
+#modal .modal-window {
   background: #131313;
   border-radius: 20px;
   width: 750px;
@@ -21,7 +17,7 @@ section #modal .modal-window {
   position: absolute;
   padding: 50px;
 }
-section #modal .modal-window .close-area {
+#modal .modal-window .close-area {
   width: 40px;
   height: 40px;
   position: absolute;
@@ -37,49 +33,49 @@ section #modal .modal-window .close-area {
   line-height: 40px;
   font-size: 25px;
 }
-section #modal .modal-window .content {
+#modal .modal-window .content {
   display: flex;
   margin-bottom: 60px;
 }
-section #modal .modal-window .content .content-image {
+#modal .modal-window .content .content-image {
   margin-right: 50px;
 }
-section #modal .modal-window .content .content-image img {
+#modal .modal-window .content .content-image img {
   width: 200px;
   height: 200px;
   border-radius: 10px;
 }
-section #modal .modal-window .content .content-text {
+#modal .modal-window .content .content-text {
   color: #D1D1D1;
 }
-section #modal .modal-window .content .content-text h2 {
+#modal .modal-window .content .content-text h2 {
   margin-bottom: 12px;
 }
-section #modal .modal-window .content .content-text .singer {
+#modal .modal-window .content .content-text .singer {
   opacity: 0.8;
   margin-bottom: 8px;
 }
-section #modal .modal-window .content .content-text .date {
+#modal .modal-window .content .content-text .date {
   opacity: 0.5;
   margin-bottom: 28px;
   font-size: 15px;
   font-weight: 300;
 }
-section #modal .modal-window .content .content-text .info {
+#modal .modal-window .content .content-text .info {
   font-size: 14px;
   font-weight: 300;
   margin-bottom: 28px;
 }
-section #modal .modal-window .content .content-text .info-sub {
+#modal .modal-window .content .content-text .info-sub {
   font-size: 14px;
   font-weight: 300;
 }
-section #modal .modal-window .detail-button {
+#modal .modal-window .detail-button {
   position: relative;
   margin-bottom: 30px;
   display: flex;
 }
-section #modal .modal-window .detail-button .button1 {
+#modal .modal-window .detail-button .button1 {
   text-align: center;
   background-color: red;
   color: #FFFFFF;
@@ -90,7 +86,7 @@ section #modal .modal-window .detail-button .button1 {
   font-size: 14px;
   border: none;
 }
-section #modal .modal-window .detail-button .button2 {
+#modal .modal-window .detail-button .button2 {
   text-align: center;
   background-color: #383131;
   color: #FFFFFF;
@@ -99,41 +95,40 @@ section #modal .modal-window .detail-button .button2 {
   font-size: 14px;
   border: none;
 }
-section #modal .modal-window .detail-track {
+#modal .modal-window .detail-track {
   padding: 30px;
   background-color: #2c2c2c;
   position: relative;
   border-radius: 10px;
 }
-section #modal .modal-window .detail-track .track-info {
+#modal .modal-window .detail-track .track-info {
+  border: 1px white solid;
   position: relative;
   height: 44px;
   line-height: 44px;
   color: white;
   display: flex;
-  justify-content: space-between;
 }
-section #modal .modal-window .detail-track .track-info .track-title {
+#modal .modal-window .detail-track .track-info .track-title {
   color: #D1D1D1;
-  margin-left: 20px;
+  margin-left: 70px;
+  margin-right: 280px;
 }
-section #modal .modal-window .detail-track .track-info .track-title:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-section #modal .modal-window .detail-track .track-info .track-singer {
+#modal .modal-window .detail-track .track-info .track-singer {
   color: #D1D1D1;
   opacity: 0.5;
+  margin-right: 50px;
 }
-section #modal .modal-window .detail-track .track-info .track-time {
+#modal .modal-window .detail-track .track-info .track-time {
   color: #D1D1D1;
   opacity: 0.8;
-  margin-right: 20px;
 }
-section .hidden {
+
+.hidden {
   display: none;
 }
-section .audio-container {
+
+.audio-container {
   width: 100%;
   z-index: 999;
   position: fixed;
@@ -141,20 +136,20 @@ section .audio-container {
   height: 80px;
   background-color: #131313;
 }
-section .audio-container .progress-container {
+.audio-container .progress-container {
   background-color: #fff;
   width: 100%;
   border-radius: a 5px;
   cursor: pointer;
 }
-section .audio-container .progress-container .progress {
+.audio-container .progress-container .progress {
   background-color: red;
   height: 4px;
   width: 0%;
   border-radius: 5px;
   transition: width 0.1s linear;
 }
-section .audio-container ul.control {
+.audio-container ul.control {
   width: 200px;
   height: 100%;
   color: white;
@@ -163,32 +158,26 @@ section .audio-container ul.control {
   line-height: 80px;
   margin: auto;
 }
-section .audio-container ul.control li {
+.audio-container ul.control li {
   cursor: pointer;
 }
-section .audio-container ul.control li.play {
+.audio-container ul.control li.play {
   transform: scale(2);
 }
-section .audio-container .audio-album {
+.audio-container .audio-album {
   position: absolute;
   top: 19px;
   left: 75px;
   display: flex;
 }
-section .audio-container .audio-album .audio-album-img {
+.audio-container .audio-album .audio-album-img {
+  width: 40px;
+  height: 40px;
   background-color: #fff;
   border-radius: 4px;
   margin-right: 12px;
 }
-section .audio-container .audio-album .audio-album-img img {
-  width: 40px;
-  height: 40px;
-}
-section .audio-container .audio-album .album-title {
-  margin-bottom: 0px !important;
-}
-section .audio-container .audio-album .album-sub-title {
+.audio-container .audio-album .album-sub-title {
   font-size: 14px;
   font-weight: 300;
-  margin-bottom: 0px !important;
 }/*# sourceMappingURL=detail.css.map */

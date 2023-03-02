@@ -1,6 +1,6 @@
 //MAIN
-const wrapper = document.querySelector(".albums .swiper-wrapper");
-const slide = document.querySelectorAll(".swiper-slide .album-box"); // 배열로 가지고 옴
+const wrapper = document.querySelector(".swiper-wrapper");
+const slide = document.querySelectorAll(".album-box"); // 배열로 가지고 옴
 const len = slide.length;
 
 // const names = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
@@ -619,7 +619,7 @@ $(document).ready(function () {
     genre.textContent = $(this)[0].outerText;
     genre.setAttribute(
       "style",
-      "text-align: left; font: normal normal bold 24px/29px Pretendard;"
+      "text-align: left; font: normal normal bold 24px/29px Pretendard; padding-left: 80px;"
     );
     genreZone.append(genre);
 
