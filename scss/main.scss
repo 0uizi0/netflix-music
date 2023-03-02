@@ -6,12 +6,11 @@ body {
 }
 
 section {
-
   .inner {
     position: relative;
     width: 100vw;
     height: 1500px;
-  
+
     .section2 {
       position: relative;
       top: 590px;
@@ -19,7 +18,7 @@ section {
       width: 100vw;
       height: 100vh;
       z-index: 2;
-  
+
       .main {
         .main-title {
           font-size: 35px;
@@ -31,12 +30,12 @@ section {
           padding: 20px;
           width: 100%;
           top: 100px;
-  
+
           ul {
             display: flex;
             align-items: center;
             flex-wrap: wrap;
-  
+
             li {
               list-style: none;
               padding: 12px 20px;
@@ -47,49 +46,49 @@ section {
               border: 1px solid #707070;
               border-radius: 6px;
               opacity: 1;
-  
+
               &.active {
                 background-color: #fff;
                 color: black;
               }
             }
           }
-  
+
           .genre-zone {
             margin-top: 35px;
           }
-  
+
           .swiper-zone {
             position: relative;
             width: 100vw;
             height: 300px;
             display: flex;
             align-items: center;
-  
+
             .albums {
               position: absolute;
               width: 100%;
               height: 300px;
               bottom: 0;
-  
+
               .swiper-wrapper {
                 .swiper-slide {
                   // display: flex;
                   align-items: center;
                   margin-top: 80px;
                   margin-right: 0px !important;
-  
+
                   &:hover {
                     transform: scale(1.5);
                     transition: 0.5s;
                     transition-delay: 0.3s;
                     z-index: 9;
                   }
-  
+
                   &.hide {
                     display: none;
                   }
-  
+
                   .album-box {
                     width: 200px;
                     height: 200px;
@@ -104,22 +103,25 @@ section {
                     transform-origin: center;
                     cursor: pointer;
                     z-index: 1;
-  
+
                     .hoverBox {
-                    width: 200px;
-                    background: transparent
-                      linear-gradient(180deg, #00000000 0%, #000000 105%) 0% 0%
-                      no-repeat padding-box;
-                    height: 60px;
-                    bottom: 99px;
-                    position: absolute;
+                      width: 200px;
+                      background: transparent
+                        linear-gradient(180deg, #00000000 0%, #000000 105%) 0%
+                        0% no-repeat padding-box;
+                      padding-left: 25px;
+                      height: 40px;
+                      bottom: 99px;
+                      position: absolute;
+                      font-size: small;
+                      transition: 0.5s;
                     }
                   }
                 }
               }
             }
           }
-  
+
           //버튼은 계속 복사해서 써야함
           .swiper-button-prev,
           .swiper-button-next {
@@ -133,7 +135,7 @@ section {
           .swiper-button-next {
             right: -55px;
           }
-  
+
           .swiper-button-prev.a,
           .swiper-button-next.a {
             top: 600px;
@@ -144,5 +146,4 @@ section {
       }
     }
   }
-
 }
