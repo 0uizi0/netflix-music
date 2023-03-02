@@ -176,11 +176,13 @@ section .audio-container .audio-album {
   display: flex;
 }
 section .audio-container .audio-album .audio-album-img {
-  width: 40px;
-  height: 40px;
   background-color: #fff;
   border-radius: 4px;
   margin-right: 12px;
+}
+section .audio-container .audio-album .audio-album-img img {
+  width: 40px;
+  height: 40px;
 }
 section .audio-container .audio-album .album-title {
   margin-bottom: 0px !important;

@@ -193,11 +193,14 @@ section {
         left: 75px;
         display: flex;
         .audio-album-img{
-          width: 40px;
-          height: 40px;
+          
           background-color: #fff;
           border-radius: 4px;
           margin-right: 12px;
+          img{
+            width: 40px;
+            height: 40px;
+          }
         }
         .album-title{
           margin-bottom: 0px !important;
