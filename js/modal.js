@@ -7,7 +7,7 @@ const albumImg = document.querySelector(".content-image");
 for(let i=0; i<btnModal.length; i++){
     btnModal[i].addEventListener("click", function(e) {
         modal.style.display = "flex"
-        document.querySelector(".section-inner").style.opacity="0.5";
+        document.querySelector(".inner.non-padding").style.opacity="0.5";
         audioConatiner.style.opacity = "1";
         audioConatiner.classList.remove("hidden");
         const clickImage = e.target.style.backgroundImage;
