@@ -12,6 +12,10 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
     <!-- ICONS -->
     <link
       rel="stylesheet"
@@ -26,6 +30,8 @@
     <script defer src="./js/header.js"></script>
     <!-- modal js -->
     <script defer src="./js/modal.js"></script>
+
+
     <!-- main css -->
     <link rel="stylesheet" href="./scss/style.css" />
 
@@ -54,9 +60,9 @@
 
         <!-- MENUS -->
         <div class="menus">
-          <a href="#">신규앨범</a>
-          <a href="#">차트</a>
-          <a href="#">장르</a>
+          <a href="#">홈</a>
+          <a href="./chart.html">차트</a>
+          <a href="#">둘러보기</a>
         </div>
 
         <!-- 서칭 및 로그인 외-->
@@ -545,7 +551,58 @@
     <!-- footer -->
     <footer>
       <div class="inner">
-        <div class="copyright"></div>
+        <p class="question">질문이 있으신가요? 문의 전화: 080-000-0000</p>
+        <div class="footer__menus">
+          <ul>
+            <li>자주 묻는 질문</li>
+            <li>투자 정보(IR)</li>
+            <li>개인정보 처리방침</li>
+            <li>속도 테스트</li>
+          </ul>
+          <ul>
+            <li>고객 센터</li>
+            <li>입사 정보</li>
+            <li>쿠키 설정</li>
+            <li>법적 고지</li>
+          </ul>
+          <ul>
+            <li>계정</li>
+            <li>넷플릭스 지원 디바이스</li>
+            <li>회사 정보</li>
+            <li>오직 넷플릭스뮤직에서</li>
+          </ul>
+          <ul>
+            <li>미디어 센터</li>
+            <li>이용 약관</li>
+            <li>문의하기</li>
+          </ul> 
+        </div>
+
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-globe"></i> 한국어
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">English(US)</a></li>
+            <li><a class="dropdown-item" href="#">English(UK)</a></li>
+            <li><a class="dropdown-item" href="#">Japan</a></li>
+            <li><a class="dropdown-item" href="#">China</a></li>
+            <li><a class="dropdown-item" href="#">German</a></li>
+            <li><a class="dropdown-item" href="#">French</a></li>
+            <li><a class="dropdown-item" href="#">Italian</a></li>
+          </ul>
+        </div>
+
+        <p>
+          넷플릭스뮤직 대한민국 <br /><br />
+          넷플릭스뮤직 서비스코리아 유한회사 통신판매업신고번호: 제 2023-서울종로-0422호 전화번호: 080-000-0000 <br />
+          대표: 레지널드 톰프슨<br />
+          이메일 주소: korea@netflixmusic.com<br />
+          주소: 대한민국 서울특별시 마포구 염리동 55, 코딩온 지하1층 우편번호 03100<br />
+          사업자등록번호: 165-00-01010<br />
+          클라우드 호스팅: Amazon Web Services Inc.<br />
+          공정거래위원회 웹사이트<br />
+        </p>
       </div>
     </footer>
   </body>

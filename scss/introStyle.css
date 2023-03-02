@@ -1,0 +1,592 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  overflow: hidden;
+}
+
+.introlayout {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+.introlayout .btn-secondary {
+  position: absolute;
+  right: 100px;
+  bottom: 50px;
+  background-color: #000000;
+  border-color: #3c3c3c;
+  color: #3c3c3c;
+  padding: 5px 0px;
+  font-size: 20px;
+  width: 100px;
+  border-radius: 3px !important;
+  transition: 0.1s !important;
+  cursor: pointer;
+}
+.introlayout .btn-secondary:hover {
+  background-color: #2d2d2d !important;
+}
+.introlayout .btn-secondary:active {
+  color: #3c3c3c;
+}
+.introlayout .intro-logo {
+  display: inline-block;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 500px;
+  opacity: 0;
+  animation: fade-in 1.5s 5.5s forwards ease;
+}
+.introlayout .container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 260px;
+  height: 470px;
+  transform-origin: 50px;
+  transform: scale(0.5);
+  margin: auto;
+  overflow: hidden;
+  animation-name: introScaleUp, fade-out;
+  animation-duration: 6.5s, 2s;
+  animation-delay: 1.5s, 5.5s;
+  animation-fill-mode: both, forwards;
+  animation-timing-function: ease-in, ease;
+}
+.introlayout .container .fa-music {
+  position: absolute;
+  top: 210px;
+  left: 30px;
+  font-size: 20px;
+  color: white;
+  scale: 0.2;
+  animation: music 2s 4s both ease;
+  z-index: 4;
+}
+.introlayout .container .material-symbols-outlined {
+  position: absolute;
+  top: 220px;
+  left: 40px;
+  font-size: 40px;
+  font-weight: 100;
+  color: white;
+  scale: 0.3;
+  animation: music 2s 3.5s both ease;
+  z-index: 4;
+}
+.introlayout .container .lineEffect {
+  position: absolute;
+  background-color: rgb(222, 222, 222);
+  width: 1px;
+  height: 472px;
+  transition: 1s;
+  z-index: 1;
+  opacity: 0;
+}
+.introlayout .container .intro1 {
+  width: 86.5px;
+  height: 472px;
+  position: absolute;
+  background-color: #b20710;
+  -webkit-clip-path: polygon(50% 0, 100% 0, 100% 35%, 100% 70%, 100% 98%, 52% 99%, 0 100%, 0% 70%, 0% 35%, 0 0);
+          clip-path: polygon(50% 0, 100% 0, 100% 35%, 100% 70%, 100% 98%, 52% 99%, 0 100%, 0% 70%, 0% 35%, 0 0);
+  z-index: 1;
+  transform-origin: bottom;
+  left: 0;
+}
+.introlayout .container .intro2__wrap {
+  position: absolute;
+  margin: auto;
+  bottom: -33px;
+  left: 0;
+  right: 0;
+  filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.5));
+  z-index: 3;
+  width: 84px;
+  height: 534px;
+  transform: rotate(-20deg);
+  opacity: 1;
+}
+.introlayout .container .intro2__wrap .intro2 {
+  position: absolute;
+  margin: auto;
+  width: inherit;
+  height: inherit;
+  top: inherit;
+  left: inherit;
+  right: inherit;
+  background-color: #ff0d19;
+  -webkit-clip-path: polygon(0 0, 100% 5.9%, 100% 100%, 0 92%);
+          clip-path: polygon(0 0, 100% 5.9%, 100% 100%, 0 92%);
+  transform-origin: top;
+}
+.introlayout .container .intro3 {
+  position: absolute;
+  right: 0;
+  background-color: #b20710;
+  width: 86.5px;
+  height: 472px;
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 100% 100%, 49% 99%, 0 98%, 0% 70%, 0% 35%, 0 0);
+          clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 100% 100%, 49% 99%, 0 98%, 0% 70%, 0% 35%, 0 0);
+  z-index: 1;
+  transform-origin: bottom;
+}
+
+@keyframes intro-in {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+@keyframes intro-reverse {
+  0% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(0);
+  }
+}
+@keyframes introScaleUp {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(25);
+  }
+}
+@keyframes random-position0 {
+  0% {
+
+    left: 77px;
+  }
+  10% {
+    left: 34px;
+  }
+  20% {
+    left: 15px;
+  }
+  30% {
+    left: 40px;
+  }
+  40% {
+    left: 2px;
+  }
+  50% {
+    left: 60px;
+  }
+  60% {
+    left: 71px;
+  }
+  70% {
+    left: 48px;
+  }
+  80% {
+    left: 81px;
+  }
+  90% {
+    left: 78px;
+  }
+  100% {
+    left: 15px;
+  }
+}
+@keyframes random-position1 {
+  0% {
+    left: 29px;
+  }
+  10% {
+    left: 75px;
+  }
+  20% {
+    left: 20px;
+  }
+  30% {
+    left: 44px;
+  }
+  40% {
+    left: 38px;
+  }
+  50% {
+    left: 41px;
+  }
+  60% {
+    left: 28px;
+  }
+  70% {
+    left: 33px;
+  }
+  80% {
+    left: 77px;
+  }
+  90% {
+    left: 25px;
+  }
+  100% {
+    left: 6px;
+  }
+}
+@keyframes random-position2 {
+  0% {
+    left: 89px;
+  }
+  10% {
+    left: 77px;
+  }
+  20% {
+    left: 46px;
+  }
+  30% {
+    left: 16px;
+  }
+  40% {
+    left: 43px;
+  }
+  50% {
+    left: 5px;
+  }
+  60% {
+    left: 4px;
+  }
+  70% {
+    left: 95px;
+  }
+  80% {
+    left: 83px;
+  }
+  90% {
+    left: 3px;
+  }
+  100% {
+    left: 43px;
+  }
+}
+@keyframes random-position3 {
+  0% {
+    left: 66px;
+  }
+  10% {
+    left: 31px;
+  }
+  20% {
+    left: 61px;
+  }
+  30% {
+    left: 33px;
+  }
+  40% {
+    left: 61px;
+  }
+  50% {
+    left: 94px;
+  }
+  60% {
+    left: 47px;
+  }
+  70% {
+    left: 82px;
+  }
+  80% {
+    left: 11px;
+  }
+  90% {
+    left: 48px;
+  }
+  100% {
+    left: 37px;
+  }
+}
+@keyframes random-position4 {
+  0% {
+    left: 26px;
+  }
+  10% {
+    left: 55px;
+  }
+  20% {
+    left: 53px;
+  }
+  30% {
+    left: 30px;
+  }
+  40% {
+    left: 69px;
+  }
+  50% {
+    left: 7px;
+  }
+  60% {
+    left: 23px;
+  }
+  70% {
+    left: 12px;
+  }
+  80% {
+    left: 23px;
+  }
+  90% {
+    left: 79px;
+  }
+  100% {
+    left: 68px;
+  }
+}
+@keyframes random-position5 {
+  0% {
+    left: 23px;
+  }
+  10% {
+    left: 73px;
+  }
+  20% {
+    left: 71px;
+  }
+  30% {
+    left: 30px;
+  }
+  40% {
+    left: 10px;
+  }
+  50% {
+    left: 8px;
+  }
+  60% {
+    left: 95px;
+  }
+  70% {
+    left: 33px;
+  }
+  80% {
+    left: 48px;
+  }
+  90% {
+    left: 52px;
+  }
+  100% {
+    left: 45px;
+  }
+}
+@keyframes random-position6 {
+  0% {
+    left: 96px;
+  }
+  10% {
+    left: 77px;
+  }
+  20% {
+    left: 87px;
+  }
+  30% {
+    left: 7px;
+  }
+  40% {
+    left: 31px;
+  }
+  50% {
+    left: 24px;
+  }
+  60% {
+    left: 91px;
+  }
+  70% {
+    left: 70px;
+  }
+  80% {
+    left: 71px;
+  }
+  90% {
+    left: 92px;
+  }
+  100% {
+    left: 18px;
+  }
+}
+@keyframes random-position7 {
+  0% {
+    left: 60px;
+  }
+  10% {
+    left: 83px;
+  }
+  20% {
+    left: 89px;
+  }
+  30% {
+    left: 9px;
+  }
+  40% {
+    left: 96px;
+  }
+  50% {
+    left: 89px;
+  }
+  60% {
+    left: 98px;
+  }
+  70% {
+    left: 23px;
+  }
+  80% {
+    left: 28px;
+  }
+  90% {
+    left: 25px;
+  }
+  100% {
+    left: 4px;
+  }
+}
+@keyframes random-position8 {
+  0% {
+    left: 42px;
+  }
+  10% {
+    left: 2px;
+  }
+  20% {
+    left: 87px;
+  }
+  30% {
+    left: 35px;
+  }
+  40% {
+    left: 93px;
+  }
+  50% {
+    left: 25px;
+  }
+  60% {
+    left: 89px;
+  }
+  70% {
+    left: 10px;
+  }
+  80% {
+    left: 17px;
+  }
+  90% {
+    left: 45px;
+  }
+  100% {
+    left: 69px;
+  }
+}
+@keyframes random-position9 {
+  0% {
+    left: 80px;
+  }
+  10% {
+    left: 33px;
+  }
+  20% {
+    left: 50px;
+  }
+  30% {
+    left: 10px;
+  }
+  40% {
+    left: 88px;
+  }
+  50% {
+    left: 98px;
+  }
+  60% {
+    left: 92px;
+  }
+  70% {
+    left: 18px;
+  }
+  80% {
+    left: 67px;
+  }
+  90% {
+    left: 64px;
+  }
+  100% {
+    left: 61px;
+  }
+}
+@keyframes random-position10 {
+  0% {
+    left: 70px;
+  }
+  10% {
+    left: 71px;
+  }
+  20% {
+    left: 39px;
+  }
+  30% {
+    left: 5px;
+  }
+  40% {
+    left: 40px;
+  }
+  50% {
+    left: 45px;
+  }
+  60% {
+    left: 39px;
+  }
+  70% {
+    left: 45px;
+  }
+  80% {
+    left: 66px;
+  }
+  90% {
+    left: 30px;
+  }
+  100% {
+    left: 51px;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes music {
+  0% {
+    transform: scale(0.3) rotate(10deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: scale(2) rotate(10deg);
+    opacity: 0;
+  }
+}/*# sourceMappingURL=introStyle.css.map */
