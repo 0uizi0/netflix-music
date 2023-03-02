@@ -60,13 +60,12 @@ header .header__logo {
   top: 50%;
   transform: translateY(-50%);
   width: 300px;
-  margin-left: 10px;
 }
 header img {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 35%;
+  width: 42%;
 }
 
 .menus {
@@ -616,16 +615,18 @@ section .inner .section2 .sub .sub__detail .swiper-button-next.a {
 }
 .chart-wrap .inner .row .col .chart-list .--text-box .album-title {
   font-size: 17px;
-  font-weight: 500px;
+  font-weight: 500px !important;
+  margin-bottom: 0px !important;
 }
 .chart-wrap .inner .row .col .chart-list .--text-box .album-sub-title {
   font-size: 15px;
+  font-weight: 300;
   color: #888;
 }
 
 .swiperChart-zone.inner {
   padding: 0px, 75px;
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 .swiperChart-zone {
@@ -639,6 +640,7 @@ section .inner .section2 .sub .sub__detail .swiper-button-next.a {
   position: absolute;
   top: -10px;
   font-size: 20px;
+  font-weight: 500;
 }
 .swiperChart-zone .swiperChart__container {
   position: absolute;
@@ -646,11 +648,13 @@ section .inner .section2 .sub .sub__detail .swiper-button-next.a {
   height: 300px;
 }
 .swiperChart-zone .swiperChart__container .swiper-wrapper {
-  gap: 100px;
+  gap: 50px;
 }
 .swiperChart-zone .swiperChart__container .swiper-wrapper .swiper-slide {
   display: flex;
   align-items: center;
+  min-width: 265px;
+  margin-right: 0px !important;
 }
 .swiperChart-zone .swiperChart__container .swiper-wrapper .swiper-slide.hide {
   display: none;
@@ -671,7 +675,7 @@ section .inner .section2 .sub .sub__detail .swiper-button-next.a {
   font-size: 200px;
   z-index: 1;
   transform: translate(-5px, -5px);
-  -webkit-text-stroke: 5px rgb(245, 245, 245);
+  -webkit-text-stroke: 3px #6C6C6C;
   color: transparent;
   font-weight: 900;
 }
@@ -879,9 +883,13 @@ section .audio-container .audio-album .audio-album-img {
   border-radius: 4px;
   margin-right: 12px;
 }
+section .audio-container .audio-album .album-title {
+  margin-bottom: 0px !important;
+}
 section .audio-container .audio-album .album-sub-title {
   font-size: 14px;
   font-weight: 300;
+  margin-bottom: 0px !important;
 }
 
 * {
