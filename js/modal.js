@@ -11,13 +11,26 @@ for(let i=0; i<btnModal.length; i++){
         audioConatiner.style.opacity = "1";
         audioConatiner.classList.remove("hidden");
         const clickImage = e.target.style.backgroundImage;
-        let imageName = e.target.id;
-        let test = e.target;
-        console.log(imageName);
-        console.log(test);
-        const singer = document.querySelector(".al-name");
-        singer.textContent = imageName;
+        
+        let nameText = e.target.getAttribute("name");
+        const albumName = document.querySelector(".al-name");
+        albumName.textContent = nameText;
 
+        let singerText = e.target.getAttribute("artist");
+        const singer = document.querySelector(".singer");
+        singer.textContent = singerText;
+
+        let dateText = e.target.getAttribute("date");
+        const date = document.querySelector(".date");
+        date.textContent = dateText;
+
+        let infoText = e.target.getAttribute("info");
+        const info = document.querySelector(".info");
+        info.textContent = infoText;
+
+        let infosubText = e.target.getAttribute("info-sub");
+        const infosub = document.querySelector(".info-sub");
+        infosub.textContent = infosubText;
 
         const img = document.createElement("img");
         img.src=clickImage;

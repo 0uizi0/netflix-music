@@ -752,13 +752,18 @@ section #modal .modal-window .content .content-text .singer {
   opacity: 0.8;
   margin-bottom: 8px;
 }
-section #modal .modal-window .content .content-text .year {
+section #modal .modal-window .content .content-text .date {
   opacity: 0.5;
   margin-bottom: 28px;
   font-size: 15px;
   font-weight: 300;
 }
-section #modal .modal-window .content .content-text .explain {
+section #modal .modal-window .content .content-text .info {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 28px;
+}
+section #modal .modal-window .content .content-text .info-sub {
   font-size: 14px;
   font-weight: 300;
 }
@@ -793,7 +798,7 @@ section #modal .modal-window .detail-track {
   position: relative;
   border-radius: 10px;
 }
-section #modal .modal-window .detail-track .info {
+section #modal .modal-window .detail-track .track-info {
   border: 1px white solid;
   position: relative;
   height: 44px;
@@ -801,17 +806,17 @@ section #modal .modal-window .detail-track .info {
   color: white;
   display: flex;
 }
-section #modal .modal-window .detail-track .info .title {
+section #modal .modal-window .detail-track .track-info .track-title {
   color: #D1D1D1;
   margin-left: 70px;
   margin-right: 280px;
 }
-section #modal .modal-window .detail-track .info .singer {
+section #modal .modal-window .detail-track .track-info .track-singer {
   color: #D1D1D1;
   opacity: 0.5;
   margin-right: 50px;
 }
-section #modal .modal-window .detail-track .info .time {
+section #modal .modal-window .detail-track .track-info .track-time {
   color: #D1D1D1;
   opacity: 0.8;
 }

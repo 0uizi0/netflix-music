@@ -136,7 +136,7 @@ let newArryAlbum = [
     img: "6",
     name: "Band Of Dynamic Brothers",
     artist: "다이나믹 듀오",
-    date: "다이나믹 듀오",
+    date: "2009.10.07",
     item: "hiphop",
     country: "국내",
     info: "다이나믹듀오의 5집 앨범",
@@ -211,13 +211,13 @@ let newArryAlbum = [
   {
     // { img: "9", name: "Teddy Bear", item: "dance" },
     img: "9",
-    name: "",
-    artist: "",
-    date: "",
-    item: "",
-    country: "",
-    info: "",
-    infoSub: "",
+    name: "Teddy Bear",
+    artist: "STAYC",
+    date: "2023.02.03",
+    item: "dance",
+    country: "국내",
+    info: "STAYC 싱글 앨범",
+    infoSub: "STAYC(스테이씨)의 밝고 키치한 ‘틴프레시(TEENFRESH)색으로 희망과 위안을 주는 긍정의 메시지!",
     track: {
       1: { title: "", time: "" },
       2: { title: "", time: "" },
@@ -230,13 +230,13 @@ let newArryAlbum = [
   {
     // { img: "10", name: "After Like", item: "kpop" },
     img: "10",
-    name: "",
-    artist: "",
-    date: "",
-    item: "",
-    country: "",
-    info: "",
-    infoSub: "",
+    name: "After Like",
+    artist: "IVE",
+    date: "2022.08.22",
+    item: "kpop",
+    country: "국내",
+    info: "IVE 3RD SINGLE ALBUM <After LIKE>",
+    infoSub: "자신감과 자유로움, 두 가지 키워드로 설명이 부족한 아이브가 다시 한 번 K팝 지형을 바꿀 준비를 마쳤다. 최고의 조합을 강조한 출사표 'ELEVEN', 6명 멤버들의 비주얼과 당당한 애티튜드를 드러낸 'LOVE DIVE', 그 다음은 다채로운 매력으로 가득 채운 'After LIKE'로 또 한 번 존재감을 증명할 차례다. 시작부터 완벽했던 아이브가 자신감 있게 새로운 시대를 예고한다.",
     track: {
       1: { title: "", time: "" },
       2: { title: "", time: "" },
@@ -249,13 +249,13 @@ let newArryAlbum = [
   {
     // { img: "11", name: "오르트구름", item: "kpop" },
     img: "11",
-    name: "",
-    artist: "",
-    date: "",
-    item: "",
-    country: "",
-    info: "",
-    infoSub: "",
+    name: "END THEORY",
+    artist: "윤하",
+    date: "2021.11.16",
+    item: "kpop",
+    country: "국내",
+    info: "윤하 정규 6집 [End Theory]",
+    infoSub: "딛고 지내온 모든 것들을 사랑하기로 했다. 정확히는, 사랑하는 선택을 하기로 했다. 그것은 시간이나 사람이나 감정의 형태로 남아있다. 더 이상의 시공간은 중요하지 않다. 주어진 시간이 얼만큼 남았는지는 모른다. 너와 내가 지나온 모든 것들이 우리를 만들었고, 그것은 대화의 주제로 이따금씩 돌아 볼 수 있겠지만 이상도 이하도 아니다. 다만, 서로를 제대로 사랑할 수 있는 이해의 기반이 되길바란다. 우리는 선택한 대로 살아간다. 설령, 선택이 정해져 있더라도.",
     track: {
       1: { title: "", time: "" },
       2: { title: "", time: "" },
@@ -268,13 +268,13 @@ let newArryAlbum = [
   {
     // { img: "12", name: "자격지심 (Feat. ZICO)", item: "hiphop" },
     img: "12",
-    name: "",
-    artist: "",
-    date: "",
-    item: "",
-    country: "",
-    info: "",
-    infoSub: "",
+    name: "자격지심 (Feat. ZICO)",
+    artist: "BE'O",
+    date: "2022.09.29",
+    item: "hiphop",
+    country: "국내",
+    info: "BE’O The 1st EP [FIVE SENSES]",
+    infoSub: "있는 그대로의 ‘저’를 담아 보고 싶었어요. 감각, 경험, 감정. 제가 겪은 것들에 대해 솔직하고 꾸밈없이 음악으로 표현해보고 싶었거든요. 물론 보여드리고 싶지 않은 모습도 있지만 그런 모습들까지 보여드려야 진짜 저다운 앨범이 완성될 것 같았어요. 누구에게나 한 번쯤은 있었을 법한 이야기부터 저만 알고 싶은 개인적인 이야기까지. 제 노래가 여러분들께 ‘공감’이자 ‘위로’가 되었으면 좋겠습니다. ",
     track: {
       1: { title: "", time: "" },
       2: { title: "", time: "" },
@@ -287,15 +287,15 @@ let newArryAlbum = [
   {
     // { img: "13", name: "85mm", item: "classic" },
     img: "13",
-    name: "",
-    artist: "",
-    date: "",
-    item: "",
-    country: "",
-    info: "",
-    infoSub: "",
+    name: "85mm",
+    artist: "Ludovico Einaudi(루도비코 에이나우디)",
+    date: "2023.02.24",
+    item: "classic",
+    country: "USA",
+    info: "싱글",
+    infoSub: "Ludovico Einaudi(루도비코 에이나우디) 뉴에이지 클래식 음악",
     track: {
-      1: { title: "", time: "" },
+      1: { title: "85mm", time: "02:59" },
       2: { title: "", time: "" },
       3: { title: "", time: "" },
       4: { title: "", time: "" },
@@ -636,8 +636,14 @@ for (let i = 0; i < len; i++) {
   const pic = slide[i];
   if (i < 30) {
     pic.setAttribute("data-item", `${arryAlbum[i].item}`); //추가한 코드
-    pic.setAttribute("id", `${arryAlbum[i].name}`);
-    pic.setAttribute("name", `${arryAlbum[i].name}`);
+    // pic.setAttribute("id", `${arryAlbum[i].name}`);
+    pic.setAttribute("name", `${newArryAlbum[i].name}`);
+    pic.setAttribute("artist", `${newArryAlbum[i].artist}`);
+    pic.setAttribute("date", `${newArryAlbum[i].date}`);
+    pic.setAttribute("info", `${newArryAlbum[i].info}`);
+    pic.setAttribute("info-sub", `${newArryAlbum[i].infoSub}`);
+    // pic.setAttribute("track-title", `${newArryAlbum[i].track[1].title}`);
+
     pic.style.backgroundImage = `url("../img/main_album/main_album${arryAlbum[i].img}.png")`;
     pic.style.boxShadow = `0px 0px 1px #e6e6e6`;
   }
