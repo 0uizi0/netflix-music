@@ -194,9 +194,13 @@ section {
           border-radius: 4px;
           margin-right: 12px;
         }
+        .album-title{
+          margin-bottom: 0px !important;
+        }
         .album-sub-title{
           font-size: 14px;
           font-weight: 300;
+          margin-bottom: 0px !important;
         }
       }
     }

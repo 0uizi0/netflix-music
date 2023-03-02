@@ -179,7 +179,11 @@ section .audio-container .audio-album .audio-album-img {
   border-radius: 4px;
   margin-right: 12px;
 }
+section .audio-container .audio-album .album-title {
+  margin-bottom: 0px !important;
+}
 section .audio-container .audio-album .album-sub-title {
   font-size: 14px;
   font-weight: 300;
+  margin-bottom: 0px !important;
 }/*# sourceMappingURL=detail.css.map */
