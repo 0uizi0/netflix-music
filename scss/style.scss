@@ -13,9 +13,11 @@
 
 @import "detail";
 
+// footer
 @import "footerStyle";
 
 .inner{
+  position: relative;
   padding: 0 75px;
   width: 100%;
 }
