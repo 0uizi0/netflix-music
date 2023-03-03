@@ -113,7 +113,9 @@
   all: revert !important;
 }
 #modal .modal-window .detail-track .track-info .track-title {
-  color: #D1D1D1;
+  color: #fff;
+  font-weight: 300;
+  margin-right: 10px;
   margin-left: 6px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -151,7 +153,6 @@
 .audio-container .progress-container {
   background-color: #fff;
   width: 100%;
-  border-radius: 5px;
   cursor: pointer;
 }
 .audio-container .progress-container .progress {
@@ -199,9 +200,15 @@
 }
 .audio-container .audio-album .album-title {
   margin-bottom: 0px !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 .audio-container .audio-album .album-sub-title {
   font-size: 14px;
   font-weight: 300;
+  opacity: 0.6;
   margin-bottom: 0px !important;
 }/*# sourceMappingURL=detail.css.map */
