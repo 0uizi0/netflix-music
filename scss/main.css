@@ -157,9 +157,9 @@ main .section3 .inner .swiper-zone .albums {
   z-index: 1;
 }
 main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide {
-  display: flex;
   align-items: center;
-  z-index: 1;
+  margin-top: 80px;
+  margin-right: 0px !important;
 }
 main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide:hover {
   transform: scale(1.5);
@@ -184,6 +184,16 @@ main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide .album-
   transform-origin: center;
   cursor: pointer;
   z-index: 1;
+}
+main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide .album-box .hoverBox {
+  width: 200px;
+  background: transparent linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 105%) 0% 0% no-repeat padding-box;
+  padding-left: 25px;
+  height: 40px;
+  bottom: 99px;
+  position: absolute;
+  font-size: small;
+  transition: 0.5s;
 }
 main .section3 .inner .swiper-button-prev.mainSwiper0,
 main .section3 .inner .swiper-button-next.mainSwiper0 {
