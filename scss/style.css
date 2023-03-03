@@ -552,10 +552,10 @@ main .section3 .inner .swiper-button-next.mainSwiper0 {
   font-size: 38px;
   font-weight: 500;
   color: white;
-  margin-bottom: 50px;
+  margin-bottom: 65px;
 }
 .top-title .inner .sub-title {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500;
   margin-bottom: 20px;
 }
@@ -572,12 +572,13 @@ main .section3 .inner .swiper-button-next.mainSwiper0 {
   position: relative;
   border-bottom: 1px solid #252525;
   width: 100%;
+  height: 82px;
   padding: 15px 0px;
   cursor: pointer;
 }
 .chart-wrap .inner .row .col .chart-list .--album-img {
-  width: 50px;
-  height: 50px;
+  min-width: 50px;
+  min-height: 50px;
   background-color: #fff;
   border-radius: 4px;
   background-size: cover;
@@ -615,15 +616,25 @@ main .section3 .inner .swiper-button-next.mainSwiper0 {
   font-weight: 400;
 }
 .chart-wrap .inner .row .col .chart-list .--text-box .album-title {
-  font-size: 17px;
-  font-weight: 500px !important;
-  margin-bottom: 0px !important;
+  font-size: 16px;
+  line-height: 1.3rem;
+  margin-bottom: 2px !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 .chart-wrap .inner .row .col .chart-list .--text-box .album-sub-title {
   font-size: 15px;
   font-weight: 300;
   margin-bottom: 0px !important;
   color: #888;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 
 .swiperChart-zone.inner {
@@ -641,7 +652,7 @@ main .section3 .inner .swiper-button-next.mainSwiper0 {
 .swiperChart-zone p {
   position: absolute;
   top: -10px;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500;
 }
 .swiperChart-zone .swiperChart__container {
