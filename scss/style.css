@@ -428,7 +428,7 @@ body {
 section .inner {
   position: relative;
   width: 100vw;
-  height: 1500px;
+  height: 3000px;
 }
 section .inner .section2 {
   position: relative;
@@ -467,6 +467,10 @@ section .inner .section2 .sub .sub__detail ul li.active {
   background-color: #fff;
   color: black;
 }
+section .inner .section2 .sub .sub__detail .all-title {
+  text-align: left;
+  font: normal normal bold 24px/29px Pretendard;
+}
 section .inner .section2 .sub .sub__detail .genre-zone {
   margin-top: 35px;
 }
@@ -486,7 +490,6 @@ section .inner .section2 .sub .sub__detail .swiper-zone .albums {
 section .inner .section2 .sub .sub__detail .swiper-zone .albums .swiper-wrapper .swiper-slide {
   align-items: center;
   margin-top: 80px;
-  margin-right: 0px !important;
 }
 section .inner .section2 .sub .sub__detail .swiper-zone .albums .swiper-wrapper .swiper-slide:hover {
   transform: scale(1.5);
@@ -521,6 +524,9 @@ section .inner .section2 .sub .sub__detail .swiper-zone .albums .swiper-wrapper 
   position: absolute;
   font-size: small;
   transition: 0.5s;
+}
+section .inner .section2 .sub .sub__detail .swiper-zone .albums p .swiper-wrapper .swiper-slide .album-box .hoverBox {
+  bottom: 40px;
 }
 section .inner .section2 .sub .sub__detail .swiper-button-prev,
 section .inner .section2 .sub .sub__detail .swiper-button-next {

@@ -9,7 +9,7 @@ section {
   .inner {
     position: relative;
     width: 100vw;
-    height: 1500px;
+    height: 3000px;
 
     .section2 {
       position: relative;
@@ -53,6 +53,10 @@ section {
               }
             }
           }
+          .all-title {
+            text-align: left;
+            font: normal normal bold 24px/29px Pretendard;
+          }
 
           .genre-zone {
             margin-top: 35px;
@@ -71,12 +75,23 @@ section {
               height: 300px;
               bottom: 0;
 
+              // .genre-title {
+              //   width: 99vw;
+              //   text-align: left;
+              //   font: normal normal bold 24px/29px Pretendard;
+              // }
+
               .swiper-wrapper {
+                // &.test {
+                //   flex-wrap: wrap;
+                //   margin-top: 20px;
+                // }
+
                 .swiper-slide {
                   // display: flex;
                   align-items: center;
                   margin-top: 80px;
-                  margin-right: 0px !important;
+                  // margin-right: 0px !important;
 
                   &:hover {
                     transform: scale(1.5);
@@ -118,6 +133,11 @@ section {
                     }
                   }
                 }
+              }
+
+              p .swiper-wrapper .swiper-slide .album-box .hoverBox {
+                bottom: 40px;
+                // width: 200px;
               }
             }
           }
