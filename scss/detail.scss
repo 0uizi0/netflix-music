@@ -125,7 +125,9 @@
               }
             }
             .track-title{
-              color: #D1D1D1;
+              color: #fff;
+              font-weight: 300;
+              margin-right: 10px;
               margin-left: 6px;
               overflow: hidden;
               text-overflow: ellipsis;
@@ -165,7 +167,6 @@
       .progress-container{
         background-color: #fff;
         width: 100%;
-        border-radius: 5px;
         cursor: pointer;
         .progress{
           background-color: red;
@@ -215,10 +216,16 @@
         }
         .album-title{
           margin-bottom: 0px !important;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
         }
         .album-sub-title{
           font-size: 14px;
           font-weight: 300;
+          opacity: 0.6;
           margin-bottom: 0px !important;
         }
       }
