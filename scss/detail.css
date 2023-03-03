@@ -169,6 +169,7 @@
   top: 19px;
   left: 75px;
   display: flex;
+  align-items: center;
 }
 .audio-container .audio-album .audio-album-img {
   width: 40px;
