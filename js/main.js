@@ -737,6 +737,9 @@ $(document).ready(function () {
   list.on("click", function () {
     inner.style.height = '300px';
 
+    const allTitle = document.querySelector('.all-title');
+    allTitle.textContent = '';
+
     list.removeClass("active");
     $(this).addClass("active");
 
