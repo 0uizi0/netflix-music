@@ -36,16 +36,6 @@ let arryAlbum = [
   { img: "29", name: "WHEN I MOVE", item: "dance" },
   { img: "30", name: "SMILEY (Feat. BIBI)", item: "dance" },
 ];
-const classicData = arryAlbum.filter((el) => el.item == "classic");
-console.log(classicData);
-const popData = arryAlbum.filter((el) => el.item == "pop");
-console.log(popData);
-const danceData = arryAlbum.filter((el) => el.item == "dance");
-console.log(danceData);
-const hiphopData = arryAlbum.filter((el) => el.item == "hiphop");
-console.log(hiphopData);
-const kpopData = arryAlbum.filter((el) => el.item == "kpop");
-console.log(kpopData);
 
 let newArryAlbum = [
   // 요청사항 반영한 arryAlbum
@@ -578,6 +568,12 @@ let newArryAlbum = [
   },
 ];
 
+const classicData = newArryAlbum.filter((el) => el.item == "classic");
+const popData = newArryAlbum.filter((el) => el.item == "pop");
+const danceData = newArryAlbum.filter((el) => el.item == "dance");
+const hiphopData = newArryAlbum.filter((el) => el.item == "hiphop");
+const kpopData = newArryAlbum.filter((el) => el.item == "kpop");
+
 for (let i = 0; i < len; i++) {
   // 해당 부분으로 인해서 따로 DOM 요소를 생성해 붙일 필요 X
   // DOM을 만들어서 붙여주게 되면 최초 All 탭에서 항목이 안 보이는 경우가 생기므로 아래와 같이 처리
@@ -602,8 +598,62 @@ for (let i = 0; i < len; i++) {
     pic.style.boxShadow = `0px 0px 1px #e6e6e6`;
   }
 }
-// 버튼 테스트
 
+const classicBox = document.createElement("div");
+classicBox.setAttribute('class','album-box');
+
+const inner = document.querySelector('.section3 .inner');
+inner.append(classicBox);
+
+const classicWrapper = document.createElement("div");
+classicWrapper.setAttribute("class", "swiper-wrapper");
+classicWrapper.style.marginTop = '30px';
+
+const classicTitle = document.createElement("p");
+classicTitle.textContent = "classic"; //일단 박아봄
+classicTitle.style.width = "99vw";
+classicTitle.style.textAlign = "left";
+classicTitle.style.font = "normal normal bold 20px/29px Pretendard";
+classicTitle.append(classicWrapper);
+
+const albums = document.querySelector(".albums");
+albums.append(classicTitle);
+
+
+for (let i = 0; i < classicData.length; i++) {
+
+    const swiperSlide = document.createElement("div");
+    swiperSlide.setAttribute("class",'swiper-slide');
+    swiperSlide.style.width = '200px';
+    swiperSlide.style.marginTop = '0';
+    swiperSlide.style.marginRight = '40px';
+    classicWrapper.append(swiperSlide);
+
+    const classic = document.createElement("div");
+    classic.setAttribute("class",'album-box');
+    classic.classList.add('classicPic');
+    swiperSlide.append(classic);
+
+  // 사진 부분 일괄 적용
+  const classicSlide = document.querySelectorAll('.classicPic');
+  const classicPic = classicSlide[i];
+  if (i < 30) {
+    classicPic.setAttribute("data-item", `${classicData[i].item}`);
+    classicPic.setAttribute("name", `${classicData[i].name}`);
+    classicPic.setAttribute("artist", `${classicData[i].artist}`);
+    classicPic.setAttribute("date", `${classicData[i].date}`);
+    classicPic.setAttribute("info", `${classicData[i].info}`);
+    classicPic.setAttribute("info-sub", `${classicData[i].infoSub}`);
+    classicPic.setAttribute("track-len", `${classicData[i].track.length}`);
+    for (let j = 0; j < classicData[i].track.length; j++) {
+      classicPic.setAttribute(`track-title${j}`, `${classicData[i].track[j].title}`);
+      classicPic.setAttribute(`track-time${j}`, `${classicData[i].track[j].time}`);
+    }
+
+    classicPic.style.backgroundImage = `url("../img/main_album/main_album${classicData[i].img}.png")`;
+    classicPic.style.boxShadow = `0px 0px 1px #e6e6e6`;
+  }
+}
 
 // 문서 로딩이 끝나면 실행되는 구문
 $(document).ready(function () {
@@ -616,6 +666,8 @@ $(document).ready(function () {
 
   // All, KPOP, POP, Comedy 의 탭이 클릭 되면 실행
   list.on("click", function () {
+    inner.style.height = '300px';
+
     list.removeClass("active");
     $(this).addClass("active");
 
