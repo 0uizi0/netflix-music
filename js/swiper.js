@@ -11,25 +11,26 @@ let swiper = new Swiper(".bannerSwiper", {
   pagination: {
     el: ".swiper-pagination",
   },
-  mousewheel: true,
-  keyboard: true,
+  // mousewheel: true,
+  // keyboard: true,
 });
 
 for (let i = 0; i < albumAllSelect.length; i += 1) {
   let swiper2 = new Swiper(albumAllSelect[i], {
     cssMode: true,
-    slidesPerView: 7,
-    spaceBetween: 20,
-
+    direction: "horizontal",
+    slidesPerView: 6,
+    spaceBetween: 5,
     navigation: {
-      nextEl: ".swiper-button-next.chartBtn",
-      prevEl: ".swiper-button-prev.chartBtn",
+      nextEl: `.swiper-button-next.mainSwiper${i}`,
+      prevEl: `.swiper-button-prev.mainSwiper${i}`,
     },
-    pagination: {
-      el: ".swiper-pagination.chartBullet",
-    },
-    // mousewheel: true,
-    // keyboard: true,
+    // pagination: {
+    //   el: ".swiper-pagination.chartBullet",
+    // },
+    mousewheel: true,
+    keyboard: true,
+
     slideToClickedSlide: false,
   });
 }

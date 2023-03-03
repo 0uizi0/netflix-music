@@ -6,11 +6,11 @@ const albumImg = document.querySelector(".content-image");
 const detailTrack= document.querySelector(".detail-track");
 const albumTitle = document.querySelector("p.album-title");
 const albumSubTitle = document.querySelector("p.album-sub-title");
-
+const audioAlbumImg = document.querySelector(".audio-album-img");
 for(let i=0; i<btnModal.length; i++){
     btnModal[i].addEventListener("click", function(e) {
         modal.style.display = "flex"
-        document.querySelector(".section-inner").style.opacity="0.5";
+        document.querySelector(".inner.non-padding").style.opacity="0.5";
         audioConatiner.style.opacity = "1";
         audioConatiner.classList.remove("hidden");
         const clickImage = e.target.style.backgroundImage;
@@ -54,10 +54,14 @@ for(let i=0; i<btnModal.length; i++){
             const trackTitle = document.createElement("div");
             trackTitle.setAttribute("class", "track-title");
             trackTitle.addEventListener("click", function(e){
-
-                albumTitle.textContent = e.target.textContent;
+                audioAlbumImg.textContent = "";
+                const audioImg = document.createElement("img");
+                audioAlbumImg.append(audioImg);
+                audioImg.src = albumImg.parentNode.parentNode.children[1].children[0].children[0].getAttribute("src");
                 
+                albumTitle.textContent = e.target.textContent;
                 albumSubTitle.textContent = e.target.parentNode.getAttribute("singer");
+                
                 
                 
             })
@@ -115,7 +119,7 @@ closeBtn.addEventListener("click", e => {
   albumImg.innerHTML="";
   albumTitle.textContent ="";
   albumSubTitle.textContent="";
-  
+  audioAlbumImg.textContent = "";
 })
 
 

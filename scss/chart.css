@@ -94,7 +94,7 @@
 
 .swiperChart-zone {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 300px;
   display: flex;
   align-items: center;
@@ -141,6 +141,7 @@
   -webkit-text-stroke: 3px #6C6C6C;
   color: transparent;
   font-weight: 900;
+  margin-bottom: 0px;
 }
 .swiperChart-zone .swiperChart__container .swiper-wrapper .swiper-slide .rank-wrapper .album-box {
   position: static;
