@@ -271,6 +271,9 @@ main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide .album-
   font-size: small;
   transition: 0.5s;
 }
+main .section3 .inner .swiper-zone .albums p .swiper-wrapper .swiper-slide .album-box .hoverBox {
+  bottom: -3px;
+}
 main .section3 .inner .swiper-button-prev.mainSwiper0,
 main .section3 .inner .swiper-button-next.mainSwiper0 {
   top: 150px;

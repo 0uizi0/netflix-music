@@ -272,7 +272,6 @@ main {
           height: 300px;
           z-index: 1;
           // bottom: 0;
-
        
           .swiper-wrapper {
           // gap: 50px;
@@ -324,6 +323,9 @@ main {
             }
           }
         }
+      }
+      p .swiper-wrapper .swiper-slide .album-box .hoverBox {
+        bottom: -3px;
       }
      }
     }
