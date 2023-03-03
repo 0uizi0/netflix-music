@@ -608,6 +608,7 @@ inner.append(classicBox);
 const classicWrapper = document.createElement("div");
 classicWrapper.setAttribute("class", "swiper-wrapper");
 classicWrapper.style.marginTop = '30px';
+classicWrapper.style.gap = '50px';
 
 const classicSwiper2 = document.createElement("div");
 classicSwiper2.setAttribute("class","swiper2");
@@ -615,8 +616,7 @@ classicSwiper2.classList.add('albums');
 classicSwiper2.append(classicWrapper);
 
 const classicTitle = document.createElement("p");
-classicTitle.textContent = "classic"; //일단 박아봄
-classicTitle.style.width = "99vw";
+classicTitle.textContent = "classic";
 classicTitle.style.textAlign = "left";
 classicTitle.style.font = "normal normal bold 20px/29px Pretendard";
 classicTitle.style.position = 'relative';
@@ -671,6 +671,7 @@ inner.append(popBox);
 const popWrapper = document.createElement("div");
 popWrapper.setAttribute("class", "swiper-wrapper");
 popWrapper.style.marginTop = '30px';
+popWrapper.style.gap = '50px';
 
 const popSwiper2 = document.createElement("div");
 popSwiper2.setAttribute("class","swiper2");
@@ -678,8 +679,7 @@ popSwiper2.classList.add('albums');
 popSwiper2.append(popWrapper);
 
 const popTitle = document.createElement("p");
-popTitle.textContent = "pop"; //일단 박아봄
-popTitle.style.width = "99vw";
+popTitle.textContent = "pop";
 popTitle.style.textAlign = "left";
 popTitle.style.font = "normal normal bold 20px/29px Pretendard";
 popTitle.style.position = 'relative';
