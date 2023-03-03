@@ -211,6 +211,10 @@ main .section2 .chart .sub .sub__detail ul li.active {
   background-color: #fff;
   color: black;
 }
+main .section2 .chart .sub .sub__detail .all-title {
+  text-align: left;
+  font: normal normal bold 24px/29px Pretendard;
+}
 main .genre-zone {
   margin-top: 35px;
 }
@@ -231,6 +235,9 @@ main .section3 .inner .swiper-zone .albums {
   position: absolute;
   width: 100%;
   z-index: 1;
+}
+main .section3 .inner .swiper-zone .albums .swiper-wrapper {
+  gap: 50px;
 }
 main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide {
   align-items: center;

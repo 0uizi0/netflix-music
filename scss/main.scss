@@ -240,7 +240,10 @@ main {
               }
             }
           }
-                      
+          .all-title {
+            text-align: left;
+            font: normal normal bold 24px/29px Pretendard;
+          }              
       }
    }
   }
@@ -273,7 +276,7 @@ main {
           // bottom: 0;
        
           .swiper-wrapper {
-          // gap: 50px;
+          gap: 50px;
 
           .swiper-slide {
             align-items: center;
