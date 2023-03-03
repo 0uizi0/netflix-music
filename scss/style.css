@@ -576,12 +576,10 @@ main .section3 .inner .swiper-zone {
 main .section3 .inner .swiper-zone .albums {
   position: absolute;
   width: 100%;
-  height: 300px;
   z-index: 1;
 }
 main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide {
   align-items: center;
-  margin-top: 80px;
 }
 main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide:hover {
   transform: scale(1.5);
@@ -608,17 +606,14 @@ main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide .album-
   z-index: 1;
 }
 main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide .album-box .hoverBox {
-  width: 200px;
+  width: 100%;
   background: transparent linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 105%) 0% 0% no-repeat padding-box;
   padding-left: 25px;
   height: 40px;
-  bottom: 99px;
+  bottom: 0;
   position: absolute;
   font-size: small;
   transition: 0.5s;
-}
-main .section3 .inner .swiper-zone .albums p .swiper-wrapper .swiper-slide .album-box .hoverBox {
-  bottom: -3px;
 }
 main .section3 .inner .swiper-button-prev.mainSwiper0,
 main .section3 .inner .swiper-button-next.mainSwiper0 {
