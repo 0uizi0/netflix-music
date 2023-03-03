@@ -211,7 +211,7 @@ body {
 }
 @keyframes random-position1 {
   0% {
-    left: 84px;
+    left: 35px;
   }
   10% {
     left: 100px;
@@ -246,6 +246,7 @@ body {
 }
 @keyframes random-position2 {
   0% {
+
     left: 40px;
   }
   10% {
@@ -277,6 +278,7 @@ body {
   }
   100% {
     left: 33px;
+
   }
 }
 @keyframes random-position3 {
@@ -445,7 +447,7 @@ body {
     left: 7px;
   }
   80% {
-    left: 13px;
+    left: 82px;
   }
   90% {
     left: 5px;
