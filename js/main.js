@@ -2,8 +2,6 @@
 const wrapper = document.querySelector(".swiper-wrapper");
 const slide = document.querySelectorAll(".album-box"); // 배열로 가지고 옴
 let len = slide.length;
-// const classicData = arryAlbum.filter((el) => el.item == "classic");
-// console.log(classicData);
 
 // const names = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
 let arryAlbum = [
@@ -40,6 +38,14 @@ let arryAlbum = [
 ];
 const classicData = arryAlbum.filter((el) => el.item == "classic");
 console.log(classicData);
+const popData = arryAlbum.filter((el) => el.item == "pop");
+console.log(popData);
+const danceData = arryAlbum.filter((el) => el.item == "dance");
+console.log(danceData);
+const hiphopData = arryAlbum.filter((el) => el.item == "hiphop");
+console.log(hiphopData);
+const kpopData = arryAlbum.filter((el) => el.item == "kpop");
+console.log(kpopData);
 
 let newArryAlbum = [
   // 요청사항 반영한 arryAlbum
@@ -591,7 +597,6 @@ for (let i = 0; i < len; i++) {
       pic.setAttribute(`track-title${j}`, `${newArryAlbum[i].track[j].title}`);
       pic.setAttribute(`track-time${j}`, `${newArryAlbum[i].track[j].time}`);
     }
-    // pic.setAttribute("track-title", `${newArryAlbum[i].track[1].title}`);
 
     pic.style.backgroundImage = `url("../img/main_album/main_album${arryAlbum[i].img}.png")`;
     pic.style.boxShadow = `0px 0px 1px #e6e6e6`;
@@ -599,25 +604,9 @@ for (let i = 0; i < len; i++) {
 }
 // 버튼 테스트
 
-//배열 담을 배열
-let showingArry = [];
-
-// 배열 섞기 함수 (임시 보류)
-// const shuffleArray = (array) => {
-//   for (var i = 0; i < array.length; i++) {
-//     var j = Math.floor(Math.random() * (i + 1));
-//     const temp = array[i]; //빈 곳에  배열i를 저장
-//     array[i] = array[j]; //배열 j를 배열 i에 저장
-//     array[j] = temp; //상수 x를 배열 j에 저장
-//   }
-//   return array;
-// };
-
-// Tetz, 사진 부분 일괄 적용에서 이미 처리 되었으므로 DOM 요소 만들어서 붙일 필요 X
 
 // 문서 로딩이 끝나면 실행되는 구문
 $(document).ready(function () {
-  // $(".swiper2.albums .swiper-wrapper").append(showingArry); //섞은 배열을 출력하기 (임시 보류)
 
   let list = $(".list"); // All, KPOP, POP, Comedy 의 탭을 변수에 저장
 
