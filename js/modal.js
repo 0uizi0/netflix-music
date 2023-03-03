@@ -10,7 +10,7 @@ const audioAlbumImg = document.querySelector(".audio-album-img");
 for(let i=0; i<btnModal.length; i++){
     btnModal[i].addEventListener("click", function(e) {
         modal.style.display = "flex"
-        document.querySelector(".inner.non-padding").style.opacity="0.5";
+        document.querySelector("main").style.opacity="0.5";
         audioConatiner.style.opacity = "1";
         audioConatiner.classList.remove("hidden");
         const clickImage = e.target.style.backgroundImage;
@@ -114,7 +114,7 @@ for(let i=0; i<btnModal.length; i++){
 const closeBtn = modal.querySelector(".close-area");
 closeBtn.addEventListener("click", e => {
   modal.style.display = "none"
-  document.querySelector(".section-inner").style.opacity="1";
+  document.querySelector("main").style.opacity="1";
   audioConatiner.classList.add("hidden");
   albumImg.innerHTML="";
   albumTitle.textContent ="";
