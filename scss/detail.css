@@ -38,7 +38,7 @@
   margin-bottom: 60px;
 }
 #modal .modal-window .content .content-image {
-  margin-right: 40px;
+  margin-right: 50px;
 }
 #modal .modal-window .content .content-image img {
   width: 200px;
@@ -109,17 +109,16 @@
   display: flex;
   justify-content: space-between;
 }
-#modal .modal-window .detail-track .track-info .track-checkbox input {
-  all: revert !important;
+#modal .modal-window .detail-track .track-info .track-check {
+  background-color: orange;
+}
+#modal .modal-window .detail-track .track-info .track-check input {
+  width: 100px;
+  height: 100px;
 }
 #modal .modal-window .detail-track .track-info .track-title {
   color: #D1D1D1;
-  margin-left: 6px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
+  margin-left: 20px;
 }
 #modal .modal-window .detail-track .track-info .track-title:hover {
   text-decoration: underline;
@@ -133,7 +132,6 @@
   color: #D1D1D1;
   opacity: 0.8;
   margin-right: 20px;
-  font-weight: 300;
 }
 
 .hidden {
@@ -151,7 +149,7 @@
 .audio-container .progress-container {
   background-color: #fff;
   width: 100%;
-  border-radius: 5px;
+  border-radius: a 5px;
   cursor: pointer;
 }
 .audio-container .progress-container .progress {
@@ -168,7 +166,6 @@
   display: flex;
   justify-content: space-around;
   line-height: 80px;
-  align-items: center;
   margin: auto;
 }
 .audio-container ul.control li {
@@ -195,7 +192,6 @@
 .audio-container .audio-album .audio-album-img img {
   width: 40px;
   height: 40px;
-  border-radius: 4px;
 }
 .audio-container .audio-album .album-title {
   margin-bottom: 0px !important;

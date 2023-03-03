@@ -1,3 +1,4 @@
+
 /* 모바일 사이즈 */
 @media (min-width: 360px) and (max-width: 415px){
   /* inner */
@@ -7,155 +8,12 @@
   .inner{
     padding: 0 20px;
   }
-  /* header */
-  header{
-    height: 50px;
-  }
-  header img{
-    width: 30%;
-  }
-  header .ex-menu .login{
-    width: 20px;
-    height: 20px;
-  }
-  header .menus{
-    display: none;
-  }
-  header .ex-menu{
-    right: 20px;
-    width: 290px;
-  }
-  header .ex-menu .pop-up{
-    right: 65px;
-  }
   /* 로그인 */
   .login-wrap .right{
     display: none;
   }
-  /* 메인 */
-  .non-padding{
-    padding: 0px !important;
-    height: 500px;
-  }
-  main .section1 .inner .bannerSwiper{
-    height: 500px;
-  }
-  main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide{
-    height: 500px;
-    align-items: end;
-  }
-  main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .banner-box{
-    padding: 0 20px;
-    padding-bottom: 70px;
-  }
-  main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .banner-box .main-banner-title{
-    font-size: 40px;
-  }
-  main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .banner-box p{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-  }
-  main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .banner-box .muted-control-container .circle-deco .material-symbols-outlined{
-    font-size: 35px;
-  }
-  main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .banner-box .muted-control-container .circle-deco{
-    right: 20px;
-    bottom: 20px;
-  }
-  main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide:nth-child(3){
-    background-position: 60%;
-  }
-  main .section1 .swiper-button-next:after,
-  main .section1 .swiper-button-prev:after{
-    font-size: 30px;
-  }
-  main .section1 .swiper-button-next.swiper-button-disabled,
-  main .section1 .swiper-button-prev.swiper-button-disabled {
-    opacity: 0;
-  }
-  main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .banner-box .btn-box .btn{
-    padding: 10px 15px;
-  }
-  main .section2 .chart .sub .sub__detail ul{
-    padding-left:0px;
-  }
-  main .section2 .chart .sub .sub__detail ul li{
-    font-size: 14px;
-    padding: 10px 15px;
-  }
-  main .section2 .chart{
-    top: 50px;
-  }
-  main .section2 .chart .main-title{
-    font-size: 30px;
-    padding: 0px;
-    margin-bottom: 0px;
-  }
-  /* 모달 */
-  #modal .modal-window{
-    top: 0;
-    width: 100vw;
-    height: 90vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    padding: 40px 20px;
-  }
-  #modal .modal-window .content .content-image{
-    margin-right: 20px;
-  }
-  #modal .modal-window .content .content-image img{
-    width: 80px;
-    height: 80px;
-  }
-  #modal .modal-window .content .content-text h2{
-    font-size: 22px;
-  }
-  #modal .modal-window .content .content-text .singer{
-    font-size: 14px;
-  }
-  #modal .modal-window .content .content-text .info,
-  #modal .modal-window .content .content-text .info-sub{
-    font-size: 13px;
-    margin-bottom: 15px;
-  }
-  #modal .modal-window .detail-button .button1{
-    padding: 10px 15px;
-    font-size: 14px;
-  }
-  #modal .modal-window .content{
-    margin-bottom: 20px;
-  }
-  .audio-container .audio-album{
-    left: 20px;
-  }
-  .audio-container ul.control{
-    margin-right: 10px;
-    margin-left: auto;
-  }
-  #modal .modal-window .close-area{
-    right: 20px;
-    font-size: 16px;
-  }
-  #modal .modal-window .detail-track{
-    background-color: #131313 !important;
-    padding: 0px;
-  }
-  #modal .modal-window .detail-track .track-info{
-    border-bottom: 1px solid #272727;
-    align-items: center;
-    height: 54px;
-  }
-  /* footer */
-  footer .inner .footer__menus ul li{
-    font-size: 12px;
-  }
-  footer .inner .question{
-    font-size: 17px;
-  }
-  /* 차트 - top30 */
+  /* 차트 */
+  /* 차트 top30 */
   .chartSwiper{
     margin-bottom: 80px;
   }
@@ -203,7 +61,7 @@
   .chart-wrap .inner .row .col .chart-list{
     padding: 12px 0;
   }
-  /* 차트 - 랭크 */
+  /* 차트 랭크 */
   .swiperChart-zone{
     height: 270px;
   }
@@ -244,7 +102,7 @@
   .login-wrap .left .login-box{
     margin-bottom: 100px;
   }
-  /* 차트 - top30 */
+  /* 차트 */
   .chart-wrap .inner .row .col .chart-list{
     height: 80px;
   }
@@ -259,7 +117,6 @@
     font-size: 13px;
     -webkit-line-clamp: 1;
   }
-  /* 차트 - 랭크 */
   .swiperChart-zone .swiperChart__container{
     width: 100%;
   }
