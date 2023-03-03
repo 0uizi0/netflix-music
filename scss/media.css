@@ -1,0 +1,123 @@
+
+/* 모바일 사이즈 */
+@media (min-width: 360px) and (max-width: 415px){
+  /* inner */
+  header .inner{
+    padding: 0 20px;
+  }
+  .inner{
+    padding: 0 20px;
+  }
+  /* 로그인 */
+  .login-wrap .right{
+    display: none;
+  }
+  /* 차트 */
+  /* 차트 top30 */
+  .chartSwiper{
+    margin-bottom: 80px;
+  }
+  .chart-wrap .inner .row .col .chart-list{
+    width: 90vw;
+  }
+  .chart-wrap .inner .row .col .chart-list .--album-img{
+    width: 40px;
+    height: 40px;
+  }
+  .chart-wrap .inner .row .col .chart-list .--text-box .album-title{
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+  .chart-wrap .inner .row .col .chart-list .--text-box .album-sub-title{
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+  .chart-wrap .inner .row .col .chart-list .--num{
+    font-size: 15px;
+  }
+  .chart-wrap .inner .row{
+    width: 100%;
+  }
+  .chartSwiper .swiper-button-next::after,
+  .chartSwiper .swiper-button-prev::after{
+    font-size: 24px;
+    z-index: 999;
+  }
+  .swiperChart-zone .swiper-button-next::after,
+  .swiperChart-zone .swiper-button-prev::after{
+    font-size: 15px !important;
+    background-color: rgba(0,0,0,0.8) !important;
+    border-radius: 100% !important;
+    padding: 10px 14px !important;
+  }
+  .chart-wrap .inner .row .col .chart-list{
+    padding: 12px 0;
+  }
+  /* 차트 랭크 */
+  .swiperChart-zone{
+    height: 270px;
+  }
+  .swiperChart-zone p{
+    font-size: 20px;
+    top: 20px;
+  }
+  .swiperChart-zone.inner{
+    margin-top: 0px;
+  }
+  .swiperChart-zone .swiperChart__container{
+    width: 100%;
+  }
+  .swiperChart-zone .swiperChart__container .swiper-wrapper .swiper-slide .rank-wrapper .rank{
+    font-size: 125px;
+  }
+  .swiperChart-zone .swiperChart__container .swiper-wrapper .swiper-slide .rank-wrapper .album-box{
+    width: 120px;
+    height: 120px;
+  }
+  .swiperChart-zone .swiperChart__container .swiper-wrapper .swiper-slide{
+    min-width: 160px;
+  }
+}
+/* 아이패드 에어, 미니 사이즈 */
+@media (min-width: 768px) and (max-width: 820px) {
+  /* inner */
+  header .inner{
+    padding: 0 30px;
+  }
+  .inner{
+    padding: 0 30px;
+  }
+  /* 로그인 */
+  .login-wrap .right{
+    display: none;
+  }
+  .login-wrap .left .login-box{
+    margin-bottom: 100px;
+  }
+  /* 차트 */
+  .chart-wrap .inner .row .col .chart-list{
+    height: 80px;
+  }
+  .chart-wrap .inner .row .col .chart-list .--album-img{
+    min-width: 50px;
+  }
+  .chart-wrap .inner .row .col .chart-list .--text-box .album-title{
+    font-size: 15px;
+    -webkit-line-clamp: 1;
+  }
+  .chart-wrap .inner .row .col .chart-list .--text-box .album-sub-title{
+    font-size: 13px;
+    -webkit-line-clamp: 1;
+  }
+  .swiperChart-zone .swiperChart__container{
+    width: 100%;
+  }
+}
