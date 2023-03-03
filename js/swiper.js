@@ -18,6 +18,7 @@ const soundMutedEl = document.querySelector(".sound-muted")
 const mvHirightCurrentTimeArr = [203, 130, 120, 85];
 // 이전 위치를 알기 위해 임시로 저장해 놓는 것
 let preNum = 0;
+let preFirst = 0;
 
 let swiper = new Swiper(".bannerSwiper", {
   cssMode: true,
@@ -30,6 +31,53 @@ let swiper = new Swiper(".bannerSwiper", {
   },
   //동영상재생
   on: {
+    afterInit: function() {
+    mvContainer[0].setAttribute("style", "opacity: 1; visibility: visible;")
+    mvEl[0].muted = true;
+    mvEl[0].currentTime = mvHirightCurrentTimeArr[0];
+    mvEl[0].play();
+    mutedControlContainer[0].setAttribute("style", "opacity: 1;")
+    setTimeout(function(){
+    mvContainer[0].setAttribute("style", "opacity: 0; visibility: hidden;")
+    }, 30000);
+    setTimeout(function(){
+    mvEl[0].pause();
+    mutedControlContainer[0].setAttribute("style", "opacity: 0; visibility: hidden; transition-delay: 0s;")
+    if(soundUpDecoElAll[0].classList.contains("on")) {
+      soundUpDecoElAll[0].classList.remove("on");
+      soundMutedDecoElAll[0].classList.add("on");
+    }
+    }, 33000)
+
+    if (preFirst > mutedControlContainer[0]) {
+      mvEl[0].currentTime = mvHirightCurrentTimeArr[0];
+      mvEl[0].pause();
+      mvContainer[0].setAttribute("style", "opacity: 0; visibility: hidden;")
+      soundUpDecoElAll[0].classList.remove("on");
+      soundMutedDecoElAll[0].classList.add("on");
+      mutedControlContainer[0].setAttribute("style", "opacity: 0; visibility: hidden; transition-delay: 0s;")
+      }
+
+
+    //동영상 음소거 BTN
+    soundMutedDecoElAll[0].addEventListener("click", () => {
+      if (soundMutedDecoElAll[0].classList.contains("on")) {
+        soundMutedDecoElAll[0].classList.remove("on");
+        soundUpDecoElAll[0].classList.add("on");
+        mvEl[0].muted = false;
+      }
+    })
+  
+    soundUpDecoElAll[0].addEventListener("click", () => {
+      if (soundUpDecoElAll[0].classList.contains("on")) {
+        soundUpDecoElAll[0].classList.remove("on");
+        soundMutedDecoElAll[0].classList.add("on");
+        mvEl[0].muted = true;
+      }
+    })
+    },
+
+    
     // 슬라이드 이동시 이벤트
     slideChange: function() {
     let swiperCurrentIndex = swiper.activeIndex;
@@ -43,12 +91,14 @@ let swiper = new Swiper(".bannerSwiper", {
     mvContainer[swiperPreIndex].setAttribute("style", "opacity: 0; visibility: hidden;")
     soundUpDecoElAll[swiperPreIndex].classList.remove("on");
     soundMutedDecoElAll[swiperPreIndex].classList.add("on");
+    mutedControlContainer[swiperPreIndex].setAttribute("style", "opacity: 0; visibility: hidden; transition-delay: 0s;")
     } else {
     mvEl[swiperNextIndex].currentTime = mvHirightCurrentTimeArr[swiperNextIndex];
     mvEl[swiperNextIndex].pause();
     mvContainer[swiperNextIndex].setAttribute("style", "opacity: 0; visibility: hidden;")
     soundUpDecoElAll[swiperNextIndex].classList.remove("on");
     soundMutedDecoElAll[swiperNextIndex].classList.add("on");
+    mutedControlContainer[swiperNextIndex].setAttribute("style", "opacity: 0; visibility: hidden; transition-delay: 0s;")
     }
 
     //현재 active 화면에서 영상 띄우고,
@@ -64,10 +114,11 @@ let swiper = new Swiper(".bannerSwiper", {
      } else if (swiperCurrentIndex === 3) {
     // 찰리푸스
      mvEl[3].currentTime = mvHirightCurrentTimeArr[3];
-     } else if (swiperCurrentIndex === 0) {
-    // 뉴진스
-     mvEl[0].currentTime = mvHirightCurrentTimeArr[0];
-     }
+     } 
+    //  else if (swiperCurrentIndex === 0) {
+    // // 뉴진스
+    //  mvEl[0].currentTime = mvHirightCurrentTimeArr[0];
+    //  }
      mvEl[swiperCurrentIndex].play();
      mutedControlContainer[swiperCurrentIndex].setAttribute("style", "opacity: 1;")
      setTimeout(function(){
@@ -75,6 +126,11 @@ let swiper = new Swiper(".bannerSwiper", {
      }, 30000);
      setTimeout(function(){
      mvEl[swiperCurrentIndex].pause();
+     mutedControlContainer[swiperCurrentIndex].setAttribute("style", "opacity: 0; visibility: hidden; transition-delay: 0s;")
+     if(soundUpDecoElAll[swiperCurrentIndex].classList.contains("on")) {
+      soundUpDecoElAll[swiperCurrentIndex].classList.remove("on");
+      soundMutedDecoElAll[swiperCurrentIndex].classList.add("on");
+     }
      }, 33000);
       preNum = swiperCurrentIndex;
 

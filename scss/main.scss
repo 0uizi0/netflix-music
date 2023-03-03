@@ -145,6 +145,35 @@ main {
                 }
               }
             }
+            .replay-control-container {
+              opacity: 0;
+              transition: 1s;
+              transition-delay: 1s;
+              .replay-deco {
+                position: absolute;
+                display: flex;
+                visibility: hidden;
+                justify-content: center;
+                align-items: center;
+                border: 3px solid white;
+                border-radius: 50%;
+                bottom: 150px;
+                right: 100px;
+                cursor: pointer;
+                
+                #replay__btn{
+                  font-size: 70px;
+                  cursor: pointer;
+                }
+                &:hover {
+                  background-color: rgba($color: rgb(214, 214, 214), $alpha: 0.5);
+                  border-radius: 50%;
+                  }
+                  &.on {
+                    visibility: visible;
+                  }
+              }
+            }
         }
       }
      }

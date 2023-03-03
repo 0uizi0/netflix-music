@@ -133,6 +133,34 @@ main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .banner-box .m
 main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .banner-box .muted-control-container .circle-deco.on {
   visibility: visible;
 }
+main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .banner-box .replay-control-container {
+  opacity: 0;
+  transition: 1s;
+  transition-delay: 1s;
+}
+main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .banner-box .replay-control-container .replay-deco {
+  position: absolute;
+  display: flex;
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid white;
+  border-radius: 50%;
+  bottom: 150px;
+  right: 100px;
+  cursor: pointer;
+}
+main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .banner-box .replay-control-container .replay-deco #replay__btn {
+  font-size: 70px;
+  cursor: pointer;
+}
+main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .banner-box .replay-control-container .replay-deco:hover {
+  background-color: rgba(214, 214, 214, 0.5);
+  border-radius: 50%;
+}
+main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .banner-box .replay-control-container .replay-deco.on {
+  visibility: visible;
+}
 main .section1 .swiper-button-next,
 main .section1 .swiper-button-prev {
   color: #dedede;
