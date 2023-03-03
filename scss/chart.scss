@@ -31,7 +31,12 @@
       font-size: 38px;
       font-weight: 500;
       color: #ffff;
-      margin-bottom: 35px;
+      margin-bottom: 65px;
+    }
+    .sub-title{
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 20px;
     }
   }
 }
@@ -48,11 +53,12 @@
           position: relative;
           border-bottom: 1px solid #252525;
           width: 100%;
+          height: 82px;
           padding: 15px 0px;
           cursor: pointer;
           .--album-img {
-            width: 50px;
-            height: 50px;
+            min-width: 50px;
+            min-height: 50px;
             background-color: #fff;
             border-radius: 4px;
             background-size: cover;
@@ -93,14 +99,25 @@
           }
           .--text-box {
             .album-title {
-              font-size: 17px;
-              font-weight: 500px !important;
-              margin-bottom: 0px !important;
+              font-size: 16px;
+              line-height: 1.3rem;
+              margin-bottom: 2px !important;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
             }
             .album-sub-title {
               font-size: 15px;
               font-weight: 300;
+              margin-bottom: 0px !important;
               color: #888;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
             }
           }
         }
@@ -120,7 +137,7 @@
 
 .swiperChart-zone {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 300px;
   display: flex;
   align-items: center;
@@ -128,7 +145,7 @@
   p {
     position: absolute;
     top: -10px;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
   }
 
@@ -167,6 +184,7 @@
             -webkit-text-stroke: 3px #6C6C6C;
             color: transparent;
             font-weight: 900;
+            margin-bottom: 0px;
           }
 
           .album-box {

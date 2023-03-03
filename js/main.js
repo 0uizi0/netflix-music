@@ -1,6 +1,6 @@
 //MAIN
-const wrapper = document.querySelector(".albums .swiper-wrapper");
-const slide = document.querySelectorAll(".swiper-slide .album-box"); // 배열로 가지고 옴
+const wrapper = document.querySelector(".swiper-wrapper");
+const slide = document.querySelectorAll(".album-box"); // 배열로 가지고 옴
 const len = slide.length;
 
 // const names = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
@@ -140,7 +140,7 @@ let newArryAlbum = [
       { title: "두꺼비집 (One More Drink) (Feat. 0cd)", time: "03:52" },
       {
         title:
-          "잔돈은 됐어요 (Keep The Change) (Feat. Garie Of Leessang, Bumky Of Komplex)",
+          "잔돈은 됐어요 (Keep The Change)",
         time: "04:11",
       },
       { title: "죽일 놈 (Guilty)", time: "03:43" },
@@ -771,7 +771,7 @@ $(document).ready(function () {
     genre.textContent = $(this)[0].outerText;
     genre.setAttribute(
       "style",
-      "text-align: left; font: normal normal bold 24px/29px Pretendard;"
+      "text-align: left; font: normal normal bold 24px/29px Pretendard; padding-left: 80px;"
     );
     genreZone.append(genre);
 
@@ -822,7 +822,6 @@ for (let i = 0; i < albumBox.length; i++) {
     albumBox[i].textContent = "";
     const hoverBox = document.createElement("div");
     hoverBox.setAttribute("class", "hoverBox");
-    console.log(e.target);
     hoverBox.textContent = `${e.target.getAttribute("name")}`;
     albumBox[i].append(hoverBox);
   });

@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Netflix Music</title>
 
+
+    <!-- Jquery -->
+    <script defer src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"> </script>
+    
     <!-- FontAwsome -->
     <script
       src="https://kit.fontawesome.com/c37ef34cf6.js"
@@ -32,23 +36,12 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
     />
 
-    <!-- Jquery -->
-    <script
-      defer
-      src="https://code.jquery.com/jquery-3.6.3.js"
-      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
-      crossorigin="anonymous"
-    ></script>
     <!-- main js -->
     <script defer src="./js/main.js"></script>
     <!-- HEADER JS -->
     <script defer src="./js/header.js"></script>
     <!-- modal js -->
     <script defer src="./js/modal.js"></script>
-
-    <!-- main css -->
-    <link rel="stylesheet" href="./scss/style.css" />
-
     <!-- swiper -->
     <link
       rel="stylesheet"
@@ -59,6 +52,11 @@
       src="https://unpkg.com/swiper@8/swiper-bundle.min.js"
     ></script>
     <script defer src="./js/swiper.js"></script>
+
+
+    <!-- main css -->
+    <link rel="stylesheet" href="./scss/style.css" />
+
   </head>
   <body>
     <!-- header -->
@@ -131,37 +129,27 @@
                   <li class="submenus__second">
                     <ul>
                       <li>
-                        <span class="material-symbols-outlined" id="pen-icon"
-                          >edit</span
-                        >
-                        <p>프로필 관리</p>
+                        <a href="#"><span class="material-symbols-outlined" id="pen-icon">edit</span></a>
+                        <a href="#">프로필 관리</a>
                       </li>
                       <li>
-                        <span
-                          class="material-symbols-outlined"
-                          id="switch_account"
-                          >switch_account</span
-                        >
-                        <p>프로필 이전</p>
+                        <a href=""><span class="material-symbols-outlined" id="switch_account">switch_account</span></a>
+                        <a href="#">프로필 이전</a>
                       </li>
                       <li>
-                        <span class="material-symbols-outlined" id="account"
-                          >person</span
-                        >
-                        <p>계정</p>
+                        <a href="#"><span class="material-symbols-outlined" id="account">person</span></a>
+                        <a href="#">계정</a>
                       </li>
                       <li>
-                        <span class="material-symbols-outlined" id="question"
-                          >help</span
-                        >
-                        <p>고객 센터</p>
+                        <a href="https://help.netflix.com/ko"><span class="material-symbols-outlined" id="question">help</span></a>
+                        <a href="https://help.netflix.com/ko">고객 센터</a>
                       </li>
                     </ul>
                   </li>
 
                   <li class="submenus__third">
-                    <div class="logout__logo"></div>
-                    <a class="logoout__text" href="#">뮤직에서 로그아웃</a>
+                    <a href="/login.html"><div class="logout__logo"></div></a>
+                    <a class="logoout__text" href="/login.html">뮤직에서 로그아웃</a>
                   </li>
                 </ul>
               </div>
@@ -174,14 +162,17 @@
       </div>
     </header>
 
-    <!-- section -->
-    <section>
-      <div class="inner section-inner">
-        <div class="section1">
+    <main>
+      <!-- 색션1 메인배너 및 MV swiper-->
+      <section class="section1">
+        <div class="inner non-padding">
           <!-- Swiper -->
           <div class="swiper bannerSwiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
+              <div class="swiper-slide mvslide">
+                <div class="video__container">
+                  <video src="./MV/NewJeans OMG.mp4" class="video_scope mv"></video>
+                </div>
                 <div class="banner-box">
                   <h1 class="main-banner-title">NewJeans 'OMG'</h1>
                   <span>NewJeans</span>
@@ -200,9 +191,20 @@
                     <button class="btn btn--play">전체 재생</button>
                     <button class="btn btn--detail">상세 보기</button>
                   </div>
+                  <div class="muted-control-container">
+                    <div class="circle-deco sound-up-deco">
+                      <span class="material-symbols-outlined sound-up">volume_up</span>
+                    </div>
+                    <div class="circle-deco sound-muted-deco on">
+                      <span class="material-symbols-outlined sound-muted">volume_off</span>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide mvslide">
+                <div class="video__container">
+                  <video src="./MV/TNX  Love or Die MV.mp4" class="video_scope mv"></video>
+                </div>
                 <div class="banner-box">
                   <h1 class="main-banner-title">Love Never Dies</h1>
                   <span>TNX</span>
@@ -218,9 +220,20 @@
                     <button class="btn btn--play">전체 재생</button>
                     <button class="btn btn--detail">상세 보기</button>
                   </div>
+                  <div class="muted-control-container">
+                    <div class="circle-deco sound-up-deco">
+                      <span class="material-symbols-outlined sound-up">volume_up</span>
+                    </div>
+                    <div class="circle-deco sound-muted-deco on">
+                      <span class="material-symbols-outlined sound-muted">volume_off</span>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide mvslide">
+                <div class="video__container">
+                  <video src="./MV/Sam Smith Unholy MV.mp4" class="video_scope mv"></video>
+                </div>
                 <div class="banner-box">
                   <h1 class="main-banner-title">Unholy</h1>
                   <span>Sam Smith, Kim Petras</span>
@@ -243,9 +256,20 @@
                     <button class="btn btn--play">전체 재생</button>
                     <button class="btn btn--detail">상세 보기</button>
                   </div>
+                  <div class="muted-control-container">
+                    <div class="circle-deco sound-up-deco">
+                      <span class="material-symbols-outlined sound-up">volume_up</span>
+                    </div>
+                    <div class="circle-deco sound-muted-deco on">
+                      <span class="material-symbols-outlined sound-muted">volume_off</span>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide mvslide">
+                <div class="video__container">
+                  <video src="./MV/Charlie Puth Left And Right MV.mp4" class="video_scope mv"></video>
+                </div>
                 <div class="banner-box">
                   <h1 class="main-banner-title">CHARLIE</h1>
                   <span>Charlie Puth</span>
@@ -264,6 +288,14 @@
                     <button class="btn btn--play">전체 재생</button>
                     <button class="btn btn--detail">상세 보기</button>
                   </div>
+                  <div class="muted-control-container">
+                    <div class="circle-deco sound-up-deco">
+                      <span class="material-symbols-outlined sound-up">volume_up</span>
+                    </div>
+                    <div class="circle-deco sound-muted-deco on">
+                      <span class="material-symbols-outlined sound-muted">volume_off</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -273,11 +305,13 @@
             <div class="swiper-pagination"></div>
           </div>
         </div>
-        <div class="section2">
+      </section>
+       
+      <!-- 섹션2 장르 필터 버튼 -->
+      <section class="section2">
+        <div class="inner">
           <div class="chart">
-            <div class="main">
-              <div class="main-title">실시간 차트</div>
-            </div>
+            <p class="main-title">실시간 차트</p>
             <div class="sub">
               <div class="sub__detail">
                 <!-- filter BTN -->
@@ -400,63 +434,175 @@
             </div>
           </div>
         </div>
-      </div>
-
-      <!-- modal -->
-      <div id="modal" class="modal-overlay">
-        <div class="modal-window">
-          <div class="close-area">X</div>
-          <div class="content">
-            <div class="content-image">
-              <!-- <img class="image" src="img/main_album/main_album1.png" /> -->
-            </div>
-
-            <div class="content-text">
-              <h2 class="al-name">ALBUM</h2>
-              <div class="singer">singer</div>
-              <div class="date">2020. 02. 02</div>
-              <div class="info">IVE THE 2nd SINGLE ALBUM</div>
-              <div class="info-sub">
-                - “사랑할 용기가 있다면?” ‘감히 뛰어들어’ 큐피드가 된 아이브,
-                Z세대의 사랑법 …더보기 - 데뷔 동시 ‘글로벌 수퍼 루키’, 주체적인
-                ‘Z세대 워너비’ 각인 - ‘우아하고 멋지게’ 무대를 런웨이처럼…완성형
-                비주얼+퍼포먼스
+      </section>
+      <div class="genre-zone"></div>
+      
+      <!-- 섹션3 앨범자켓 스와이퍼(재생) + 모달-->
+      <section class="section3">
+        <div class="inner">
+          <div class="swiper-zone">
+            <div class="swiper2 albums">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="album-box">
+                    <!--<div class="beforeHover"></div>-->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                    <!--<div class="beforeHover"></div>-->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                    <!--<div class="beforeHover"></div>-->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                    <!--<div class="beforeHover"></div>-->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                   <!--<div class="beforeHover"></div>-->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                    <!--<div class="beforeHover"></div>-->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                    <!--<div class="beforeHover"></div>-->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                    <!--<div class="beforeHover"></div>-->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                    <!--<div class="beforeHover"></div>-->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                    <!--<div class="beforeHover"></div>-->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                    <!--<div class="beforeHover"></div>-->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                    <!--<div class="beforeHover"></div>-->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                    <!--<div class="beforeHover"></div>-->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                    <!--<div class="beforeHover"></div>-->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                    <!--<div class="beforeHover"></div>-->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                    <!--<div class="beforeHover"></div>-->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                    <!--<div class="beforeHover"></div>-->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                    <!--<div class="beforeHover"></div>-->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                    <!--<div class="beforeHover"></div>-->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                    <!--<div class="beforeHover"></div>-->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                    <!--<div class="beforeHover"></div>-->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                    <!--<div class="beforeHover"></div>-->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                    <!--<div class="beforeHover"></div>-->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                    <!--<div class="beforeHover"></div>-->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                    <!--<div class="beforeHover"></div>-->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                    <!--<div class="beforeHover"></div>-->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                    <!--<div class="beforeHover"></div>-->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                    <!--<div class="beforeHover"></div>-->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                    <!--<div class="beforeHover"></div>-->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                    <!--<div class="beforeHover"></div>-->
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-
-          <div class="detail-button">
-            <div class="button1">전체 재생</div>
-            <!-- <div class="button2">button2</div> -->
-          </div>
-
-          <div class="detail-track">
-            <!-- <div class="track-info">
-              <div class="track-title">title</div>
-              <div class="track-singer">singer</div>
-              <div class="track-time">time</div>
-            </div> -->
-          </div>
+          <!-- 앨범 Swiper btn1 -->
+          <!-- <div class="swiper-pagination chartBullet"></div> -->
+          <div class="swiper-button-prev mainSwiper0"></div>
+          <div class="swiper-button-next mainSwiper0"></div>
         </div>
-      </div>
-      <div class="audio-container hidden" id="audio-container">
-        <div class="progress-container">
-          <div class="progress"></div>
-        </div>
-        <ul class="control">
-          <li class="pause"><i class="fas fa-pause"></i></li>
-          <li class="play"><i class="fas fa-play"></i></li>
-          <li class="reload"><i class="fas fa-redo-alt"></i></li>
-        </ul>
-        <div class="audio-album">
-          <div class="audio-album-img"></div>
-          <div class="--text-box">
-            <p class="album-title">Ditto</p>
-            <p class="album-sub-title">NewJeans</p>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>        
+    </main>
 
     <!-- footer -->
     <footer>
@@ -522,5 +668,65 @@
         </p>
       </div>
     </footer>
+
+
+    <!-- modal -->
+    <div id="modal" class="modal-overlay">
+      <div class="modal-window">
+        <div class="close-area">X</div>
+        <div class="content">
+          <div class="content-image">
+            <!-- <img class="image" src="img/main_album/main_album1.png" /> -->
+          </div>
+
+          <div class="content-text">
+            <h2 class="al-name">ALBUM</h2>
+            <div class="singer">singer</div>
+            <div class="date">2020. 02. 02</div>
+            <div class="info">
+              IVE THE 2nd SINGLE ALBUM
+            </div>
+            <div class="info-sub">
+              - “사랑할 용기가 있다면?” ‘감히 뛰어들어’ 큐피드가 된 아이브,
+              Z세대의 사랑법 …더보기 - 데뷔 동시 ‘글로벌 수퍼 루키’, 주체적인
+              ‘Z세대 워너비’ 각인 - ‘우아하고 멋지게’ 무대를 런웨이처럼…완성형
+              비주얼+퍼포먼스
+            </div>  
+          </div>
+        </div>
+
+        <div class="detail-button">
+          <div class="button1">재생</div>
+          <!-- <div class="button2">button2</div> -->
+        </div>
+
+        <div class="detail-track">
+          <div class="track-info">
+            <div class="track-title">
+              <input type="radio" class="track-checkbox" name="checkbox"/>title
+            </div>
+            <div class="track-singer">singer</div>
+            <div class="track-time">time</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="audio-container hidden" id="audio-container">
+      <div class="progress-container">
+        <div class="progress"></div>
+      </div>
+      <ul class="control">
+        <li class="pause hidden"><i class="fas fa-pause"></i></li>
+        <li class="play"><i class="fas fa-play"></i></li>
+        <!-- <li class="reload"><i class="fas fa-redo-alt"></i></li> -->
+      </ul>
+      <div class="audio-album">
+        <div class="audio-album-img"></div>
+        <div class="--text-box">
+          <p class="album-title"></p>
+          <p class="album-sub-title"></p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

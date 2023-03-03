@@ -1,3 +1,14 @@
+
+body {
+  background-color: black;
+}
+
+.inner{
+  position: relative;
+  padding: 0 75px;
+  width: 100%;
+}
+
 // reset
 @import "reset";
 
@@ -13,14 +24,10 @@
 //detail
 @import "detail";
 
+@import "login";
+
 // footer
 @import "footerStyle";
 
-//login
+// login
 @import "login";
-
-.inner{
-  position: relative;
-  padding: 0 75px;
-  width: 100%;
-}

@@ -230,7 +230,7 @@ header img {
 .ex-menu .login .login__submenus .login__contents__contain .login__submenus__list .submenus__first li {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .ex-menu .login .login__submenus .login__contents__contain .login__submenus__list .submenus__first li .login-sub {
   width: 30px;
@@ -246,6 +246,7 @@ header img {
   text-decoration: underline;
 }
 .ex-menu .login .login__submenus .login__contents__contain .login__submenus__list .submenus__first li p {
+  margin-bottom: 0 !important;
   cursor: pointer;
 }
 .ex-menu .login .login__submenus .login__contents__contain .login__submenus__list .submenus__first li p:hover {
@@ -273,16 +274,16 @@ header img {
 .ex-menu .login .login__submenus .login__contents__contain .login__submenus__list .submenus__second li #question {
   margin-right: 15px;
 }
-.ex-menu .login .login__submenus .login__contents__contain .login__submenus__list .submenus__second li span {
+.ex-menu .login .login__submenus .login__contents__contain .login__submenus__list .submenus__second li a {
   cursor: pointer;
 }
-.ex-menu .login .login__submenus .login__contents__contain .login__submenus__list .submenus__second li span:hover ~ p {
+.ex-menu .login .login__submenus .login__contents__contain .login__submenus__list .submenus__second li a:hover ~ a {
   text-decoration: underline;
 }
-.ex-menu .login .login__submenus .login__contents__contain .login__submenus__list .submenus__second li p {
+.ex-menu .login .login__submenus .login__contents__contain .login__submenus__list .submenus__second li a {
   cursor: pointer;
 }
-.ex-menu .login .login__submenus .login__contents__contain .login__submenus__list .submenus__second li p:hover {
+.ex-menu .login .login__submenus .login__contents__contain .login__submenus__list .submenus__second li a:hover {
   text-decoration: underline;
 }
 .ex-menu .login .login__submenus .login__contents__contain .login__submenus__list .submenus__third {
@@ -293,16 +294,16 @@ header img {
   border-top: 0.5px solid rgba(255, 255, 255, 0.5);
   padding: 15px;
 }
-.ex-menu .login .login__submenus .login__contents__contain .login__submenus__list .submenus__third .logout__logo {
+.ex-menu .login .login__submenus .login__contents__contain .login__submenus__list .submenus__third a:hover ~ .logoout__text {
+  text-decoration: underline;
+}
+.ex-menu .login .login__submenus .login__contents__contain .login__submenus__list .submenus__third a .logout__logo {
   width: 20px;
   height: 20px;
   transform: translateX(2px);
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url("../img/netflix_logo/intro_logo/intro_netflix_logo.png");
-}
-.ex-menu .login .login__submenus .login__contents__contain .login__submenus__list .submenus__third .logout__logo:hover ~ .logoout__text {
-  text-decoration: underline;
 }
 .ex-menu .login .login__submenus .login__contents__contain .login__submenus__list .submenus__third .logoout__text {
   display: block;
