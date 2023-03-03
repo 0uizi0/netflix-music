@@ -655,6 +655,61 @@ for (let i = 0; i < classicData.length; i++) {
   }
 }
 
+// pop
+const popBox = document.createElement("div");
+popBox.setAttribute('class','album-box');
+
+inner.append(popBox);
+
+const popWrapper = document.createElement("div");
+popWrapper.setAttribute("class", "swiper-wrapper");
+popWrapper.style.marginTop = '30px';
+
+const popTitle = document.createElement("p");
+popTitle.textContent = "pop"; //일단 박아봄
+popTitle.style.width = "99vw";
+popTitle.style.textAlign = "left";
+popTitle.style.font = "normal normal bold 20px/29px Pretendard";
+popTitle.append(popWrapper);
+
+albums.append(popTitle);
+
+for (let i = 0; i < popData.length; i++) {
+
+    const swiperSlide = document.createElement("div");
+    swiperSlide.setAttribute("class",'swiper-slide');
+    swiperSlide.style.width = '200px';
+    swiperSlide.style.marginTop = '0';
+    swiperSlide.style.marginRight = '40px';
+    popWrapper.append(swiperSlide);
+
+    const pop = document.createElement("div");
+    pop.setAttribute("class",'album-box');
+    pop.classList.add('popPic');
+    swiperSlide.append(pop);
+
+  // 사진 부분 일괄 적용
+  const popSlide = document.querySelectorAll('.popPic');
+  const popPic = popSlide[i];
+  if (i < 30) {
+    popPic.setAttribute("data-item", `${popData[i].item}`);
+    popPic.setAttribute("name", `${popData[i].name}`);
+    popPic.setAttribute("artist", `${popData[i].artist}`);
+    popPic.setAttribute("date", `${popData[i].date}`);
+    popPic.setAttribute("info", `${popData[i].info}`);
+    popPic.setAttribute("info-sub", `${popData[i].infoSub}`);
+    popPic.setAttribute("track-len", `${popData[i].track.length}`);
+    for (let j = 0; j < popData[i].track.length; j++) {
+      popPic.setAttribute(`track-title${j}`, `${popData[i].track[j].title}`);
+      popPic.setAttribute(`track-time${j}`, `${popData[i].track[j].time}`);
+    }
+
+    popPic.style.backgroundImage = `url("../img/main_album/main_album${popData[i].img}.png")`;
+    popPic.style.boxShadow = `0px 0px 1px #e6e6e6`;
+  }
+}
+
+
 // 문서 로딩이 끝나면 실행되는 구문
 $(document).ready(function () {
 
