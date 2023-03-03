@@ -556,7 +556,12 @@ section .inner .section2 .sub .sub__detail .swiper-button-next.a {
   font-size: 38px;
   font-weight: 500;
   color: white;
-  margin-bottom: 35px;
+  margin-bottom: 50px;
+}
+.top-title .inner .sub-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
 }
 
 .chart-wrap .inner .row {
@@ -621,6 +626,7 @@ section .inner .section2 .sub .sub__detail .swiper-button-next.a {
 .chart-wrap .inner .row .col .chart-list .--text-box .album-sub-title {
   font-size: 15px;
   font-weight: 300;
+  margin-bottom: 0px !important;
   color: #888;
 }
 
@@ -879,6 +885,7 @@ section .audio-container .audio-album {
   top: 19px;
   left: 75px;
   display: flex;
+  align-items: center;
 }
 section .audio-container .audio-album .audio-album-img {
   width: 40px;
@@ -935,6 +942,10 @@ footer .inner .footer__menus ul {
 }
 footer .inner .footer__menus ul li {
   margin-bottom: 15px;
+  font-size: 14px;
+}
+footer .inner .footer-bottom {
+  font-size: 13px;
 }
 footer .inner .dropdown {
   margin-bottom: 40px;
@@ -943,9 +954,8 @@ footer .inner .dropdown .btn-secondary {
   background-color: #000000;
   border-color: #686868;
   color: #686868;
-  padding: 15px 0px;
-  font-size: 20px;
-  width: 150px;
+  padding: 8px;
+  font-size: 15px;
   border-radius: 3px !important;
   transition: 0.1s !important;
 }

@@ -42,8 +42,12 @@ footer {
   
         li {
           margin-bottom: 15px;
+          font-size: 14px;
         }
       }
+    }
+    .footer-bottom{
+      font-size: 13px;
     }
   
     .dropdown {
@@ -53,9 +57,8 @@ footer {
         background-color: #000000;
         border-color: $light-gray;
         color: $light-gray;
-        padding: 15px 0px;
-        font-size: 20px;
-        width: 150px;
+        padding: 8px;
+        font-size: 15px;
         border-radius: 3px !important;
         transition: 0.1s !important;
   

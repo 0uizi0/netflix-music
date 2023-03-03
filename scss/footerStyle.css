@@ -38,6 +38,10 @@ footer .inner .footer__menus ul {
 }
 footer .inner .footer__menus ul li {
   margin-bottom: 15px;
+  font-size: 14px;
+}
+footer .inner .footer-bottom {
+  font-size: 13px;
 }
 footer .inner .dropdown {
   margin-bottom: 40px;
@@ -46,9 +50,8 @@ footer .inner .dropdown .btn-secondary {
   background-color: #000000;
   border-color: #686868;
   color: #686868;
-  padding: 15px 0px;
-  font-size: 20px;
-  width: 150px;
+  padding: 8px;
+  font-size: 15px;
   border-radius: 3px !important;
   transition: 0.1s !important;
 }
