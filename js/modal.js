@@ -47,7 +47,7 @@ for(let i=0; i<btnModal.length; i++){
         const infosub = document.querySelector(".info-sub");
         infosub.textContent = infosubText;
 
-        detailTrack.textContent="";
+        // detailTrack.textContent="";
         progress.style.width = "0%";
 
 
