@@ -113,7 +113,7 @@ for (let i = 0; i < rankWrpperEl.length; i += 1) {
   let swiperChar0 = new Swiper(rankWrpperEl[i], {
     direction: 'horizontal',
     cssMode: true,
-    slidesPerView: 7,
+    slidesPerView: 5,
     spaceBetween: 50,
     navigation: {
       nextEl: `.swiper-button-next.chartBtn${i}`,
