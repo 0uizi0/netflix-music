@@ -40,17 +40,12 @@
           
           margin-bottom: 60px;
           .content-image {
-            margin-right: 50px;
+            margin-right: 40px;
             img {
               width: 200px;
               height: 200px;
-              
               border-radius: 10px;
-              
-  
             }
-  
-  
           }
   
           .content-text {
@@ -77,7 +72,6 @@
               font-size: 14px;
               font-weight: 300;
             }
-  
           }
         }
         .detail-button{
@@ -119,16 +113,20 @@
             color: white;
             display: flex;
             justify-content: space-between;
-            .track-check{
-              background-color: orange;
+
+            .track-checkbox{
               input{
-                width: 100px;
-                height: 100px;
+                all:revert !important;
               }
             }
             .track-title{
               color: #D1D1D1;
-              margin-left: 20px;
+              margin-left: 6px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
               &:hover{
                 text-decoration: underline;
                 cursor: pointer;
@@ -143,6 +141,7 @@
               color: #D1D1D1;
               opacity: 0.8;
               margin-right: 20px;
+              font-weight: 300;
               
             }
           }
@@ -162,7 +161,7 @@
       .progress-container{
         background-color: #fff;
         width: 100%;
-        border-radius:a 5px;
+        border-radius: 5px;
         cursor: pointer;
         .progress{
           background-color: red;
@@ -179,6 +178,7 @@
         display: flex;
         justify-content: space-around;
         line-height: 80px;
+        align-items: center;
         margin: auto;
         li{
           cursor: pointer;
@@ -206,6 +206,7 @@
           img{
             width: 40px;
             height: 40px;
+            border-radius: 4px;
           }
         }
         .album-title{
@@ -218,3 +219,5 @@
         }
       }
     }
+
+    
