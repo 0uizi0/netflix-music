@@ -42,6 +42,25 @@ main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide:nth-child(3) {
 main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide:nth-child(4) {
   background-image: url("../img/main_banner/main_banner4@2x.png");
 }
+main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .video__container {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  transition: 2s;
+  transition-delay: 3s;
+  transition-timing-function: ease;
+}
+main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .video__container .video_scope {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  left: 50%;
+  transform: translate(-50%, -120px);
+}
 main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .banner-box {
   text-align: left;
   display: block;
@@ -84,6 +103,35 @@ main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .banner-box .b
 main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .banner-box .btn-box .btn--detail {
   background-color: #383131;
   color: #fff;
+}
+main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .banner-box .muted-control-container {
+  opacity: 0;
+  transition: 1s;
+  transition-delay: 3s;
+}
+main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .banner-box .muted-control-container .circle-deco {
+  position: absolute;
+  display: flex;
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid white;
+  border-radius: 50%;
+  bottom: 50px;
+  right: 100px;
+  cursor: pointer;
+}
+main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .banner-box .muted-control-container .circle-deco .material-symbols-outlined {
+  font-size: 70px;
+  transform: scale(0.95);
+  cursor: pointer;
+}
+main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .banner-box .muted-control-container .circle-deco:hover {
+  background-color: rgba(214, 214, 214, 0.5);
+  border-radius: 50%;
+}
+main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .banner-box .muted-control-container .circle-deco.on {
+  visibility: visible;
 }
 main .section1 .swiper-button-next,
 main .section1 .swiper-button-prev {
@@ -185,7 +233,6 @@ main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide .album-
   cursor: pointer;
   z-index: 1;
 }
-
 main .section3 .inner .swiper-button-prev.mainSwiper0,
 main .section3 .inner .swiper-button-next.mainSwiper0 {
   top: 150px;

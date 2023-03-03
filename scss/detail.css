@@ -102,26 +102,29 @@
   border-radius: 10px;
 }
 #modal .modal-window .detail-track .track-info {
-  border: 1px white solid;
   position: relative;
   height: 44px;
   line-height: 44px;
   color: white;
   display: flex;
+  justify-content: space-between;
 }
 #modal .modal-window .detail-track .track-info .track-title {
   color: #D1D1D1;
-  margin-left: 70px;
-  margin-right: 280px;
+  margin-left: 20px;
+}
+#modal .modal-window .detail-track .track-info .track-title:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 #modal .modal-window .detail-track .track-info .track-singer {
   color: #D1D1D1;
   opacity: 0.5;
-  margin-right: 50px;
 }
 #modal .modal-window .detail-track .track-info .track-time {
   color: #D1D1D1;
   opacity: 0.8;
+  margin-right: 20px;
 }
 
 .hidden {
@@ -171,13 +174,19 @@
   display: flex;
 }
 .audio-container .audio-album .audio-album-img {
-  width: 40px;
-  height: 40px;
   background-color: #fff;
   border-radius: 4px;
   margin-right: 12px;
 }
+.audio-container .audio-album .audio-album-img img {
+  width: 40px;
+  height: 40px;
+}
+.audio-container .audio-album .album-title {
+  margin-bottom: 0px !important;
+}
 .audio-container .audio-album .album-sub-title {
   font-size: 14px;
   font-weight: 300;
+  margin-bottom: 0px !important;
 }/*# sourceMappingURL=detail.css.map */
