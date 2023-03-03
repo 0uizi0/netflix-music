@@ -58,7 +58,7 @@ main {
             height: 700px;
             overflow: hidden;
             transition: 1s;
-            transition-delay: 1s;
+            transition-delay: 2s;
             transition-timing-function: ease;
 
             .video_scope {
@@ -118,7 +118,7 @@ main {
             .muted-control-container {
               opacity: 0;
               transition: 1s;
-              transition-delay: 1s;
+              transition-delay: 2s;
               .circle-deco {
                 position: absolute;
                 display: flex;
@@ -147,12 +147,16 @@ main {
             }
             .replay-control-container {
               opacity: 0;
+              visibility: hidden;
               transition: 1s;
               transition-delay: 1s;
+              &.on {
+                visibility: visible;
+                opacity: 1;
+              }
               .replay-deco {
                 position: absolute;
                 display: flex;
-                visibility: hidden;
                 justify-content: center;
                 align-items: center;
                 border: 3px solid white;
@@ -168,9 +172,6 @@ main {
                 &:hover {
                   background-color: rgba($color: rgb(214, 214, 214), $alpha: 0.5);
                   border-radius: 50%;
-                  }
-                  &.on {
-                    visibility: visible;
                   }
               }
             }

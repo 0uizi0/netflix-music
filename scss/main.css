@@ -50,7 +50,7 @@ main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .video__contai
   height: 700px;
   overflow: hidden;
   transition: 1s;
-  transition-delay: 1s;
+  transition-delay: 2s;
   transition-timing-function: ease;
 }
 main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .video__container .video_scope {
@@ -107,7 +107,7 @@ main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .banner-box .b
 main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .banner-box .muted-control-container {
   opacity: 0;
   transition: 1s;
-  transition-delay: 1s;
+  transition-delay: 2s;
 }
 main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .banner-box .muted-control-container .circle-deco {
   position: absolute;
@@ -135,13 +135,17 @@ main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .banner-box .m
 }
 main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .banner-box .replay-control-container {
   opacity: 0;
+  visibility: hidden;
   transition: 1s;
   transition-delay: 1s;
+}
+main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .banner-box .replay-control-container.on {
+  visibility: visible;
+  opacity: 1;
 }
 main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .banner-box .replay-control-container .replay-deco {
   position: absolute;
   display: flex;
-  visibility: hidden;
   justify-content: center;
   align-items: center;
   border: 3px solid white;
@@ -157,9 +161,6 @@ main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .banner-box .r
 main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .banner-box .replay-control-container .replay-deco:hover {
   background-color: rgba(214, 214, 214, 0.5);
   border-radius: 50%;
-}
-main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .banner-box .replay-control-container .replay-deco.on {
-  visibility: visible;
 }
 main .section1 .swiper-button-next,
 main .section1 .swiper-button-prev {
