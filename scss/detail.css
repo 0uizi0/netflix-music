@@ -109,6 +109,13 @@
   display: flex;
   justify-content: space-between;
 }
+#modal .modal-window .detail-track .track-info .track-check {
+  background-color: orange;
+}
+#modal .modal-window .detail-track .track-info .track-check input {
+  width: 100px;
+  height: 100px;
+}
 #modal .modal-window .detail-track .track-info .track-title {
   color: #D1D1D1;
   margin-left: 20px;
@@ -165,6 +172,9 @@
   cursor: pointer;
 }
 .audio-container ul.control li.play {
+  transform: scale(2);
+}
+.audio-container ul.control li.pause {
   transform: scale(2);
 }
 .audio-container .audio-album {
