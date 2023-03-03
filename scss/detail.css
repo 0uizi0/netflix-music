@@ -177,6 +177,9 @@
 .audio-container ul.control li.play {
   transform: scale(2);
 }
+.audio-container ul.control li.pause {
+  transform: scale(2);
+}
 .audio-container .audio-album {
   position: absolute;
   top: 19px;

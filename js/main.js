@@ -265,9 +265,7 @@ let newArryAlbum = [
     country: "USA",
     info: "싱글",
     infoSub: "Ludovico Einaudi(루도비코 에이나우디) 뉴에이지 클래식 음악",
-    track: [
-      { title: "85mm", time: "5:01" },
-    ],
+    track: [{ title: "85mm", time: "5:01" }],
   },
   {
     // { img: "14", name: "캔디", item: "kpop" },
@@ -278,7 +276,8 @@ let newArryAlbum = [
     item: "kpop",
     country: "국내",
     info: "EP(미니)",
-    infoSub: "NCT DREAM의 청량한 매력으로 재탄생한 타이틀 곡 ‘Candy’! 국민 윈터송 탄생 예감!",
+    infoSub:
+      "NCT DREAM의 청량한 매력으로 재탄생한 타이틀 곡 ‘Candy’! 국민 윈터송 탄생 예감!",
     track: [
       { title: "Candy", time: "3:01" },
       { title: "Graduation", time: "3:54" },
@@ -297,7 +296,8 @@ let newArryAlbum = [
     item: "kpop",
     country: "국내",
     info: "EP(미니)",
-    infoSub: "[I love]는 ‘나’는 내가 아닌 다른 누군가가 원하는 모습이 아닌 그냥 ‘나’ 본연의 모습으로 존재해야 마땅하며 내가 원하지 않는 겉치레는 벗어 던지고 꾸밈없는 본모습을 보여주겠다는 당찬 각오를 담고 있다. 앨범에 수록된 6개의 트랙은 각기 다른 사랑에 대한 이야기를 음악적으로 풀어냈다. 팝, 록, 인디 팝, 힙합 등의 다채로운 장르를 (여자)아이들만의 스타일로 충분히 소화해냈다. 이번 앨범 또한 전소연이 총괄 프로듀서로서 앨범 제작 전반을 주도적으로 진두지휘하였으며 멤버들이 전곡 작곡, 작사에 참여하여 ‘만능 아티스트’다운 면모를 충분히 입증한다.",
+    infoSub:
+      "[I love]는 ‘나’는 내가 아닌 다른 누군가가 원하는 모습이 아닌 그냥 ‘나’ 본연의 모습으로 존재해야 마땅하며 내가 원하지 않는 겉치레는 벗어 던지고 꾸밈없는 본모습을 보여주겠다는 당찬 각오를 담고 있다. 앨범에 수록된 6개의 트랙은 각기 다른 사랑에 대한 이야기를 음악적으로 풀어냈다. 팝, 록, 인디 팝, 힙합 등의 다채로운 장르를 (여자)아이들만의 스타일로 충분히 소화해냈다. 이번 앨범 또한 전소연이 총괄 프로듀서로서 앨범 제작 전반을 주도적으로 진두지휘하였으며 멤버들이 전곡 작곡, 작사에 참여하여 ‘만능 아티스트’다운 면모를 충분히 입증한다.",
     track: [
       { title: "Nxde", time: "3:15" },
       { title: "LOVE", time: "3:01" },
@@ -316,7 +316,8 @@ let newArryAlbum = [
     item: "kpop",
     country: "국내",
     info: "블랙핑크 두 번째 정규 앨범",
-    infoSub: "[BORN PINK]는 태생부터 남다른 존재감을 지닌 BLACKPINK의 자신감을 드러내는 앨범명으로, 타이틀곡 ‘Shut Down’을 비롯한 BLACKPINK만의 강렬한 사운드를 담은 독보적인 트랙 8곡이 수록됐다.",
+    infoSub:
+      "[BORN PINK]는 태생부터 남다른 존재감을 지닌 BLACKPINK의 자신감을 드러내는 앨범명으로, 타이틀곡 ‘Shut Down’을 비롯한 BLACKPINK만의 강렬한 사운드를 담은 독보적인 트랙 8곡이 수록됐다.",
     track: [
       { title: "Pink Venom", time: "3:45" },
       { title: "Shut Down", time: "4:05" },
@@ -336,9 +337,7 @@ let newArryAlbum = [
     country: "usa",
     info: "Hauser classic",
     infoSub: "",
-    track: [
-      { title: "It's Not Unusual", time: "4:12" },
-    ],
+    track: [{ title: "It's Not Unusual", time: "4:12" }],
   },
   {
     // { img: "18", name: "건물 사이에 피어난 장미 (Rose Blossom)", item: "dance" },
@@ -349,7 +348,8 @@ let newArryAlbum = [
     item: "dance",
     country: "국내",
     info: "EP(미니)",
-    infoSub: "완전히 새로워진 비주얼과 더욱 당당해진 태도로 돌아온 하이키! 데뷔 1주년에 맞춰 2023년 1월 5일 컴백! 꿈을 포기하지 않고 악착같이 피어나려는 이들에게 바치는 앨범 [Rose Blossom]",
+    infoSub:
+      "완전히 새로워진 비주얼과 더욱 당당해진 태도로 돌아온 하이키! 데뷔 1주년에 맞춰 2023년 1월 5일 컴백! 꿈을 포기하지 않고 악착같이 피어나려는 이들에게 바치는 앨범 [Rose Blossom]",
     track: [
       { title: "Ring the Alarm", time: "3:12" },
       { title: "건물 사이에 피어난 장미", time: "4:12" },
@@ -368,9 +368,7 @@ let newArryAlbum = [
     country: "usa",
     info: "Json Mraz Single",
     infoSub: "",
-    track: [
-      { title: "I Feel Like Dancing", time: "4:12" },
-    ],
+    track: [{ title: "I Feel Like Dancing", time: "4:12" }],
   },
   {
     // { img: "20", name: "Best Disaster", item: "pop" },
@@ -382,9 +380,7 @@ let newArryAlbum = [
     country: "usa",
     info: "Cuco Single",
     infoSub: "",
-    track: [
-      { title: "Best Disaster", time: "4:23" },
-    ],
+    track: [{ title: "Best Disaster", time: "4:23" }],
   },
   {
     // { img: "21", name: "The River", item: "classic" },
@@ -396,9 +392,7 @@ let newArryAlbum = [
     country: "usa",
     info: "Jeong Jae-Il new age album",
     infoSub: "",
-    track: [
-      { title: "The River", time: "6:12" },
-    ],
+    track: [{ title: "The River", time: "6:12" }],
   },
   {
     // { img: "22", name: "TRUSTFALL", item: "pop" },
@@ -410,9 +404,7 @@ let newArryAlbum = [
     country: "usa",
     info: "P!nk single",
     infoSub: "",
-    track: [
-      { title: "TRUSTFALL", time: "4:12" },
-    ],
+    track: [{ title: "TRUSTFALL", time: "4:12" }],
   },
   {
     // { img: "23", name: "NOT SORRY (Feat. pH-1) (Prod. by Slom)", item: "hiphop" },
@@ -442,7 +434,8 @@ let newArryAlbum = [
     item: "hiphop",
     country: "국내",
     info: "EP(미니)",
-    infoSub: "ZICO는 여전히 트렌드에 민감하고, 본인이 좋아하는 음악을 할 때 더욱 빛나는 아티스트다. 다른 모든 것이 변할 때도, 변하지 않는 음악 취향과 열정, 에너지는 ZICO가 긴 공백기를 뛰어넘어 다시금 아티스트로서 활동에 박차를 가할 수 있는 이유이다. 새 EP의 제목 [Grown Ass Kid]에는 그런 의미가 함축되어 있다.",
+    infoSub:
+      "ZICO는 여전히 트렌드에 민감하고, 본인이 좋아하는 음악을 할 때 더욱 빛나는 아티스트다. 다른 모든 것이 변할 때도, 변하지 않는 음악 취향과 열정, 에너지는 ZICO가 긴 공백기를 뛰어넘어 다시금 아티스트로서 활동에 박차를 가할 수 있는 이유이다. 새 EP의 제목 [Grown Ass Kid]에는 그런 의미가 함축되어 있다.",
     track: [
       { title: "괴짜(Freak)", time: "3:33" },
       { title: "SEOUL DRIFT", time: "3:12" },
@@ -460,7 +453,8 @@ let newArryAlbum = [
     item: "hiphop",
     country: "국내",
     info: "에픽하이 정규",
-    infoSub: "누구나 공감할 수 있는 가사들과 연애소설의 아이유, 노땡큐의 송민호, 사이먼 도미닉, 더콰이엇, 빈차의 오혁, 문배동 단골집의 크러쉬 등 곡의 완성도를 더해줄 특급 피처링은 에픽하이의 음악과 잘 어우러져 앨범의 다양성을 높인다.",
+    infoSub:
+      "누구나 공감할 수 있는 가사들과 연애소설의 아이유, 노땡큐의 송민호, 사이먼 도미닉, 더콰이엇, 빈차의 오혁, 문배동 단골집의 크러쉬 등 곡의 완성도를 더해줄 특급 피처링은 에픽하이의 음악과 잘 어우러져 앨범의 다양성을 높인다.",
     track: [
       { title: "난 사람이 제일 무서워", time: "4:01" },
       { title: "연애소설(Feat.아이유)", time: "4:03" },
@@ -478,9 +472,7 @@ let newArryAlbum = [
     country: "usa",
     info: "싱글",
     infoSub: "M.I.L.K Single",
-    track: [
-      { title: "Right Here (Feat. Benny Sings)", time: "4:32" },
-    ],
+    track: [{ title: "Right Here (Feat. Benny Sings)", time: "4:32" }],
   },
   {
     // { img: "27", name: "파이팅 해야지 (Feat. 이영지)", item: "dance" },
@@ -491,7 +483,8 @@ let newArryAlbum = [
     item: "dance",
     country: "국내",
     info: "부석순 Single",
-    infoSub: "힘들고 포기하고 싶은 순간! 새로운 변화의 바람…‘SECOND WIND' ‘나를 위한 응원단' 부석순...지친 일상 속 웃음과 활기를 ‘파이팅 해야지' 목표를 향해 달려라 ‘가장 짜릿한 순간' 위한 파이팅! ‘러닝 크루 (Running Crew)'",
+    infoSub:
+      "힘들고 포기하고 싶은 순간! 새로운 변화의 바람…‘SECOND WIND' ‘나를 위한 응원단' 부석순...지친 일상 속 웃음과 활기를 ‘파이팅 해야지' 목표를 향해 달려라 ‘가장 짜릿한 순간' 위한 파이팅! ‘러닝 크루 (Running Crew)'",
     track: [
       { title: "파이팅 해야지(Feat. 이영지)", time: "3:56" },
       { title: "LUNCH", time: "4:12" },
@@ -507,7 +500,8 @@ let newArryAlbum = [
     item: "dance",
     country: "국내",
     info: "EP(미니)",
-    infoSub: "르세라핌, 10월 17일 미니 2집 ‘ANTIFRAGILE' 발매 ‘5개월 만의 컴백' 시련을 마주할수록 더 단단해지는 르세라핌 타이틀곡, 라틴 리듬 가미된 팝 장르 곡…독특한 후렴구에 중독!",
+    infoSub:
+      "르세라핌, 10월 17일 미니 2집 ‘ANTIFRAGILE' 발매 ‘5개월 만의 컴백' 시련을 마주할수록 더 단단해지는 르세라핌 타이틀곡, 라틴 리듬 가미된 팝 장르 곡…독특한 후렴구에 중독!",
     track: [
       { title: "The Hydra", time: "3:44" },
       { title: "ANTIFRAGILE", time: "4:01" },
@@ -525,7 +519,8 @@ let newArryAlbum = [
     item: "dance",
     country: "국내",
     info: "EP(미니)",
-    infoSub: "레전드 걸그룹 카라가 15주년을 맞아 [15th Anniversary Special Album ‘MOVE AGAIN’을 발표하며 전격 컴백했다. 카라는 지난 2015년 5월 발표한 미니 7집 ‘인 러브(In Love)’ 이후 7년 만의 컴백으로, 이번 컴백은 데뷔 15주년을 맞아 박규리, 한승연, 허영지는 물론, 니콜, 강지영까지 합류한 완전체라 더욱 의미가 깊다.",
+    infoSub:
+      "레전드 걸그룹 카라가 15주년을 맞아 [15th Anniversary Special Album ‘MOVE AGAIN’을 발표하며 전격 컴백했다. 카라는 지난 2015년 5월 발표한 미니 7집 ‘인 러브(In Love)’ 이후 7년 만의 컴백으로, 이번 컴백은 데뷔 15주년을 맞아 박규리, 한승연, 허영지는 물론, 니콜, 강지영까지 합류한 완전체라 더욱 의미가 깊다.",
     track: [
       { title: "Happy Hour", time: "3:56" },
       { title: "WHEN I MOVE", time: "3:12" },
@@ -542,7 +537,8 @@ let newArryAlbum = [
     item: "dance",
     country: "국내",
     info: "EP(미니)",
-    infoSub: "퍼포먼스, 보컬, 랩, 예능 까지 섭렵한 YENA(최예나)의 솔로 핫데뷔! 홀로서기를 넘어 이제는 아티스트적인 면모까지 선보이며 한층 성장한 YENA를 만날 수 있는 데뷔 앨범 ˣ‿ˣ (SMiLEY) YENA만의 행복 에너지가 가득 담긴 데뷔곡 ‘SMILEY’, 스마일 히어로의 행복 파워가 모두에게 전파된다!",
+    infoSub:
+      "퍼포먼스, 보컬, 랩, 예능 까지 섭렵한 YENA(최예나)의 솔로 핫데뷔! 홀로서기를 넘어 이제는 아티스트적인 면모까지 선보이며 한층 성장한 YENA를 만날 수 있는 데뷔 앨범 ˣ‿ˣ (SMiLEY) YENA만의 행복 에너지가 가득 담긴 데뷔곡 ‘SMILEY’, 스마일 히어로의 행복 파워가 모두에게 전파된다!",
     track: [
       { title: "Before Anyone Else", time: "2:33" },
       { title: "SMILEY", time: "3:12" },
@@ -578,23 +574,173 @@ for (let i = 0; i < len; i++) {
     pic.style.boxShadow = `0px 0px 1px #e6e6e6`;
   }
 }
-// 버튼 테스트
 
-//배열 담을 배열
-let showingArry = [];
+// 사진 부분 일괄 적용에서 이미 처리 되었으므로 DOM 요소 만들어서 붙일 필요 X
 
-// 배열 섞기 함수 (임시 보류)
-// const shuffleArray = (array) => {
-//   for (var i = 0; i < array.length; i++) {
-//     var j = Math.floor(Math.random() * (i + 1));
-//     const temp = array[i]; //빈 곳에  배열i를 저장
-//     array[i] = array[j]; //배열 j를 배열 i에 저장
-//     array[j] = temp; //상수 x를 배열 j에 저장
-//   }
-//   return array;
-// };
+// test --jke
 
-// Tetz, 사진 부분 일괄 적용에서 이미 처리 되었으므로 DOM 요소 만들어서 붙일 필요 X
+// 일단 item끼리 배열 정렬
+let sortedArray = [...newArryAlbum].sort((a, b) => {
+  if (a["item"] > b["item"]) {
+    return 1;
+  } else {
+    return -1;
+  }
+});
+
+// for문 이용해서 item 같은것끼리 자르기 -- 일단 노가다로 다 자르고 나중에 도전
+
+// for (let i = 0; i < sortedArray.length; i++) {
+//   console.log(sortedArray[i].item);
+// }
+
+const classicArr = sortedArray.splice(0, 3); //classic
+const danceArr = sortedArray.splice(0, 9); //dance
+const hiphopArr = sortedArray.splice(0, 5); //hiphop
+const kpopArr = sortedArray.splice(0, 8); //kpop
+
+// classic
+const albums = document.querySelector(".albums"); //  밑에 쌓임
+const classicTitle = document.createElement("p");
+classicTitle.textContent = "classic"; //일단 박아봄
+classicTitle.style.width = "99vw";
+classicTitle.style.textAlign = "left";
+classicTitle.style.font = "normal normal bold 20px/29px Pretendard";
+albums.append(classicTitle);
+
+const classicWrapper = document.createElement("div");
+classicWrapper.setAttribute("class", "swiper-wrapper");
+classicWrapper.style.flexWrap = "wrap";
+classicWrapper.style.marginTop = "20px";
+classicTitle.append(classicWrapper);
+
+for (key in classicArr) {
+  const classic = document.createElement("div");
+  classic.setAttribute("class", "album-box");
+  classic.setAttribute(
+    "style",
+    `background-image: url("../img/main_album/main_album${classicArr[key].img}.png"); width:200px; height:200px; display:block; background-position: center; background-size: cover; background-repeat: no-repeat; border-radius: 15px; transition: 0.5s; transform-origin: center; cursor: pointer; z-index: 1; margin-right:40px; margin-bottom: 40px;`
+  );
+
+  const swiperSlide = document.createElement("div");
+  swiperSlide.setAttribute("class", "swiper-slide");
+  swiperSlide.style.width = "200px";
+  swiperSlide.style.marginRight = "40px";
+  swiperSlide.style.marginTop = "0";
+  classicWrapper.append(swiperSlide);
+  swiperSlide.append(classic);
+}
+
+// dance
+const danceTitle = document.createElement("p");
+danceTitle.textContent = "dance"; //일단 박아봄
+danceTitle.style.width = "99vw";
+danceTitle.style.textAlign = "left";
+danceTitle.style.font = "normal normal bold 20px/29px Pretendard";
+albums.append(danceTitle);
+
+const danceTest = document.createElement("div");
+danceTest.setAttribute("class", "swiper-wrapper");
+danceTest.setAttribute("flex-wrap", "wrap");
+danceTest.style.flexWrap = "wrap";
+danceTest.style.marginTop = "20px";
+danceTitle.append(danceTest);
+
+const danceWrapper = document.createElement("div");
+danceWrapper.setAttribute("class", "swiper-wrapper");
+danceWrapper.style.flexWrap = "wrap";
+danceWrapper.style.marginTop = "20px";
+danceTitle.append(danceWrapper);
+
+for (key in danceArr) {
+  const dance = document.createElement("div");
+  dance.setAttribute("class", "album-box");
+  dance.setAttribute(
+    "style",
+    `background-image: url("../img/main_album/main_album${danceArr[key].img}.png"); width:200px; height:200px; display:block; background-position: center; background-size: cover; background-repeat: no-repeat; border-radius: 15px; transition: 0.5s; transform-origin: center; cursor: pointer; z-index: 1; margin-right:40px; margin-bottom: 40px;`
+  );
+  const swiperSlide = document.createElement("div");
+  swiperSlide.setAttribute("class", "swiper-slide");
+  swiperSlide.style.width = "200px";
+  swiperSlide.style.marginRight = "40px";
+  swiperSlide.style.marginTop = "0";
+  danceWrapper.append(swiperSlide);
+  swiperSlide.append(dance);
+}
+
+// hiphop
+const hiphopTitle = document.createElement("p");
+hiphopTitle.textContent = "hiphop"; //일단 박아봄
+hiphopTitle.style.width = "99vw";
+hiphopTitle.style.textAlign = "left";
+hiphopTitle.style.font = "normal normal bold 20px/29px Pretendard";
+albums.append(hiphopTitle);
+
+const hiphopTest = document.createElement("div");
+hiphopTest.setAttribute("class", "swiper-wrapper");
+hiphopTest.setAttribute("flex-wrap", "wrap");
+hiphopTest.style.flexWrap = "wrap";
+hiphopTest.style.marginTop = "20px";
+hiphopTitle.append(hiphopTest);
+
+const hiphopWrapper = document.createElement("div");
+hiphopWrapper.setAttribute("class", "swiper-wrapper");
+hiphopWrapper.style.flexWrap = "wrap";
+hiphopWrapper.style.marginTop = "20px";
+hiphopTitle.append(hiphopWrapper);
+
+for (key in hiphopArr) {
+  const hiphop = document.createElement("div");
+  hiphop.setAttribute("class", "album-box");
+  hiphop.setAttribute(
+    "style",
+    `background-image: url("../img/main_album/main_album${hiphopArr[key].img}.png"); width:200px; height:200px; display:block; background-position: center; background-size: cover; background-repeat: no-repeat; border-radius: 15px; transition: 0.5s; transform-origin: center; cursor: pointer; z-index: 1; margin-right:40px; margin-bottom: 40px;`
+  );
+  const swiperSlide = document.createElement("div");
+  swiperSlide.setAttribute("class", "swiper-slide");
+  swiperSlide.style.width = "200px";
+  swiperSlide.style.marginRight = "40px";
+  swiperSlide.style.marginTop = "0";
+  hiphopWrapper.append(swiperSlide);
+  swiperSlide.append(hiphop);
+}
+
+// kpop
+const kpopTitle = document.createElement("p");
+kpopTitle.textContent = "kpop"; //일단 박아봄
+kpopTitle.style.width = "99vw";
+kpopTitle.style.textAlign = "left";
+kpopTitle.style.font = "normal normal bold 20px/29px Pretendard";
+albums.append(kpopTitle);
+
+const kpopTest = document.createElement("div");
+kpopTest.setAttribute("class", "swiper-wrapper");
+kpopTest.setAttribute("flex-wrap", "wrap");
+kpopTest.style.flexWrap = "wrap";
+kpopTest.style.marginTop = "20px";
+kpopTitle.append(kpopTest);
+
+const kpopWrapper = document.createElement("div");
+kpopWrapper.setAttribute("class", "swiper-wrapper");
+kpopWrapper.style.flexWrap = "wrap";
+kpopWrapper.style.marginTop = "20px";
+kpopTitle.append(kpopWrapper);
+
+for (key in kpopArr) {
+  const kpop = document.createElement("div");
+  kpop.setAttribute("class", "album-box");
+  kpop.setAttribute(
+    "style",
+    `background-image: url("../img/main_album/main_album${kpopArr[key].img}.png"); width:200px; height:200px; display:block; background-position: center; background-size: cover; background-repeat: no-repeat; border-radius: 15px; transition: 0.5s; transform-origin: center; cursor: pointer; z-index: 1; margin-right:40px; margin-bottom: 40px;`
+  );
+  const swiperSlide = document.createElement("div");
+  swiperSlide.setAttribute("class", "swiper-slide");
+  swiperSlide.style.width = "200px";
+  swiperSlide.style.marginRight = "40px";
+  swiperSlide.style.marginTop = "0";
+  kpopWrapper.append(swiperSlide);
+  swiperSlide.append(kpop);
+}
 
 // 문서 로딩이 끝나면 실행되는 구문
 $(document).ready(function () {
@@ -608,6 +754,12 @@ $(document).ready(function () {
 
   // All, KPOP, POP, Comedy 의 탭이 클릭 되면 실행
   list.on("click", function () {
+    const sectionInner = document.querySelector(".inner.section-inner");
+    sectionInner.style.height = "1500px";
+
+    const allTitle = document.querySelector(".all-title");
+    allTitle.textContent = "";
+
     list.removeClass("active");
     $(this).addClass("active");
 
@@ -628,7 +780,6 @@ $(document).ready(function () {
       swiperSlide[i].classList.add("hide");
       swiperSlide[i].classList.remove("active");
 
-      // dataFilter가 'all'이거나, 슬라이드 내부 div 요소(.album-box)의 data-item 속성이 dataFilter의 값과 '같을때' active 클래스 적용 (hide 클래스 X)
       if (
         swiperSlide[i].querySelector(".album-box").getAttribute("data-item") ===
           dataFilter ||
@@ -636,7 +787,30 @@ $(document).ready(function () {
       ) {
         swiperSlide[i].classList.remove("hide");
         swiperSlide[i].classList.add("active");
+        const slideArr = [];
+        slideArr.push(swiperSlide[i]);
       }
+    }
+
+    if (dataFilter !== "all") {
+      // all만 거르는지 확인하기
+      console.log("dataFilter가 all이 아님");
+
+      // classic
+      classicWrapper.textContent = "";
+      classicTitle.textContent = "";
+      // dance
+      danceTest.textContent = "";
+      danceTitle.textContent = "";
+      // hiphop
+      hiphopTest.textContent = "";
+      hiphopTitle.textContent = "";
+      // kpop
+      kpopTest.textContent = "";
+      kpopTitle.textContent = "";
+    } else {
+      // all만 거르는지 확인하기
+      console.log("dataFilter가 all임");
     }
   });
 });
@@ -648,8 +822,8 @@ for (let i = 0; i < albumBox.length; i++) {
     albumBox[i].textContent = "";
     const hoverBox = document.createElement("div");
     hoverBox.setAttribute("class", "hoverBox");
-    albumBox[i].append(hoverBox);
     hoverBox.textContent = `${e.target.getAttribute("name")}`;
+    albumBox[i].append(hoverBox);
   });
   albumBox[i].addEventListener("mouseout", function (e) {
     albumBox[i].textContent = "";

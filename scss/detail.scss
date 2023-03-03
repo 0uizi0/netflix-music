@@ -72,7 +72,6 @@
               font-size: 14px;
               font-weight: 300;
             }
-  
           }
         }
         .detail-button{
@@ -114,6 +113,7 @@
             color: white;
             display: flex;
             justify-content: space-between;
+
             .track-checkbox{
               input{
                 all:revert !important;
@@ -185,6 +185,9 @@
           // opacity: 0.6;
   
           &.play{
+            transform: scale(2.0);
+          }
+          &.pause{
             transform: scale(2.0);
           }
         }
