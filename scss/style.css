@@ -395,8 +395,8 @@ main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .video__contai
   width: 100%;
   height: 700px;
   overflow: hidden;
-  transition: 2s;
-  transition-delay: 3s;
+  transition: 1s;
+  transition-delay: 1s;
   transition-timing-function: ease;
 }
 main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .video__container .video_scope {
@@ -453,7 +453,7 @@ main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .banner-box .b
 main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .banner-box .muted-control-container {
   opacity: 0;
   transition: 1s;
-  transition-delay: 3s;
+  transition-delay: 1s;
 }
 main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .banner-box .muted-control-container .circle-deco {
   position: absolute;
