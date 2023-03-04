@@ -1214,6 +1214,7 @@ main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide .album-
 }
 .login-wrap .left .login-checkBox p #check-text:hover {
   color: rgba(255, 255, 255, 0.8);
+  text-decoration: underline;
 }
 .login-wrap .left .login-checkBox .join {
   display: flex;
@@ -1229,6 +1230,7 @@ main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide .album-
 }
 .login-wrap .left .login-checkBox .join .join-href:hover {
   color: rgba(255, 255, 255, 0.8);
+  text-decoration: underline;
 }
 .login-wrap .left .login-checkBox .login-text {
   margin-top: 100px;
@@ -1427,6 +1429,7 @@ footer .inner .company_info {
 }
 .login-wrap .left .login-checkBox p #check-text:hover {
   color: rgba(255, 255, 255, 0.8);
+  text-decoration: underline;
 }
 .login-wrap .left .login-checkBox .join {
   display: flex;
@@ -1442,6 +1445,7 @@ footer .inner .company_info {
 }
 .login-wrap .left .login-checkBox .join .join-href:hover {
   color: rgba(255, 255, 255, 0.8);
+  text-decoration: underline;
 }
 .login-wrap .left .login-checkBox .login-text {
   margin-top: 100px;
