@@ -219,6 +219,7 @@ main .section2 .chart .sub .sub__detail ul li.active {
 }
 main .section2 .chart .sub .sub__detail .all-title {
   text-align: left;
+  margin-top: 80px;
   font: normal normal bold 24px/29px Pretendard;
 }
 main .genre-zone {
@@ -240,18 +241,23 @@ main .section3 .inner .swiper-zone {
 main .section3 .inner .swiper-zone .albums {
   position: absolute;
   width: 100%;
+  height: 100%;
   z-index: 1;
-  top: 10px;
+  top: 55px;
 }
 main .section3 .inner .swiper-zone .albums .swiper-wrapper {
+  gap: 30px !important;
+  height: 300px;
+  top: -10px;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide {
+  width: 200px !important;
   align-items: center;
+  padding-top: 50px;
 }
-main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide:hover > .album-box {
+main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide:hover {
   transform: scale(1.5);
   transition: 0.5s;
   transition-delay: 0.3s;
@@ -261,9 +267,10 @@ main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide.hide {
   display: none;
 }
 main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide .album-box {
-  position: static;
+  position: relative;
   width: 200px;
-  height: 200px;
+  min-width: 200px;
+  min-height: 200px;
   display: block;
   align-items: center;
   background-position: center;
@@ -272,9 +279,10 @@ main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide .album-
   border-radius: 15px;
   transform-origin: center;
   cursor: pointer;
-  z-index: 2;
+  z-index: 1;
 }
 main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide .album-box .hoverBox {
+  position: absolute;
   width: 100%;
   background: transparent linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 105%) 0% 0% no-repeat padding-box;
   padding-left: 25px;

@@ -598,7 +598,7 @@ kpopSwiper2.classList.add('albums');
 kpopSwiper2.append(kpopWrapper);
 
 const kpopTitle = document.createElement("p");
-kpopTitle.textContent = "kpop";
+kpopTitle.textContent = "K-POP";
 kpopTitle.style.textAlign = "left";
 kpopTitle.style.font = "normal normal bold 24px/29px Pretendard";
 kpopTitle.style.position = 'relative';
@@ -661,7 +661,7 @@ popSwiper2.classList.add('albums');
 popSwiper2.append(popWrapper);
 
 const popTitle = document.createElement("p");
-popTitle.textContent = "pop";
+popTitle.textContent = "POP";
 popTitle.style.textAlign = "left";
 popTitle.style.font = "normal normal bold 24px/29px Pretendard";
 popTitle.style.position = 'relative';
@@ -722,7 +722,7 @@ hiphopSwiper2.classList.add('albums');
 hiphopSwiper2.append(hiphopWrapper);
 
 const hiphopTitle = document.createElement('p');
-hiphopTitle.textContent = 'hiphop';
+hiphopTitle.textContent = 'Hip-hop';
 hiphopTitle.style.textAlign = 'left';
 hiphopTitle.style.font = 'normal normal bold 24px/29px Pretendard';
 hiphopTitle.style.position = 'relative';
@@ -782,7 +782,7 @@ classicSwiper2.classList.add('albums');
 classicSwiper2.append(classicWrapper);
 
 const classicTitle = document.createElement('p');
-classicTitle.textContent = 'classic';
+classicTitle.textContent = 'Classic';
 classicTitle.style.textAlign = 'left';
 classicTitle.style.font = 'normal normal bold 24px/29px Pretendard';
 classicTitle.style.position = 'relative';
@@ -842,7 +842,7 @@ danceSwiper2.classList.add('albums');
 danceSwiper2.append(danceWrapper);
 
 const danceTitle = document.createElement('p');
-danceTitle.textContent = 'dance';
+danceTitle.textContent = 'Dance';
 danceTitle.style.textAlign = 'left';
 danceTitle.style.font = 'normal normal bold 24px/29px Pretendard';
 danceTitle.style.position = 'relative';
@@ -907,6 +907,8 @@ $(document).ready(function () {
     let genreZone = document.querySelector(".genre-zone");
     genreZone.textContent = "";
     let genre = document.createElement("p");
+
+    albums.style.top = '0';
 
     if (dataFilter !== 'all') {
       inner.style.height = '300px';

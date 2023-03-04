@@ -248,6 +248,7 @@ main {
           }
           .all-title {
             text-align: left;
+            margin-top: 80px;
             font: normal normal bold 24px/29px Pretendard;
           }              
       }
@@ -278,20 +279,24 @@ main {
         .albums {
           position: absolute;
           width: 100%;
+          height: 100%;
           z-index: 1;
           // bottom: 0;
-          top: 10px;
+          top: 55px;
        
           .swiper-wrapper {
-          // gap: 50px;
+          gap: 30px !important;
+          height: 300px;
+          top: -10px;
           display: flex;
           align-items: center;
-          justify-content: center;
 
           .swiper-slide {
+            width: 200px !important;
             align-items: center;
+            padding-top: 50px;
 
-            &:hover > .album-box {
+            &:hover {
               transform: scale(1.5);
               transition: 0.5s;
               transition-delay: 0.3s;
@@ -303,9 +308,10 @@ main {
             }
             
             .album-box {
-            position: static;
+            position: relative;
             width: 200px;
-            height: 200px;
+            min-width: 200px;
+            min-height: 200px;
             display: block; 
             align-items: center; 
             background-position: center; 
@@ -314,9 +320,10 @@ main {
             border-radius: 15px;
             transform-origin: center;
             cursor: pointer;
-            z-index: 2;
+            z-index: 1;
 
             .hoverBox{
+              position: absolute;
               width: 100%;
               background: transparent
               linear-gradient(180deg, #00000000 0%, #000000 105%) 0%
