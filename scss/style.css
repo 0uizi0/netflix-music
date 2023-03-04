@@ -613,14 +613,24 @@ main .section3 .inner {
   position: relative;
   left: 0;
   width: 100%;
-  height: 1800px;
+  height: 2200px;
 }
+
+main .section3 .inner .all-title {
+  text-align: left;
+  margin-top: 50px;
+  font: normal normal bold 24px/29px Pretendard;
+}
+
 main .section3 .inner .swiper-zone {
   position: relative;
   width: 100%;
   height: 300px;
   display: flex;
   align-items: center;
+}
+main .section3 .inner .swiper-zone p {
+  top: 20px;
 }
 main .section3 .inner .swiper-zone .albums {
   position: relative;
@@ -693,7 +703,7 @@ main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide .album-
 .swiper-button-next.mainSwiper4,
 .swiper-button-prev.mainSwiper5,
 .swiper-button-next.mainSwiper5 {
-  top: 100px;
+  top: 140px;
   color: white;
   opacity: 0.8;
   cursor: pointer;
@@ -895,6 +905,18 @@ main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide .album-
   transform-origin: center;
   cursor: pointer;
   z-index: 2;
+}
+.swiperChart-zone .swiperChart__container .swiper-wrapper .swiper-slide .rank-wrapper .album-box .hoverBox {
+  position: absolute;
+  width: 100%;
+  background: transparent linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 105%) 0% 0% no-repeat padding-box;
+  padding-left: 20px;
+  height: 50px;
+  bottom: 0;
+  position: absolute;
+  font-size: small;
+  line-height: 1.2rem;
+  transition: 0.5s;
 }
 .swiperChart-zone .swiper-button-next, .swiperChart-zone .swiper-button-prev {
   color: #dedede;
