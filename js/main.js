@@ -785,6 +785,67 @@ for (let i = 0; i< hiphopData.length; i++) {
   }
 } 
 
+// kpop
+const kpopBox = document.createElement('div');
+kpopBox.setAttribute('class','album-box');
+
+inner.append(kpopBox);
+
+const kpopWrapper = document.createElement('div');
+kpopWrapper.setAttribute('class','swiper-wrapper');
+kpopWrapper.style.marginTop = '30px';
+kpopWrapper.style.gap = '50px';
+
+const kpopSwiper2 = document.createElement('div');
+kpopSwiper2.setAttribute('class','swiper2');
+kpopSwiper2.classList.add('albums');
+kpopSwiper2.append(kpopWrapper);
+
+const kpopTitle = document.createElement('p');
+kpopTitle.textContent = 'kpop';
+kpopTitle.style.textAlign = 'left';
+kpopTitle.style.font = 'normal normal bold 20px/29px Pretendard';
+kpopTitle.style.position = 'relative';
+kpopTitle.style.top = '860px';
+kpopTitle.append(kpopSwiper2);
+
+albums.append(kpopTitle);
+
+for (let i = 0; i< kpopData.length; i++) {
+  const swiperSlide = document.createElement("div");
+  swiperSlide.setAttribute("class",'swiper-slide');
+  swiperSlide.style.width = '200px';
+  swiperSlide.style.marginTop = '0';
+  swiperSlide.style.marginRight = '40px';
+  kpopWrapper.append(swiperSlide);
+
+  const kpop = document.createElement('div');
+  kpop.setAttribute('class','album-box');
+  kpop.classList.add('kpopPic');
+  swiperSlide.append(kpop);
+
+  // 사진 부분 일괄 적용
+  const kpopSlide = document.querySelectorAll('.kpopPic');
+  console.log(kpopSlide);
+  const kpopPic = kpopSlide[i];
+  if (i < 30) {
+    kpopPic.setAttribute("data-item", `${kpopData[i].item}`);
+    kpopPic.setAttribute("name", `${kpopData[i].name}`);
+    kpopPic.setAttribute("artist", `${kpopData[i].artist}`);
+    kpopPic.setAttribute("date", `${kpopData[i].date}`);
+    kpopPic.setAttribute("info", `${kpopData[i].info}`);
+    kpopPic.setAttribute("info-sub", `${kpopData[i].infoSub}`);
+    kpopPic.setAttribute("track-len", `${kpopData[i].track.length}`);
+    for (let j = 0; j < kpopData[i].track.length; j++) {
+      kpopPic.setAttribute(`track-title${j}`, `${kpopData[i].track[j].title}`);
+      kpopPic.setAttribute(`track-time${j}`, `${kpopData[i].track[j].time}`);
+    }
+
+    kpopPic.style.backgroundImage = `url("../img/main_album/main_album${kpopData[i].img}.png")`;
+    kpopPic.style.boxShadow = `0px 0px 1px #e6e6e6`;
+  }
+} 
+
 
 // 문서 로딩이 끝나면 실행되는 구문
 $(document).ready(function () {
