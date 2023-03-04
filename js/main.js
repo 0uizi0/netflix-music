@@ -746,7 +746,6 @@ for (let i = 0; i< hiphopData.length; i++) {
 
   // 사진 부분 일괄 적용
   const hiphopSlide = document.querySelectorAll('.hiphopPic');
-  console.log(hiphopSlide);
   const hiphopPic = hiphopSlide[i];
   if (i < 30) {
     hiphopPic.setAttribute("data-item", `${hiphopData[i].item}`);
@@ -807,7 +806,6 @@ for (let i = 0; i< classicData.length; i++) {
 
   // 사진 부분 일괄 적용
   const classicSlide = document.querySelectorAll('.classicPic');
-  console.log(classicSlide);
   const classicPic = classicSlide[i];
   if (i < 30) {
     classicPic.setAttribute("data-item", `${classicData[i].item}`);
@@ -868,7 +866,6 @@ for (let i = 0; i< danceData.length; i++) {
 
   // 사진 부분 일괄 적용
   const danceSlide = document.querySelectorAll('.dancePic');
-  console.log(danceSlide);
   const dancePic = danceSlide[i];
   if (i < 30) {
     dancePic.setAttribute("data-item", `${danceData[i].item}`);
@@ -897,42 +894,92 @@ $(document).ready(function () {
     ".swiper2.albums .swiper-wrapper .swiper-slide"
   ); // 스와이퍼에 들어있는 슬라이드 '전부'를 배열로 받기
 
-  // All, KPOP, POP, Comedy 의 탭이 클릭 되면 실행
-  list.on("click", function () {
-    inner.style.height = '300px';
+  // All, KPOP, POP, Comedy 의 탭이 클릭 되면 실행 (원본)
+  // list.on("click", function () {
+  //   inner.style.height = '300px';
 
-    const allTitle = document.querySelector('.all-title');
-    allTitle.textContent = '';
+  //   const allTitle = document.querySelector('.all-title');
+  //   allTitle.textContent = '';
+
+  //   list.removeClass("active");
+  //   $(this).addClass("active");
+
+  //   let dataFilter = $(this).attr("data-filter");
+
+  //   let genreZone = document.querySelector(".genre-zone");
+  //   genreZone.textContent = "";
+  //   let genre = document.createElement("p");
+  //   genre.textContent = $(this)[0].outerText;
+  //   genre.setAttribute(
+  //     "style",
+  //     "text-align: left; font: normal normal bold 24px/29px Pretendard; padding-left: 80px;"
+  //   );
+  //   genreZone.append(genre);
+
+  //   for (let i = 0; i < swiperSlide.length; i++) {
+  //     // 스와이퍼 슬라이드(모두) 초기 설정 (hide 클래스: O, active 클래스: X)
+  //     swiperSlide[i].classList.add("hide");
+  //     swiperSlide[i].classList.remove("active");
+
+  //     // dataFilter가 'all'이거나, 슬라이드 내부 div 요소(.album-box)의 data-item 속성이 dataFilter의 값과 '같을때' active 클래스 적용 (hide 클래스 X)
+  //     if (
+  //       swiperSlide[i].querySelector(".album-box").getAttribute("data-item") ===
+  //         dataFilter ||
+  //       dataFilter === "all"
+  //     ) {
+  //       swiperSlide[i].classList.remove("hide");
+  //       swiperSlide[i].classList.add("active");
+  //     }
+  //   }
+  // });
+  list.on("click", function () {
 
     list.removeClass("active");
     $(this).addClass("active");
 
     let dataFilter = $(this).attr("data-filter");
+ 
+    const allSlide = document.querySelectorAll(".albums p");
 
-    let genreZone = document.querySelector(".genre-zone");
-    genreZone.textContent = "";
-    let genre = document.createElement("p");
-    genre.textContent = $(this)[0].outerText;
-    genre.setAttribute(
-      "style",
-      "text-align: left; font: normal normal bold 24px/29px Pretendard; padding-left: 80px;"
-    );
-    genreZone.append(genre);
+    if (dataFilter !== 'all') {
+      inner.style.height = '300px';
 
-    for (let i = 0; i < swiperSlide.length; i++) {
-      // 스와이퍼 슬라이드(모두) 초기 설정 (hide 클래스: O, active 클래스: X)
-      swiperSlide[i].classList.add("hide");
-      swiperSlide[i].classList.remove("active");
+      let genreZone = document.querySelector(".genre-zone");
+      genreZone.textContent = "";
+      let genre = document.createElement("p");
+      genre.textContent = $(this)[0].outerText;
+      genre.setAttribute(
+        "style",
+        "text-align: left; font: normal normal bold 24px/29px Pretendard; padding-left: 80px;"
+      );
+      genreZone.append(genre);
 
-      // dataFilter가 'all'이거나, 슬라이드 내부 div 요소(.album-box)의 data-item 속성이 dataFilter의 값과 '같을때' active 클래스 적용 (hide 클래스 X)
-      if (
-        swiperSlide[i].querySelector(".album-box").getAttribute("data-item") ===
-          dataFilter ||
-        dataFilter === "all"
-      ) {
-        swiperSlide[i].classList.remove("hide");
-        swiperSlide[i].classList.add("active");
+      for (let i = 0; i < swiperSlide.length; i++) {
+        // 스와이퍼 슬라이드(모두) 초기 설정 (hide 클래스: O, active 클래스: X)
+        swiperSlide[i].classList.add("hide");
+        swiperSlide[i].classList.remove("active");
+
+        // dataFilter가 'all'이거나, 슬라이드 내부 div 요소(.album-box)의 data-item 속성이 dataFilter의 값과 '같을때' active 클래스 적용 (hide 클래스 X)
+        if (
+          swiperSlide[i].querySelector(".album-box").getAttribute("data-item") ===
+            dataFilter ||
+          dataFilter === "all"
+        ) {
+          swiperSlide[i].classList.remove("hide");
+          swiperSlide[i].classList.add("active");
+        }
       }
+
+      // All에 띄워둔 스와이퍼 슬라이드 영역 삭제
+      for (let i = 0; i < allSlide.length; i++) {
+        allSlide[i].style.display = 'none';
+        const prevBtn = document.querySelector(`.swiper-button-prev.mainSwiper${i+1}`);
+        prevBtn.style.display = 'none';
+        const nextBtn = document.querySelector(`.swiper-button-next.mainSwiper${i+1}`);
+        nextBtn.style.display = 'none';
+      }
+    } else {
+      console.log('all');
     }
   });
 });
