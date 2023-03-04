@@ -339,7 +339,9 @@ main {
 .swiper-button-prev.mainSwiper2,
 .swiper-button-next.mainSwiper2,
 .swiper-button-prev.mainSwiper3,
-.swiper-button-next.mainSwiper3 {
+.swiper-button-next.mainSwiper3,
+.swiper-button-prev.mainSwiper4,
+.swiper-button-next.mainSwiper4 {
   top: 100px;
   color: white;
   opacity: 0.8;
@@ -347,13 +349,17 @@ main {
 }
 .swiper-button-prev.mainSwiper1,
 .swiper-button-next.mainSwiper1 {
-  top: 430px;
+  top: 400px;
 }
 .swiper-button-prev.mainSwiper2,
 .swiper-button-next.mainSwiper2 {
-  top: 730px;
+  top: 700px;
 }
 .swiper-button-prev.mainSwiper3,
 .swiper-button-next.mainSwiper3 {
-  top: 1030px;
+  top: 1000px;
+}
+.swiper-button-prev.mainSwiper4,
+.swiper-button-next.mainSwiper4 {
+  top: 1300px;
 }
