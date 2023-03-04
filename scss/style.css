@@ -589,11 +589,6 @@ main .section2 .chart .sub .sub__detail ul li.active {
   background-color: #fff;
   color: black;
 }
-main .section2 .chart .sub .sub__detail .all-title {
-  text-align: left;
-  margin-top: 80px;
-  font: normal normal bold 24px/29px Pretendard;
-}
 main .genre-zone {
   margin-top: 35px;
 }
@@ -602,6 +597,11 @@ main .section3 .inner {
   left: 0;
   width: 100%;
   height: 1800px;
+}
+main .section3 .inner .all-title {
+  text-align: left;
+  margin-top: 80px;
+  font: normal normal bold 24px/29px Pretendard;
 }
 main .section3 .inner .swiper-zone {
   position: relative;
