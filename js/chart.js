@@ -71,12 +71,89 @@ for (let i = 0; i < albumListAll.length; i++){
   });
   albumListAll[i].addEventListener("mouseout", function(){
     albumHoverAll[i].setAttribute("style","display:none;");
-  });
-  albumHoverAll[i].addEventListener("click",function(){
+  }); 
+}
+
+const audioArr = ["cardio", "groove", "happy", "light", "lily", "limes", "pop", "swing"];
+const audioControl = document.querySelector("ul.control")
+// audio bar 띄우기
+for(let i=0; i<albumHoverAll.length; i++){
+  albumHoverAll[i].addEventListener("click",function(e){
     audioPlay.classList.remove("hidden");
     audioPlay.setAttribute("style","display:block;");
+    console.log(e.target.parentNode.parentNode);
+    console.log(audioPlay.querySelector(".audio-album").querySelector(".audio-album-img"));
+    
+
+    audioPlay.querySelector(".audio-album").querySelector(".audio-album-img").textContent ="";
+    audioPlay.querySelector(".audio-album").querySelector(".--text-box").querySelector(".album-title").textContent = "";
+
+    const img = document.createElement("img");
+    img.src= e.target.parentNode.parentNode.children[0].style.backgroundImage;
+    img.src = img.src.substring(32,);
+    img.src = img.src.replace("%22)","");
+    audioPlay.querySelector(".audio-album").querySelector(".audio-album-img").append(img);
+    console.log(e.target.parentNode.parentNode.querySelector(".--text-box").querySelector(".album-title").textContent);
+    audioPlay.querySelector(".audio-album").querySelector(".--text-box").querySelector(".album-title").textContent = e.target.parentNode.parentNode.querySelector(".--text-box").querySelector(".album-title").textContent;
+
+    if(audioPlay.querySelector("audio")===null){
+      console.log("노없");
+      audioPlay.append(audio);
+      audio.setAttribute("src", `./music/${audioArr[Math.floor(Math.random()*8)]}.mp3`);
+      audio.play();
+      audioControl.querySelector("li.play").classList.add("hidden");
+      audioControl.querySelector("li.pause").classList.remove("hidden");
+    }else{
+      audio.setAttribute("src", `./music/${audioArr[Math.floor(Math.random()*8)]}.mp3`);
+      audioControl.querySelector("li.play").classList.add("hidden");
+      audioControl.querySelector("li.pause").classList.remove("hidden");
+      audio.play();
+    }
+    audio.addEventListener("timeupdate", updateProgress); 
   });
 }
+
+// audio bar 기능
+const progressContainer = document.querySelector(".progress-container");
+const progress = document.querySelector(".progress");
+const audio = document.createElement("audio");
+const playBtn = document.querySelector(".play");
+const pauseBtn = document.querySelector(".pause");
+
+
+function updateProgress(e){
+  const {duration, currentTime} = e.srcElement;
+  const progressPer = (currentTime / duration) * 100;
+  
+  progress.style.width = `${progressPer}%`;
+  if(progressPer===100){
+    audioControl.querySelector("li.play").classList.remove("hidden");
+    audioControl.querySelector("li.pause").classList.add("hidden");
+      audio.currentTime = 0;
+  }
+}
+
+function changeProgress(e){
+
+  const width = document.querySelector("body").clientWidth;
+  const offsetx = e.offsetX;
+  const duration = audio.duration; //전체길이
+  audio.currentTime =(offsetx / width) * duration; //현재길이
+}
+progressContainer.addEventListener("click", changeProgress);
+
+playBtn.addEventListener("click",function(){
+    audio.play();
+    audioControl.querySelector("li.play").classList.add("hidden");
+    audioControl.querySelector("li.pause").classList.remove("hidden");
+})
+pauseBtn.addEventListener("click",function(){
+    audio.pause();
+    audioControl.querySelector("li.play").classList.remove("hidden");
+    audioControl.querySelector("li.pause").classList.add("hidden");
+})
+
+
 
 
 //Top10 랭크 스와이퍼
