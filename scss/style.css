@@ -568,7 +568,7 @@ main .section3 .inner {
   position: relative;
   left: 0;
   width: 100%;
-  height: 1500px;
+  height: 1800px;
 }
 main .section3 .inner .swiper-zone {
   position: relative;
@@ -636,7 +636,9 @@ main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide .album-
 .swiper-button-prev.mainSwiper3,
 .swiper-button-next.mainSwiper3,
 .swiper-button-prev.mainSwiper4,
-.swiper-button-next.mainSwiper4 {
+.swiper-button-next.mainSwiper4,
+.swiper-button-prev.mainSwiper5,
+.swiper-button-next.mainSwiper5 {
   top: 100px;
   color: white;
   opacity: 0.8;
@@ -661,6 +663,11 @@ main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide .album-
 .swiper-button-prev.mainSwiper4,
 .swiper-button-next.mainSwiper4 {
   top: 1300px;
+}
+
+.swiper-button-prev.mainSwiper5,
+.swiper-button-next.mainSwiper5 {
+  top: 1600px;
 }
 
 .chartSwiper .swiper-button-next, .chartSwiper .swiper-button-prev {
