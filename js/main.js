@@ -599,6 +599,7 @@ for (let i = 0; i < len; i++) {
   }
 }
 
+// classic
 const classicBox = document.createElement("div");
 classicBox.setAttribute('class','album-box');
 
@@ -722,6 +723,67 @@ for (let i = 0; i < popData.length; i++) {
     popPic.style.boxShadow = `0px 0px 1px #e6e6e6`;
   }
 }
+
+// hiphop
+const hiphopBox = document.createElement('div');
+hiphopBox.setAttribute('class','album-box');
+
+inner.append(hiphopBox);
+
+const hiphopWrapper = document.createElement('div');
+hiphopWrapper.setAttribute('class','swiper-wrapper');
+hiphopWrapper.style.marginTop = '30px';
+hiphopWrapper.style.gap = '50px';
+
+const hiphopSwiper2 = document.createElement('div');
+hiphopSwiper2.setAttribute('class','swiper2');
+hiphopSwiper2.classList.add('albums');
+hiphopSwiper2.append(hiphopWrapper);
+
+const hiphopTitle = document.createElement('p');
+hiphopTitle.textContent = 'hiphop';
+hiphopTitle.style.textAlign = 'left';
+hiphopTitle.style.font = 'normal normal bold 20px/29px Pretendard';
+hiphopTitle.style.position = 'relative';
+hiphopTitle.style.top = '600px';
+hiphopTitle.append(hiphopSwiper2);
+
+albums.append(hiphopTitle);
+
+for (let i = 0; i< hiphopData.length; i++) {
+  const swiperSlide = document.createElement("div");
+  swiperSlide.setAttribute("class",'swiper-slide');
+  swiperSlide.style.width = '200px';
+  swiperSlide.style.marginTop = '0';
+  swiperSlide.style.marginRight = '40px';
+  hiphopWrapper.append(swiperSlide);
+
+  const hiphop = document.createElement('div');
+  hiphop.setAttribute('class','album-box');
+  hiphop.classList.add('hiphopPic');
+  swiperSlide.append(hiphop);
+
+  // 사진 부분 일괄 적용
+  const hiphopSlide = document.querySelectorAll('.hiphopPic');
+  console.log(hiphopSlide);
+  const hiphopPic = hiphopSlide[i];
+  if (i < 30) {
+    hiphopPic.setAttribute("data-item", `${hiphopData[i].item}`);
+    hiphopPic.setAttribute("name", `${hiphopData[i].name}`);
+    hiphopPic.setAttribute("artist", `${hiphopData[i].artist}`);
+    hiphopPic.setAttribute("date", `${hiphopData[i].date}`);
+    hiphopPic.setAttribute("info", `${hiphopData[i].info}`);
+    hiphopPic.setAttribute("info-sub", `${hiphopData[i].infoSub}`);
+    hiphopPic.setAttribute("track-len", `${hiphopData[i].track.length}`);
+    for (let j = 0; j < hiphopData[i].track.length; j++) {
+      hiphopPic.setAttribute(`track-title${j}`, `${hiphopData[i].track[j].title}`);
+      hiphopPic.setAttribute(`track-time${j}`, `${hiphopData[i].track[j].time}`);
+    }
+
+    hiphopPic.style.backgroundImage = `url("../img/main_album/main_album${hiphopData[i].img}.png")`;
+    hiphopPic.style.boxShadow = `0px 0px 1px #e6e6e6`;
+  }
+} 
 
 
 // 문서 로딩이 끝나면 실행되는 구문

@@ -632,7 +632,9 @@ main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide .album-
 .swiper-button-prev.mainSwiper1,
 .swiper-button-next.mainSwiper1,
 .swiper-button-prev.mainSwiper2,
-.swiper-button-next.mainSwiper2 {
+.swiper-button-next.mainSwiper2,
+.swiper-button-prev.mainSwiper3,
+.swiper-button-next.mainSwiper3 {
   top: 100px;
   color: white;
   opacity: 0.8;
@@ -641,12 +643,17 @@ main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide .album-
 
 .swiper-button-prev.mainSwiper1,
 .swiper-button-next.mainSwiper1 {
-  top: 450px;
+  top: 430px;
 }
 
 .swiper-button-prev.mainSwiper2,
 .swiper-button-next.mainSwiper2 {
-  top: 750px;
+  top: 730px;
+}
+
+.swiper-button-prev.mainSwiper3,
+.swiper-button-next.mainSwiper3 {
+  top: 1030px;
 }
 
 .chartSwiper .swiper-button-next, .chartSwiper .swiper-button-prev {
