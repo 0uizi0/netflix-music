@@ -580,67 +580,67 @@ for (let i = 0; i < len; i++) {
   }
 }
 
-// classic
-const classicBox = document.createElement("div");
-classicBox.setAttribute('class','album-box');
+// kpop
+const kpopBox = document.createElement("div");
+kpopBox.setAttribute('class','album-box');
 
 const inner = document.querySelector('.section3 .inner');
-inner.append(classicBox);
+inner.append(kpopBox);
 
-const classicWrapper = document.createElement("div");
-classicWrapper.setAttribute("class", "swiper-wrapper");
-classicWrapper.style.marginTop = '30px';
-classicWrapper.style.gap = '50px';
+const kpopWrapper = document.createElement("div");
+kpopWrapper.setAttribute("class", "swiper-wrapper");
+kpopWrapper.style.marginTop = '30px';
+kpopWrapper.style.gap = '50px';
 
-const classicSwiper2 = document.createElement("div");
-classicSwiper2.setAttribute("class","swiper2");
-classicSwiper2.classList.add('albums');
-classicSwiper2.append(classicWrapper);
+const kpopSwiper2 = document.createElement("div");
+kpopSwiper2.setAttribute("class","swiper2");
+kpopSwiper2.classList.add('albums');
+kpopSwiper2.append(kpopWrapper);
 
-const classicTitle = document.createElement("p");
-classicTitle.textContent = "classic";
-classicTitle.style.textAlign = "left";
-classicTitle.style.font = "normal normal bold 20px/29px Pretendard";
-classicTitle.style.position = 'relative';
-classicTitle.style.top = '90px';
-classicTitle.append(classicSwiper2);
+const kpopTitle = document.createElement("p");
+kpopTitle.textContent = "kpop";
+kpopTitle.style.textAlign = "left";
+kpopTitle.style.font = "normal normal bold 20px/29px Pretendard";
+kpopTitle.style.position = 'relative';
+kpopTitle.style.top = '90px';
+kpopTitle.append(kpopSwiper2);
 
 const albums = document.querySelector(".albums");
-albums.append(classicTitle);
+albums.append(kpopTitle);
 
 
-for (let i = 0; i < classicData.length; i++) {
+for (let i = 0; i < kpopData.length; i++) {
 
     const swiperSlide = document.createElement("div");
     swiperSlide.setAttribute("class",'swiper-slide');
     swiperSlide.style.width = '200px';
     swiperSlide.style.marginTop = '0';
     swiperSlide.style.marginRight = '40px';
-    classicWrapper.append(swiperSlide);
+    kpopWrapper.append(swiperSlide);
 
-    const classic = document.createElement("div");
-    classic.setAttribute("class",'album-box');
-    classic.classList.add('classicPic');
-    swiperSlide.append(classic);
+    const kpop = document.createElement("div");
+    kpop.setAttribute("class",'album-box');
+    kpop.classList.add('kpopPic');
+    swiperSlide.append(kpop);
 
   // 사진 부분 일괄 적용
-  const classicSlide = document.querySelectorAll('.classicPic');
-  const classicPic = classicSlide[i];
+  const kpopSlide = document.querySelectorAll('.kpopPic');
+  const kpopPic = kpopSlide[i];
   if (i < 30) {
-    classicPic.setAttribute("data-item", `${classicData[i].item}`);
-    classicPic.setAttribute("name", `${classicData[i].name}`);
-    classicPic.setAttribute("artist", `${classicData[i].artist}`);
-    classicPic.setAttribute("date", `${classicData[i].date}`);
-    classicPic.setAttribute("info", `${classicData[i].info}`);
-    classicPic.setAttribute("info-sub", `${classicData[i].infoSub}`);
-    classicPic.setAttribute("track-len", `${classicData[i].track.length}`);
-    for (let j = 0; j < classicData[i].track.length; j++) {
-      classicPic.setAttribute(`track-title${j}`, `${classicData[i].track[j].title}`);
-      classicPic.setAttribute(`track-time${j}`, `${classicData[i].track[j].time}`);
+    kpopPic.setAttribute("data-item", `${kpopData[i].item}`);
+    kpopPic.setAttribute("name", `${kpopData[i].name}`);
+    kpopPic.setAttribute("artist", `${kpopData[i].artist}`);
+    kpopPic.setAttribute("date", `${kpopData[i].date}`);
+    kpopPic.setAttribute("info", `${kpopData[i].info}`);
+    kpopPic.setAttribute("info-sub", `${kpopData[i].infoSub}`);
+    kpopPic.setAttribute("track-len", `${kpopData[i].track.length}`);
+    for (let j = 0; j < kpopData[i].track.length; j++) {
+      kpopPic.setAttribute(`track-title${j}`, `${kpopData[i].track[j].title}`);
+      kpopPic.setAttribute(`track-time${j}`, `${kpopData[i].track[j].time}`);
     }
 
-    classicPic.style.backgroundImage = `url("../img/main_album/main_album${classicData[i].img}.png")`;
-    classicPic.style.boxShadow = `0px 0px 1px #e6e6e6`;
+    kpopPic.style.backgroundImage = `url("../img/main_album/main_album${kpopData[i].img}.png")`;
+    kpopPic.style.boxShadow = `0px 0px 1px #e6e6e6`;
   }
 }
 
@@ -766,64 +766,64 @@ for (let i = 0; i< hiphopData.length; i++) {
   }
 } 
 
-// kpop
-const kpopBox = document.createElement('div');
-kpopBox.setAttribute('class','album-box');
+// classic
+const classicBox = document.createElement('div');
+classicBox.setAttribute('class','album-box');
 
-inner.append(kpopBox);
+inner.append(classicBox);
 
-const kpopWrapper = document.createElement('div');
-kpopWrapper.setAttribute('class','swiper-wrapper');
-kpopWrapper.style.marginTop = '30px';
-kpopWrapper.style.gap = '50px';
+const classicWrapper = document.createElement('div');
+classicWrapper.setAttribute('class','swiper-wrapper');
+classicWrapper.style.marginTop = '30px';
+classicWrapper.style.gap = '50px';
 
-const kpopSwiper2 = document.createElement('div');
-kpopSwiper2.setAttribute('class','swiper2');
-kpopSwiper2.classList.add('albums');
-kpopSwiper2.append(kpopWrapper);
+const classicSwiper2 = document.createElement('div');
+classicSwiper2.setAttribute('class','swiper2');
+classicSwiper2.classList.add('albums');
+classicSwiper2.append(classicWrapper);
 
-const kpopTitle = document.createElement('p');
-kpopTitle.textContent = 'kpop';
-kpopTitle.style.textAlign = 'left';
-kpopTitle.style.font = 'normal normal bold 20px/29px Pretendard';
-kpopTitle.style.position = 'relative';
-kpopTitle.style.top = '860px';
-kpopTitle.append(kpopSwiper2);
+const classicTitle = document.createElement('p');
+classicTitle.textContent = 'classic';
+classicTitle.style.textAlign = 'left';
+classicTitle.style.font = 'normal normal bold 20px/29px Pretendard';
+classicTitle.style.position = 'relative';
+classicTitle.style.top = '860px';
+classicTitle.append(classicSwiper2);
 
-albums.append(kpopTitle);
+albums.append(classicTitle);
 
-for (let i = 0; i< kpopData.length; i++) {
+for (let i = 0; i< classicData.length; i++) {
   const swiperSlide = document.createElement("div");
   swiperSlide.setAttribute("class",'swiper-slide');
   swiperSlide.style.width = '200px';
   swiperSlide.style.marginTop = '0';
   swiperSlide.style.marginRight = '40px';
-  kpopWrapper.append(swiperSlide);
+  classicWrapper.append(swiperSlide);
 
-  const kpop = document.createElement('div');
-  kpop.setAttribute('class','album-box');
-  kpop.classList.add('kpopPic');
-  swiperSlide.append(kpop);
+  const classic = document.createElement('div');
+  classic.setAttribute('class','album-box');
+  classic.classList.add('classicPic');
+  swiperSlide.append(classic);
 
   // 사진 부분 일괄 적용
-  const kpopSlide = document.querySelectorAll('.kpopPic');
-  console.log(kpopSlide);
-  const kpopPic = kpopSlide[i];
+  const classicSlide = document.querySelectorAll('.classicPic');
+  console.log(classicSlide);
+  const classicPic = classicSlide[i];
   if (i < 30) {
-    kpopPic.setAttribute("data-item", `${kpopData[i].item}`);
-    kpopPic.setAttribute("name", `${kpopData[i].name}`);
-    kpopPic.setAttribute("artist", `${kpopData[i].artist}`);
-    kpopPic.setAttribute("date", `${kpopData[i].date}`);
-    kpopPic.setAttribute("info", `${kpopData[i].info}`);
-    kpopPic.setAttribute("info-sub", `${kpopData[i].infoSub}`);
-    kpopPic.setAttribute("track-len", `${kpopData[i].track.length}`);
-    for (let j = 0; j < kpopData[i].track.length; j++) {
-      kpopPic.setAttribute(`track-title${j}`, `${kpopData[i].track[j].title}`);
-      kpopPic.setAttribute(`track-time${j}`, `${kpopData[i].track[j].time}`);
+    classicPic.setAttribute("data-item", `${classicData[i].item}`);
+    classicPic.setAttribute("name", `${classicData[i].name}`);
+    classicPic.setAttribute("artist", `${classicData[i].artist}`);
+    classicPic.setAttribute("date", `${classicData[i].date}`);
+    classicPic.setAttribute("info", `${classicData[i].info}`);
+    classicPic.setAttribute("info-sub", `${classicData[i].infoSub}`);
+    classicPic.setAttribute("track-len", `${classicData[i].track.length}`);
+    for (let j = 0; j < classicData[i].track.length; j++) {
+      classicPic.setAttribute(`track-title${j}`, `${classicData[i].track[j].title}`);
+      classicPic.setAttribute(`track-time${j}`, `${classicData[i].track[j].time}`);
     }
 
-    kpopPic.style.backgroundImage = `url("../img/main_album/main_album${kpopData[i].img}.png")`;
-    kpopPic.style.boxShadow = `0px 0px 1px #e6e6e6`;
+    classicPic.style.backgroundImage = `url("../img/main_album/main_album${classicData[i].img}.png")`;
+    classicPic.style.boxShadow = `0px 0px 1px #e6e6e6`;
   }
 } 
 

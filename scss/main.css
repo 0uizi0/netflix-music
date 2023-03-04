@@ -235,6 +235,7 @@ main .section3 .inner .swiper-zone .albums {
   position: absolute;
   width: 100%;
   z-index: 1;
+  top: 10px;
 }
 main .section3 .inner .swiper-zone .albums .swiper-wrapper {
   gap: 50px;
@@ -301,25 +302,25 @@ main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide .album-
 
 .swiper-button-prev.mainSwiper1,
 .swiper-button-next.mainSwiper1 {
-  top: 400px;
+  top: 440px;
 }
 
 .swiper-button-prev.mainSwiper2,
 .swiper-button-next.mainSwiper2 {
-  top: 700px;
+  top: 740px;
 }
 
 .swiper-button-prev.mainSwiper3,
 .swiper-button-next.mainSwiper3 {
-  top: 1000px;
+  top: 1040px;
 }
 
 .swiper-button-prev.mainSwiper4,
 .swiper-button-next.mainSwiper4 {
-  top: 1300px;
+  top: 1340px;
 }
 
 .swiper-button-prev.mainSwiper5,
 .swiper-button-next.mainSwiper5 {
-  top: 1600px;
+  top: 1640px;
 }/*# sourceMappingURL=main.css.map */
