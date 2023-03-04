@@ -213,6 +213,7 @@ modalTrackPlayBtn.addEventListener("click", function(e){
         // console.log(test[i].querySelector(".track-check").querySelector(".track-checkBox").parentNode.children[1]);
         // temp2 = test[i].querySelector(".track-check").querySelector(".track-checkBox").parentNode.children[1].textContent;
         albumTitle.textContent = test[i].querySelector(".track-check").querySelector(".track-checkBox").parentNode.children[1].textContent;
+        albumSubTitle.textContent = test[i].getAttribute("singer");
         temp = test[i].querySelector(".track-check").querySelector(".track-checkBox").parentNode.children[1].textContent;
         const audioImg = document.createElement("img");
         audioAlbumImg.append(audioImg);
