@@ -18,6 +18,15 @@
     }
   }
 
+  .mobile__check {
+    &.on {
+      visibility: visible;
+      opacity: 1;
+      transition: 0.3s;
+      transition-delay: 0.5s;
+    }
+  }
+
   .replay-control-container.on {
     .replay-deco {
       bottom: -30px !important;
@@ -32,8 +41,9 @@
 
 .video__container {
   .video_scope {
-    width: 908px !important;
-    top: 320px !important;
+    min-width: 0px !important;
+    width: 895px !important;
+    top: 318px !important;
   }
 }
 

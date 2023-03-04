@@ -63,8 +63,8 @@ main {
 
             .video_scope {
               position: absolute;
-              top: 3px;
-              width: 1700px;
+              top: -10px;
+              min-width: 1600px;
               z-index: 1;
               left: 50%;
               transform: translate(-50%, -120px);
@@ -246,11 +246,11 @@ main {
               }
             }
           }
-          // .all-title {
-          //   text-align: left;
-          //   margin-top: 80px;
-          //   font: normal normal bold 24px/29px Pretendard;
-          // }              
+          .all-title {
+            text-align: left;
+            margin-top: 80px;
+            font: normal normal bold 24px/29px Pretendard;
+          }              
       }
    }
   }
@@ -266,6 +266,7 @@ main {
       position: relative;
       left: 0;
       width: 100%;
+
       height: 2200px; // main.js에서 장르 버튼 클릭 시, height 300px로 잡도록 설정
 
       .all-title {
@@ -273,6 +274,7 @@ main {
         margin-top: 50px;
         font: normal normal bold 24px/29px Pretendard;
       }     
+
         .swiper-zone {
         position: relative;
         width: 100%;
