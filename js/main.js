@@ -996,18 +996,9 @@ $(document).ready(function () {
         }
       }
 
-      const allPrevBtn = document.querySelector('.swiper-button-prev.mainSwiper0')
-      allPrevBtn.style.display = 'none';
-      const allNextBtn = document.querySelector('.swiper-button-next.mainSwiper0')
-      allNextBtn.style.display = 'none';
-
       // All에 띄워둔 스와이퍼 슬라이드 영역 복원
       for (let i = 0; i < allSlide.length; i++) {
         allSlide[i].style.display = 'block';
-        const prevBtn = document.querySelector(`.swiper-button-prev.mainSwiper${i+1}`);
-        prevBtn.style.display = 'block';
-        const nextBtn = document.querySelector(`.swiper-button-next.mainSwiper${i+1}`);
-        nextBtn.style.display = 'block';
       }
       console.log(allSlide);
       // All에 띄워둔 스와이퍼 슬라이드 영역 위치 재지정
