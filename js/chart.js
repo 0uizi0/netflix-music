@@ -75,35 +75,47 @@ for (let i = 0; i < albumListAll.length; i++){
 }
 
 const audioArr = ["cardio", "groove", "happy", "light", "lily", "limes", "pop", "swing"];
-const audioControl = document.querySelector("ul.control")
-// audio bar 띄우기
+const audioControl = document.querySelector("ul.control");
+let temp ="temp";
+//top30 클릭 시
 for(let i=0; i<albumHoverAll.length; i++){
   albumHoverAll[i].addEventListener("click",function(e){
     audioPlay.classList.remove("hidden");
     audioPlay.setAttribute("style","display:block;");
-    console.log(e.target.parentNode.parentNode);
-    console.log(audioPlay.querySelector(".audio-album").querySelector(".audio-album-img"));
     
-
+    temp=audioPlay.querySelector(".audio-album").querySelector(".--text-box").querySelector(".album-title").textContent;
     audioPlay.querySelector(".audio-album").querySelector(".audio-album-img").textContent ="";
     audioPlay.querySelector(".audio-album").querySelector(".--text-box").querySelector(".album-title").textContent = "";
-
+    audioPlay.querySelector(".audio-album").querySelector(".--text-box").querySelector(".album-sub-title").textContent="";
+    
     const img = document.createElement("img");
     img.src= e.target.parentNode.parentNode.children[0].style.backgroundImage;
     img.src = img.src.substring(32,);
     img.src = img.src.replace("%22)","");
     audioPlay.querySelector(".audio-album").querySelector(".audio-album-img").append(img);
-    console.log(e.target.parentNode.parentNode.querySelector(".--text-box").querySelector(".album-title").textContent);
+    // console.log(e.target.parentNode.parentNode.querySelector(".--text-box").querySelector(".album-title").textContent);
     audioPlay.querySelector(".audio-album").querySelector(".--text-box").querySelector(".album-title").textContent = e.target.parentNode.parentNode.querySelector(".--text-box").querySelector(".album-title").textContent;
-
+    audioPlay.querySelector(".audio-album").querySelector(".--text-box").querySelector(".album-sub-title").textContent = e.target.parentNode.parentNode.querySelector(".--text-box").querySelector(".album-sub-title").textContent;
+    
     if(audioPlay.querySelector("audio")===null){
-      console.log("노없");
+      
       audioPlay.append(audio);
       audio.setAttribute("src", `./music/${audioArr[Math.floor(Math.random()*8)]}.mp3`);
       audio.play();
       audioControl.querySelector("li.play").classList.add("hidden");
       audioControl.querySelector("li.pause").classList.remove("hidden");
-    }else{
+    }else if(temp == e.target.parentNode.parentNode.querySelector(".--text-box").querySelector(".album-title").textContent){
+      if(audioControl.querySelector("li.play").className=="play hidden"){
+        audioControl.querySelector("li.play").classList.remove("hidden");
+        audioControl.querySelector("li.pause").classList.add("hidden");
+        audio.pause();
+      }else{
+        audioControl.querySelector("li.play").classList.add("hidden");
+        audioControl.querySelector("li.pause").classList.remove("hidden");
+        audio.play();
+      }
+    }
+    else{
       audio.setAttribute("src", `./music/${audioArr[Math.floor(Math.random()*8)]}.mp3`);
       audioControl.querySelector("li.play").classList.add("hidden");
       audioControl.querySelector("li.pause").classList.remove("hidden");
@@ -111,6 +123,54 @@ for(let i=0; i<albumHoverAll.length; i++){
     }
     audio.addEventListener("timeupdate", updateProgress); 
   });
+}
+
+//급상승 클릭시
+const btnModal = document.querySelectorAll(".album-box");
+for(let i=0; i<btnModal.length; i++){
+  btnModal[i].addEventListener("click", function(e){
+    console.log(e.target);
+    audioPlay.classList.remove("hidden");
+    audioPlay.setAttribute("style","display:block;");
+    temp = audioPlay.querySelector(".audio-album").querySelector(".--text-box").querySelector(".album-title").textContent;
+    audioPlay.querySelector(".audio-album").querySelector(".audio-album-img").textContent ="";
+    audioPlay.querySelector(".audio-album").querySelector(".--text-box").querySelector(".album-title").textContent = "";
+    audioPlay.querySelector(".audio-album").querySelector(".--text-box").querySelector(".album-sub-title").textContent ="";
+
+    audioPlay.querySelector(".audio-album").querySelector(".--text-box").querySelector(".album-title").textContent = e.target.getAttribute("name");
+    audioPlay.querySelector(".audio-album").querySelector(".--text-box").querySelector(".album-sub-title").textContent = e.target.getAttribute("artist");
+    
+    const img = document.createElement("img");
+    img.src= e.target.style.backgroundImage;
+    img.src = img.src.substring(32,);
+    img.src = img.src.replace("%22)","");
+    audioPlay.querySelector(".audio-album").querySelector(".audio-album-img").append(img);
+
+    if(audioPlay.querySelector("audio")===null){
+      audioPlay.append(audio);
+      audio.setAttribute("src", `./music/${audioArr[Math.floor(Math.random()*8)]}.mp3`);
+      audio.play();
+      audioControl.querySelector("li.play").classList.add("hidden");
+      audioControl.querySelector("li.pause").classList.remove("hidden");
+    }else if(temp == e.target.getAttribute("name")){
+      if(audioControl.querySelector("li.play").className=="play hidden"){
+        audioControl.querySelector("li.play").classList.remove("hidden");
+        audioControl.querySelector("li.pause").classList.add("hidden");
+        audio.pause();
+      }else{
+        audioControl.querySelector("li.play").classList.add("hidden");
+        audioControl.querySelector("li.pause").classList.remove("hidden");
+        audio.play();
+      }
+    }
+    else{
+      audio.setAttribute("src", `./music/${audioArr[Math.floor(Math.random()*8)]}.mp3`);
+      audioControl.querySelector("li.play").classList.add("hidden");
+      audioControl.querySelector("li.pause").classList.remove("hidden");
+      audio.play();
+    }
+    audio.addEventListener("timeupdate", updateProgress); 
+  })
 }
 
 // audio bar 기능
