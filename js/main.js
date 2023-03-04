@@ -600,7 +600,7 @@ kpopSwiper2.append(kpopWrapper);
 const kpopTitle = document.createElement("p");
 kpopTitle.textContent = "kpop";
 kpopTitle.style.textAlign = "left";
-kpopTitle.style.font = "normal normal bold 20px/29px Pretendard";
+kpopTitle.style.font = "normal normal bold 24px/29px Pretendard";
 kpopTitle.style.position = 'relative';
 kpopTitle.style.top = '90px';
 kpopTitle.append(kpopSwiper2);
@@ -663,7 +663,7 @@ popSwiper2.append(popWrapper);
 const popTitle = document.createElement("p");
 popTitle.textContent = "pop";
 popTitle.style.textAlign = "left";
-popTitle.style.font = "normal normal bold 20px/29px Pretendard";
+popTitle.style.font = "normal normal bold 24px/29px Pretendard";
 popTitle.style.position = 'relative';
 popTitle.style.top = '340px';
 popTitle.append(popSwiper2);
@@ -724,7 +724,7 @@ hiphopSwiper2.append(hiphopWrapper);
 const hiphopTitle = document.createElement('p');
 hiphopTitle.textContent = 'hiphop';
 hiphopTitle.style.textAlign = 'left';
-hiphopTitle.style.font = 'normal normal bold 20px/29px Pretendard';
+hiphopTitle.style.font = 'normal normal bold 24px/29px Pretendard';
 hiphopTitle.style.position = 'relative';
 hiphopTitle.style.top = '600px';
 hiphopTitle.append(hiphopSwiper2);
@@ -784,7 +784,7 @@ classicSwiper2.append(classicWrapper);
 const classicTitle = document.createElement('p');
 classicTitle.textContent = 'classic';
 classicTitle.style.textAlign = 'left';
-classicTitle.style.font = 'normal normal bold 20px/29px Pretendard';
+classicTitle.style.font = 'normal normal bold 24px/29px Pretendard';
 classicTitle.style.position = 'relative';
 classicTitle.style.top = '860px';
 classicTitle.append(classicSwiper2);
@@ -844,7 +844,7 @@ danceSwiper2.append(danceWrapper);
 const danceTitle = document.createElement('p');
 danceTitle.textContent = 'dance';
 danceTitle.style.textAlign = 'left';
-danceTitle.style.font = 'normal normal bold 20px/29px Pretendard';
+danceTitle.style.font = 'normal normal bold 24px/29px Pretendard';
 danceTitle.style.position = 'relative';
 danceTitle.style.top = '1120px';
 danceTitle.append(danceSwiper2);
@@ -894,59 +894,25 @@ $(document).ready(function () {
     ".swiper2.albums .swiper-wrapper .swiper-slide"
   ); // 스와이퍼에 들어있는 슬라이드 '전부'를 배열로 받기
 
-  // All, KPOP, POP, Comedy 의 탭이 클릭 되면 실행 (원본)
-  // list.on("click", function () {
-  //   inner.style.height = '300px';
-
-  //   const allTitle = document.querySelector('.all-title');
-  //   allTitle.textContent = '';
-
-  //   list.removeClass("active");
-  //   $(this).addClass("active");
-
-  //   let dataFilter = $(this).attr("data-filter");
-
-  //   let genreZone = document.querySelector(".genre-zone");
-  //   genreZone.textContent = "";
-  //   let genre = document.createElement("p");
-  //   genre.textContent = $(this)[0].outerText;
-  //   genre.setAttribute(
-  //     "style",
-  //     "text-align: left; font: normal normal bold 24px/29px Pretendard; padding-left: 80px;"
-  //   );
-  //   genreZone.append(genre);
-
-  //   for (let i = 0; i < swiperSlide.length; i++) {
-  //     // 스와이퍼 슬라이드(모두) 초기 설정 (hide 클래스: O, active 클래스: X)
-  //     swiperSlide[i].classList.add("hide");
-  //     swiperSlide[i].classList.remove("active");
-
-  //     // dataFilter가 'all'이거나, 슬라이드 내부 div 요소(.album-box)의 data-item 속성이 dataFilter의 값과 '같을때' active 클래스 적용 (hide 클래스 X)
-  //     if (
-  //       swiperSlide[i].querySelector(".album-box").getAttribute("data-item") ===
-  //         dataFilter ||
-  //       dataFilter === "all"
-  //     ) {
-  //       swiperSlide[i].classList.remove("hide");
-  //       swiperSlide[i].classList.add("active");
-  //     }
-  //   }
-  // });
   list.on("click", function () {
 
     list.removeClass("active");
     $(this).addClass("active");
 
     let dataFilter = $(this).attr("data-filter");
- 
+
+    const AllWrapper = document.querySelector('.albums .swiper-wrapper');
     const allSlide = document.querySelectorAll(".albums p");
+
+    let genreZone = document.querySelector(".genre-zone");
+    genreZone.textContent = "";
+    let genre = document.createElement("p");
 
     if (dataFilter !== 'all') {
       inner.style.height = '300px';
 
-      let genreZone = document.querySelector(".genre-zone");
-      genreZone.textContent = "";
-      let genre = document.createElement("p");
+      AllWrapper.style.display = 'flex';
+
       genre.textContent = $(this)[0].outerText;
       genre.setAttribute(
         "style",
@@ -962,8 +928,7 @@ $(document).ready(function () {
         // dataFilter가 'all'이거나, 슬라이드 내부 div 요소(.album-box)의 data-item 속성이 dataFilter의 값과 '같을때' active 클래스 적용 (hide 클래스 X)
         if (
           swiperSlide[i].querySelector(".album-box").getAttribute("data-item") ===
-            dataFilter ||
-          dataFilter === "all"
+            dataFilter
         ) {
           swiperSlide[i].classList.remove("hide");
           swiperSlide[i].classList.add("active");
@@ -979,7 +944,66 @@ $(document).ready(function () {
         nextBtn.style.display = 'none';
       }
     } else {
-      console.log('all');
+      inner.style.height = '1500px';
+
+      // 기존 스와이퍼 슬라이드 영역 삭제
+      AllWrapper.style.display = 'none';
+
+      for (let i = 0; i < swiperSlide.length; i++) {
+        if (
+          dataFilter === "all"
+        ) {
+          swiperSlide[i].classList.remove("hide");
+          swiperSlide[i].classList.add("active");
+        }
+      }
+
+      const allPrevBtn = document.querySelector('.swiper-button-prev.mainSwiper0')
+      allPrevBtn.style.display = 'none';
+      const allNextBtn = document.querySelector('.swiper-button-next.mainSwiper0')
+      allNextBtn.style.display = 'none';
+
+      // All에 띄워둔 스와이퍼 슬라이드 영역 복원
+      for (let i = 0; i < allSlide.length; i++) {
+        allSlide[i].style.display = 'block';
+        const prevBtn = document.querySelector(`.swiper-button-prev.mainSwiper${i+1}`);
+        prevBtn.style.display = 'block';
+        const nextBtn = document.querySelector(`.swiper-button-next.mainSwiper${i+1}`);
+        nextBtn.style.display = 'block';
+      }
+      console.log(allSlide);
+      // All에 띄워둔 스와이퍼 슬라이드 영역 위치 재지정
+      allSlide[0].style.top = '0';
+      allSlide[1].style.top = '240px';
+      allSlide[2].style.top = '480px';
+      allSlide[3].style.top = '720px';
+      allSlide[4].style.top = '960px';
+
+      // prev 버튼 위치 재지정
+      const prev1 = document.querySelector('.swiper-button-prev.mainSwiper1');
+      const prev2 = document.querySelector('.swiper-button-prev.mainSwiper2');
+      const prev3 = document.querySelector('.swiper-button-prev.mainSwiper3');
+      const prev4 = document.querySelector('.swiper-button-prev.mainSwiper4');
+      const prev5 =  document.querySelector('.swiper-button-prev.mainSwiper5');
+
+      prev1.style.top = '150px';
+      prev2.style.top = '430px';
+      prev3.style.top = '710px';
+      prev4.style.top = '990px';
+      prev5.style.top = '1270px';
+
+      // next 버튼 위치 재지정
+      const next1 = document.querySelector('.swiper-button-next.mainSwiper1');
+      const next2 = document.querySelector('.swiper-button-next.mainSwiper2');
+      const next3 = document.querySelector('.swiper-button-next.mainSwiper3');
+      const next4 = document.querySelector('.swiper-button-next.mainSwiper4');
+      const next5 =  document.querySelector('.swiper-button-next.mainSwiper5');
+
+      next1.style.top = '150px';
+      next2.style.top = '430px';
+      next3.style.top = '710px';
+      next4.style.top = '990px';
+      next5.style.top = '1270px';
     }
   });
 });
