@@ -908,7 +908,7 @@ $(document).ready(function () {
     genreZone.textContent = "";
     let genre = document.createElement("p");
 
-    albums.style.top = '0';
+    // albums.style.top = '0';
 
     if (dataFilter !== 'all') {
       inner.style.height = '300px';
@@ -916,7 +916,8 @@ $(document).ready(function () {
       AllWrapper.style.display = 'flex';
 
       const allTitle = document.querySelector('.all-title');
-      allTitle.textContent = '';
+      // allTitle.textContent = '';
+      allTitle.style.display = 'none';
 
       genre.textContent = $(this)[0].outerText;
       genre.setAttribute(
@@ -951,8 +952,9 @@ $(document).ready(function () {
     } else {
       inner.style.height = '1500px';
 
-      // 기존 스와이퍼 슬라이드 영역 삭제
-      AllWrapper.style.display = 'none';
+      const allTitle = document.querySelector('.all-title');
+      // allTitle.textContent = '';
+      allTitle.style.display = 'block';
 
       for (let i = 0; i < swiperSlide.length; i++) {
         if (
