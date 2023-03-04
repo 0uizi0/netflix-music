@@ -598,6 +598,7 @@ kpopSwiper2.classList.add('albums');
 kpopSwiper2.append(kpopWrapper);
 
 const kpopArr = document.createElement("div");
+kpopArr.setAttribute("class","arr");
 
 const kpopTitle = document.createElement("p");
 kpopTitle.textContent = "K-POP";
@@ -665,6 +666,7 @@ popSwiper2.classList.add('albums');
 popSwiper2.append(popWrapper);
 
 const popArr = document.createElement("div");
+popArr.setAttribute("class","arr");
 
 const popTitle = document.createElement("p");
 popTitle.textContent = "POP";
@@ -730,6 +732,7 @@ hiphopSwiper2.classList.add('albums');
 hiphopSwiper2.append(hiphopWrapper);
 
 const hiphopArr = document.createElement("div");
+hiphopArr.setAttribute("class","arr");
 
 const hiphopTitle = document.createElement('p');
 hiphopTitle.textContent = 'Hip-hop';
@@ -794,6 +797,7 @@ classicSwiper2.classList.add('albums');
 classicSwiper2.append(classicWrapper);
 
 const classicArr = document.createElement('div');
+classicArr.setAttribute("class","arr");
 
 const classicTitle = document.createElement('p');
 classicTitle.textContent = 'Classic';
@@ -858,6 +862,7 @@ danceSwiper2.classList.add('albums');
 danceSwiper2.append(danceWrapper);
 
 const danceArr = document.createElement("div");
+danceArr.setAttribute("class","arr");
 
 const danceTitle = document.createElement('p');
 danceTitle.textContent = 'Dance';
@@ -914,6 +919,8 @@ $(document).ready(function () {
     ".swiper2.albums .swiper-wrapper .swiper-slide"
   ); // 스와이퍼에 들어있는 슬라이드 '전부'를 배열로 받기
 
+  const arrs = document.querySelectorAll('.arr');
+
   list.on("click", function () {
 
     list.removeClass("active");
@@ -935,6 +942,10 @@ $(document).ready(function () {
 
       const allTitle = document.querySelector('.all-title');
       allTitle.style.display = 'none';
+
+      for (let i = 0; i < arrs.length; i++ ) {
+        arrs[i].style.display = 'none';
+      }
 
       genre.textContent = $(this)[0].outerText;
       genre.setAttribute(
@@ -967,7 +978,11 @@ $(document).ready(function () {
         nextBtn.style.display = 'none';
       }
     } else {
-      inner.style.height = '1800px';
+      inner.style.height = '2200px';
+
+      for (let i = 0; i < arrs.length; i++ ) {
+        arrs[i].style.display = 'block';
+      }
 
       const allTitle = document.querySelector('.all-title');
       allTitle.style.display = 'block';
