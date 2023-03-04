@@ -13,6 +13,8 @@ const progress = document.querySelector(".progress");
 const audioConatiner = document.getElementById("audio-container");
 
 const modalTrackPlayBtn = document.querySelector(".modalTrack-PlayBtn");
+let temp = "temp";
+let temp2 = "temp2";
 
 for(let i=0; i<btnModal.length; i++){
     btnModal[i].addEventListener("click", function(e) {
@@ -65,7 +67,8 @@ for(let i=0; i<btnModal.length; i++){
                 
                 
                 trackTitle.parentNode.children[0].checked = true;
-                
+                temp = trackTitle.textContent;
+                console.log(temp);
                 
             })
             
@@ -93,6 +96,13 @@ for(let i=0; i<btnModal.length; i++){
             
             const trackCheckBoxAll = document.querySelectorAll("input.track-checkBox");
             trackCheckBoxAll[0].checked = true;
+           
+            trackCheckBox.addEventListener("click", function(e){
+                temp = e.target.parentNode.children[1].textContent;
+                console.log(temp);
+            })
+            
+            
             
 
             detailTrack.children[j].querySelector(".track-title").textContent=e.target.getAttribute(`track-title${j}`);  
@@ -138,15 +148,16 @@ const audioControl = document.querySelector("ul.control")
 
 const audioArr = ["cardio", "groove", "happy", "light", "lily", "limes", "pop", "swing"];
 
+//play
 playBtn.addEventListener("click",function(e){
     
     
     if(playBtn.parentNode.parentNode.querySelector("audio")===null){
-        audio.setAttribute("src", `./music/${audioArr[Math.floor(Math.random()*8)]}.mp3`);
-        playBtn.parentNode.parentNode.append(audio);  
-        audio.play();
+        console.log("재생x");
     }else{
         audio.play();
+        audioControl.querySelector("li.play").classList.add("hidden");
+        audioControl.querySelector("li.pause").classList.remove("hidden");
     }
     // audio.setAttribute("src", `./music/${audioArr[Math.floor(Math.random()*8)]}.mp3`);
     // playBtn.parentNode.parentNode.append(audio);
@@ -155,13 +166,12 @@ playBtn.addEventListener("click",function(e){
     audio.addEventListener("timeupdate", updateProgress); 
     
 
-    audioControl.querySelector("li.play").classList.add("hidden");
-    audioControl.querySelector("li.pause").classList.remove("hidden");
+   
     
 
 })
 
-
+//pause
 pauseBtn.addEventListener("click", function(){
     audio.pause();
     audioControl.querySelector("li.pause").classList.add("hidden");
@@ -178,6 +188,7 @@ function updateProgress(e){
         audio.currentTime = 0;
     }
 }
+
 function changeProgress(e){
 
     const width = document.querySelector("main").clientWidth;
@@ -190,14 +201,17 @@ function changeProgress(e){
 
 progressContainer.addEventListener("click", changeProgress);
 
-
+// temp2 = albumTitle.textContent;
+//modalTrackPlayBtn
 modalTrackPlayBtn.addEventListener("click", function(e){
    const test =e.target.parentNode.parentNode.querySelector(".detail-track").querySelectorAll(".track-info"); 
-   let temp = "temp";
+   
    audioAlbumImg.innerHTML="";
+   temp2 =document.querySelector(".album-title").textContent;
    for(let i=0; i<test.length; i++){
     if(test[i].querySelector(".track-check").querySelector(".track-checkBox").checked){
-        console.log(test[i].querySelector(".track-check").querySelector(".track-checkBox").parentNode.children[1]);
+        // console.log(test[i].querySelector(".track-check").querySelector(".track-checkBox").parentNode.children[1]);
+        // temp2 = test[i].querySelector(".track-check").querySelector(".track-checkBox").parentNode.children[1].textContent;
         albumTitle.textContent = test[i].querySelector(".track-check").querySelector(".track-checkBox").parentNode.children[1].textContent;
         temp = test[i].querySelector(".track-check").querySelector(".track-checkBox").parentNode.children[1].textContent;
         const audioImg = document.createElement("img");
@@ -210,11 +224,26 @@ modalTrackPlayBtn.addEventListener("click", function(e){
     audio.setAttribute("src", `./music/${audioArr[Math.floor(Math.random()*8)]}.mp3`);
     playBtn.parentNode.parentNode.append(audio);  
     audio.play();
-    }else if(temp!==albumTitle){
+    // temp2 = albumTitle.textContent;
+    
+    }else if(temp!=temp2){
         console.log("다름");
+        
+        //기존 오디오 지워버리고 
+        audioConatiner.querySelector("audio").remove();
+        audio.setAttribute("src", `./music/${audioArr[Math.floor(Math.random()*8)]}.mp3`);
+        playBtn.parentNode.parentNode.append(audio);  
+        audio.play();
+
+        //새로 음악 시작
     }
-    else{
+    else if(temp==temp2){
+        // console.log("같음");
+        
+    }else{
         audio.play();
     }
     audio.addEventListener("timeupdate", updateProgress); 
+    audioControl.querySelector("li.pause").classList.remove("hidden");
+    audioControl.querySelector("li.play").classList.add("hidden");
 })
