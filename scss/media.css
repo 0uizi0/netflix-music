@@ -83,6 +83,9 @@
   main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .banner-box .btn-box .btn{
     padding: 10px 15px;
   }
+  main .section2 .chart .sub .sub__detail{
+    top: 50px !important;
+  }
   main .section2 .chart .sub .sub__detail ul{
     padding-left:0px;
   }
@@ -95,8 +98,14 @@
     padding: 0px;
     margin-bottom: 0px;
   }
-  /* main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide{
-    gap: 20px;
+  main .section3 .inner{
+    height: 1600px;
+  }
+  main .section3 .inner .swiper-zone .albums .swiper-wrapper{
+    height: 210px;
+    gap: 20px !important;
+  }
+  main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide{
     width: 120px !important;
   }
   main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide .album-box{
@@ -104,7 +113,25 @@
     min-width: 120px;
     min-height: 120px;
     border-radius: 12px;
-  } */
+  }
+  main .section3 .inner .all-title{
+    margin-top: 0px;
+  }
+  main .genre-zone {
+    margin-top: 0px !important;
+  }
+  main .genre-zone p{
+    padding-left: 20px !important;
+    margin-bottom: 0px !important;
+  }
+  main .genre-zone p,
+  main .section3 .inner .swiper-zone p {
+    font-size: 22px !important;
+    font-weight: 500 !important;
+  }
+  main .swiper-button-prev.mainSwiper0, .swiper-button-next.mainSwiper0{
+    top: 110px;
+  }
   /* 모달 */
   #modal .modal-window{
     top: 0;
