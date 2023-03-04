@@ -37,6 +37,7 @@ header .inner {
   padding: 0px 75px;
   transition: 0.3s;
   transition-timing-function: ease;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
 }
 header .header__logo {
   display: inline-block;
