@@ -16,6 +16,107 @@ const modalTrackPlayBtn = document.querySelector(".modalTrack-PlayBtn");
 let temp = "temp";
 let temp2 = "temp2";
 
+const mainDetailBtn = document.querySelectorAll("button.btn--detail");
+for(let i=0; i<mainDetailBtn.length; i++){
+  mainDetailBtn[i].addEventListener("click", function(e){
+    console.log(e.target.parentNode.parentNode.querySelector("h1"));
+    modal.style.display = "flex"
+    document.querySelector("main").style.opacity="0.5";
+    audioConatiner.style.opacity = "1";
+    audioConatiner.classList.remove("hidden");
+
+    for(let i=0; i<btnModal.length; i++){
+        if(btnModal[i].getAttribute("name")===e.target.parentNode.parentNode.querySelector("h1").textContent && btnModal[i].className==="album-box"){
+            const clickImage = btnModal[i].style.backgroundImage;
+        
+            const img = document.createElement("img");
+            img.src=clickImage;
+            img.src = img.src.substring(32,);
+            img.src = img.src.replace("%22)","");
+            albumImg.append(img);
+
+            let nameText = btnModal[i].getAttribute("name");
+            const albumName = document.querySelector(".al-name");
+            albumName.textContent = nameText;
+
+            let singerText = btnModal[i].getAttribute("artist");
+            const singer = document.querySelector(".singer");
+            singer.textContent = singerText;
+
+            let dateText = btnModal[i].getAttribute("date");
+            const date = document.querySelector(".date");
+            date.textContent = dateText;
+
+            let infoText = btnModal[i].getAttribute("info");
+            const info = document.querySelector(".info");
+            info.textContent = infoText;
+
+            let infosubText = btnModal[i].getAttribute("info-sub");
+            const infosub = document.querySelector(".info-sub");
+            infosub.textContent = infosubText;
+            
+            detailTrack.textContent="";
+            progress.style.width = "0%";
+            for(let j=0; j<btnModal[i].getAttribute("track-len"); j++){
+                const trackInfo = document.createElement("div");
+                trackInfo.setAttribute("class", "track-info");
+                trackInfo.setAttribute("singer", singerText);
+    
+                const trackTitle = document.createElement("div");
+                trackTitle.setAttribute("class", "track-title");
+                trackTitle.addEventListener("click", function(e){
+                    
+                    
+                    
+                    trackTitle.parentNode.children[0].checked = true;
+                    temp = trackTitle.textContent;
+                    console.log(temp);
+                    
+                })
+                
+    
+                const trackSinger = document.createElement("div");
+                trackSinger.setAttribute("class", "track-singer");
+                const trackTime = document.createElement("div");
+                trackTime.setAttribute("class", "track-time");
+                const trackCheck = document.createElement("div");
+                trackCheck.setAttribute("class","track-check");
+                const trackCheckBox = document.createElement("input");
+                trackCheckBox.setAttribute("class","track-checkBox");
+    
+                trackCheckBox.setAttribute("type","radio");
+                trackCheckBox.setAttribute("name","radio-box");
+    
+                detailTrack.append(trackInfo);
+        
+                trackInfo.append(trackCheck);
+                trackCheck.append(trackCheckBox);
+                trackCheck.append(trackTitle);
+    
+                trackInfo.append(trackSinger);
+                trackInfo.append(trackTime);
+                
+                const trackCheckBoxAll = document.querySelectorAll("input.track-checkBox");
+                trackCheckBoxAll[0].checked = true;
+               
+                trackCheckBox.addEventListener("click", function(e){
+                    temp = btnModal[i].parentNode.children[1].textContent;
+                    console.log(temp);
+                })
+                
+                
+                
+    
+                detailTrack.children[j].querySelector(".track-title").textContent=btnModal[i].getAttribute(`track-title${j}`);  
+                detailTrack.children[j].querySelector(".track-time").textContent=btnModal[i].getAttribute(`track-time${j}`); 
+    
+            }
+        }
+    }
+
+  })
+}
+
 for(let i=0; i<btnModal.length; i++){
     btnModal[i].addEventListener("click", function(e) {
         modal.style.display = "flex"
