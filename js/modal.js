@@ -12,6 +12,8 @@ const progressContainer = document.querySelector(".progress-container");
 const progress = document.querySelector(".progress");
 const audioConatiner = document.getElementById("audio-container");
 
+const modalTrackPlayBtn = document.querySelector(".modalTrack-PlayBtn");
+
 for(let i=0; i<btnModal.length; i++){
     btnModal[i].addEventListener("click", function(e) {
         modal.style.display = "flex"
@@ -46,8 +48,8 @@ for(let i=0; i<btnModal.length; i++){
         let infosubText = e.target.getAttribute("info-sub");
         const infosub = document.querySelector(".info-sub");
         infosub.textContent = infosubText;
-
-        // detailTrack.textContent="";
+        
+        detailTrack.textContent="";
         progress.style.width = "0%";
 
 
@@ -59,32 +61,43 @@ for(let i=0; i<btnModal.length; i++){
             const trackTitle = document.createElement("div");
             trackTitle.setAttribute("class", "track-title");
             trackTitle.addEventListener("click", function(e){
-                audioAlbumImg.textContent = "";
-                const audioImg = document.createElement("img");
-                audioAlbumImg.append(audioImg);
-                audioImg.src = albumImg.parentNode.parentNode.children[1].children[0].children[0].getAttribute("src");
                 
-                albumTitle.textContent = e.target.textContent;
-                albumSubTitle.textContent = e.target.parentNode.getAttribute("singer");
                 
+                
+                trackTitle.parentNode.children[0].checked = true;
                 
                 
             })
+            
 
             const trackSinger = document.createElement("div");
             trackSinger.setAttribute("class", "track-singer");
             const trackTime = document.createElement("div");
             trackTime.setAttribute("class", "track-time");
-            
+            const trackCheck = document.createElement("div");
+            trackCheck.setAttribute("class","track-check");
+            const trackCheckBox = document.createElement("input");
+            trackCheckBox.setAttribute("class","track-checkBox");
+
+            trackCheckBox.setAttribute("type","radio");
+            trackCheckBox.setAttribute("name","radio-box");
 
             detailTrack.append(trackInfo);
     
-            trackInfo.append(trackTitle);
+            trackInfo.append(trackCheck);
+            trackCheck.append(trackCheckBox);
+            trackCheck.append(trackTitle);
+
             trackInfo.append(trackSinger);
             trackInfo.append(trackTime);
             
+            const trackCheckBoxAll = document.querySelectorAll("input.track-checkBox");
+            trackCheckBoxAll[0].checked = true;
+            
+
             detailTrack.children[j].querySelector(".track-title").textContent=e.target.getAttribute(`track-title${j}`);  
-            detailTrack.children[j].querySelector(".track-time").textContent=e.target.getAttribute(`track-time${j}`);    
+            detailTrack.children[j].querySelector(".track-time").textContent=e.target.getAttribute(`track-time${j}`); 
+
         }
     }) 
 }
@@ -176,3 +189,32 @@ function changeProgress(e){
 }
 
 progressContainer.addEventListener("click", changeProgress);
+
+
+modalTrackPlayBtn.addEventListener("click", function(e){
+   const test =e.target.parentNode.parentNode.querySelector(".detail-track").querySelectorAll(".track-info"); 
+   let temp = "temp";
+   audioAlbumImg.innerHTML="";
+   for(let i=0; i<test.length; i++){
+    if(test[i].querySelector(".track-check").querySelector(".track-checkBox").checked){
+        console.log(test[i].querySelector(".track-check").querySelector(".track-checkBox").parentNode.children[1]);
+        albumTitle.textContent = test[i].querySelector(".track-check").querySelector(".track-checkBox").parentNode.children[1].textContent;
+        temp = test[i].querySelector(".track-check").querySelector(".track-checkBox").parentNode.children[1].textContent;
+        const audioImg = document.createElement("img");
+        audioAlbumImg.append(audioImg);
+        audioImg.src = albumImg.parentNode.parentNode.children[1].children[0].children[0].getAttribute("src");
+    }
+   }
+   
+   if(playBtn.parentNode.parentNode.querySelector("audio")===null){
+    audio.setAttribute("src", `./music/${audioArr[Math.floor(Math.random()*8)]}.mp3`);
+    playBtn.parentNode.parentNode.append(audio);  
+    audio.play();
+    }else if(temp!==albumTitle){
+        console.log("다름");
+    }
+    else{
+        audio.play();
+    }
+    audio.addEventListener("timeupdate", updateProgress); 
+})

@@ -84,7 +84,7 @@
           position: relative;
           margin-bottom: 30px;
           display: flex;
-          .button1{
+          .modalTrack-PlayBtn{
             text-align: center;
             background-color: red;
             color: #FFFFFF;
@@ -94,6 +94,10 @@
             border-radius: 6px;
             font-size: 14px;
             border: none;
+            &:hover{
+              cursor: pointer;
+              opacity: 0.8;
+            }
           }
           .button2{
             text-align: center;
@@ -119,26 +123,29 @@
             color: white;
             display: flex;
             justify-content: space-between;
-            .track-checkbox{
+            .track-check{
+              display: flex;
               input{
                 all:revert !important;
+                display: inline;
+              }
+              .track-title{
+                color: #fff;
+                font-weight: 300;
+                // margin-right: 10px;
+                margin-left: 6px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                &:hover{
+                  text-decoration: underline;
+                  cursor: pointer;
+                }
               }
             }
-            .track-title{
-              color: #fff;
-              font-weight: 300;
-              margin-right: 10px;
-              margin-left: 6px;
-              overflow: hidden;
-              text-overflow: ellipsis;
-              display: -webkit-box;
-              -webkit-line-clamp: 1;
-              -webkit-box-orient: vertical;
-              &:hover{
-                text-decoration: underline;
-                cursor: pointer;
-              }
-            }
+            
             .track-singer{
               color: #D1D1D1;
               opacity: 0.5;
