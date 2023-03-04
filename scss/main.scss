@@ -325,12 +325,29 @@ main {
       }
      }
     }
-    .swiper-button-prev.mainSwiper0,
-    .swiper-button-next.mainSwiper0 {
-      top: 150px;
-      color: white;
-      opacity: 0.8;
-    }
-   }
- }
+  }
+}
+}
+.swiper-button-lock {
+  display: block;
+}
+
+.swiper-button-prev.mainSwiper0,
+.swiper-button-next.mainSwiper0,
+.swiper-button-prev.mainSwiper1,
+.swiper-button-next.mainSwiper1,
+.swiper-button-prev.mainSwiper2,
+.swiper-button-next.mainSwiper2 {
+  top: 100px;
+  color: white;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.swiper-button-prev.mainSwiper1,
+.swiper-button-next.mainSwiper1 {
+  top: 450px;
+}
+.swiper-button-prev.mainSwiper2,
+.swiper-button-next.mainSwiper2 {
+  top: 750px;
 }
