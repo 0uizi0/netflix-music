@@ -239,11 +239,10 @@ main .section3 .inner .swiper-zone {
   align-items: center;
 }
 main .section3 .inner .swiper-zone .albums {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100%;
   z-index: 1;
-  top: 55px;
 }
 main .section3 .inner .swiper-zone .albums .swiper-wrapper {
   gap: 30px !important;
