@@ -427,8 +427,8 @@ main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .video__contai
 }
 main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .video__container .video_scope {
   position: absolute;
-  top: 0px;
-  width: 100%;
+  top: 3px;
+  width: 1700px;
   z-index: 1;
   left: 50%;
   transform: translate(-50%, -120px);
@@ -513,7 +513,6 @@ main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .banner-box .r
   right: 0;
   opacity: 0;
   visibility: hidden;
-  transition: 0.5s;
 }
 main .section1 .inner .bannerSwiper .swiper-wrapper .swiper-slide .banner-box .replay-control-container.on {
   visibility: visible;
