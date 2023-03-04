@@ -693,46 +693,11 @@ main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide .album-
 }
 
 .swiper-button-prev.mainSwiper0,
-.swiper-button-next.mainSwiper0,
-.swiper-button-prev.mainSwiper1,
-.swiper-button-next.mainSwiper1,
-.swiper-button-prev.mainSwiper2,
-.swiper-button-next.mainSwiper2,
-.swiper-button-prev.mainSwiper3,
-.swiper-button-next.mainSwiper3,
-.swiper-button-prev.mainSwiper4,
-.swiper-button-next.mainSwiper4,
-.swiper-button-prev.mainSwiper5,
-.swiper-button-next.mainSwiper5 {
+.swiper-button-next.mainSwiper0 {
   top: 140px;
   color: white;
   opacity: 0.8;
   cursor: pointer;
-}
-
-.swiper-button-prev.mainSwiper1,
-.swiper-button-next.mainSwiper1 {
-  top: 440px;
-}
-
-.swiper-button-prev.mainSwiper2,
-.swiper-button-next.mainSwiper2 {
-  top: 740px;
-}
-
-.swiper-button-prev.mainSwiper3,
-.swiper-button-next.mainSwiper3 {
-  top: 1040px;
-}
-
-.swiper-button-prev.mainSwiper4,
-.swiper-button-next.mainSwiper4 {
-  top: 1340px;
-}
-
-.swiper-button-prev.mainSwiper5,
-.swiper-button-next.mainSwiper5 {
-  top: 1640px;
 }
 
 .chartSwiper .swiper-button-next, .chartSwiper .swiper-button-prev {
@@ -1276,7 +1241,7 @@ main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide .album-
 .login-wrap .left .login-checkBox .login-text a {
   color: #fff;
 }
-.login-wrap .left .right {
+.login-wrap .right {
   width: 100%;
   height: 100%;
 }
@@ -1489,7 +1454,7 @@ footer .inner .company_info {
 .login-wrap .left .login-checkBox .login-text a {
   color: #fff;
 }
-.login-wrap .left .right {
+.login-wrap .right {
   width: 100%;
   height: 100%;
 }/*# sourceMappingURL=style.css.map */
