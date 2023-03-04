@@ -597,15 +597,20 @@ kpopSwiper2.setAttribute("class","swiper2");
 kpopSwiper2.classList.add('albums');
 kpopSwiper2.append(kpopWrapper);
 
+const kpopArr = document.createElement("div");
+
 const kpopTitle = document.createElement("p");
 kpopTitle.textContent = "K-POP";
 kpopTitle.style.textAlign = "left";
 kpopTitle.style.font = "normal normal bold 24px/29px Pretendard";
 kpopTitle.style.position = 'relative';
-kpopTitle.append(kpopSwiper2);
+
+kpopArr.append(kpopTitle);
+
+kpopArr.append(kpopSwiper2);
 
 const albums = document.querySelector(".albums");
-albums.append(kpopTitle);
+albums.append(kpopArr);
 
 
 for (let i = 0; i < kpopData.length; i++) {
@@ -659,14 +664,19 @@ popSwiper2.setAttribute("class","swiper2");
 popSwiper2.classList.add('albums');
 popSwiper2.append(popWrapper);
 
+const popArr = document.createElement("div");
+
 const popTitle = document.createElement("p");
 popTitle.textContent = "POP";
 popTitle.style.textAlign = "left";
 popTitle.style.font = "normal normal bold 24px/29px Pretendard";
 popTitle.style.position = 'relative';
-popTitle.append(popSwiper2);
 
-albums.append(popTitle);
+popArr.append(popTitle);
+
+popArr.append(popSwiper2);
+
+albums.append(popArr);
 
 for (let i = 0; i < popData.length; i++) {
 
@@ -719,19 +729,19 @@ hiphopSwiper2.setAttribute('class','swiper2');
 hiphopSwiper2.classList.add('albums');
 hiphopSwiper2.append(hiphopWrapper);
 
+const hiphopArr = document.createElement("div");
+
 const hiphopTitle = document.createElement('p');
-const hiphopSpan = document.createElement('span');
-hiphopSpan.textContent = 'Hiphop';
-
-hiphopTitle.append(hiphopSpan);
-
 hiphopTitle.textContent = 'Hip-hop';
 hiphopTitle.style.textAlign = 'left';
 hiphopTitle.style.font = 'normal normal bold 24px/29px Pretendard';
 hiphopTitle.style.position = 'relative';
-hiphopTitle.append(hiphopSwiper2);
 
-albums.append(hiphopTitle);
+hiphopArr.append(hiphopTitle);
+
+hiphopArr.append(hiphopSwiper2);
+
+albums.append(hiphopArr);
 
 for (let i = 0; i< hiphopData.length; i++) {
   const swiperSlide = document.createElement("div");
@@ -783,19 +793,19 @@ classicSwiper2.setAttribute('class','swiper2');
 classicSwiper2.classList.add('albums');
 classicSwiper2.append(classicWrapper);
 
+const classicArr = document.createElement('div');
+
 const classicTitle = document.createElement('p');
-const classicSpan = document.createElement('span');
-classicSpan.textContent = 'Classic';
-
-classicTitle.append(classicSpan);
-
 classicTitle.textContent = 'Classic';
 classicTitle.style.textAlign = 'left';
 classicTitle.style.font = 'normal normal bold 24px/29px Pretendard';
 classicTitle.style.position = 'relative';
-classicTitle.append(classicSwiper2);
 
-albums.append(classicTitle);
+classicArr.append(classicTitle);
+
+classicArr.append(classicSwiper2);
+
+albums.append(classicArr);
 
 for (let i = 0; i< classicData.length; i++) {
   const swiperSlide = document.createElement("div");
@@ -847,18 +857,19 @@ danceSwiper2.setAttribute('class','swiper2');
 danceSwiper2.classList.add('albums');
 danceSwiper2.append(danceWrapper);
 
+const danceArr = document.createElement("div");
+
 const danceTitle = document.createElement('p');
-const danceSpan = document.createElement('span');
-danceSpan.textContent = 'Dance';
-
-danceTitle.append(danceSpan);
-
+danceTitle.textContent = 'Dance';
 danceTitle.style.textAlign = 'left';
 danceTitle.style.font = 'normal normal bold 24px/29px Pretendard';
 danceTitle.style.position = 'relative';
-danceTitle.append(danceSwiper2);
 
-albums.append(danceTitle);
+danceArr.append(danceTitle);
+
+danceArr.append(danceSwiper2);
+
+albums.append(danceArr);
 
 for (let i = 0; i< danceData.length; i++) {
   const swiperSlide = document.createElement("div");
@@ -917,15 +928,12 @@ $(document).ready(function () {
     genreZone.textContent = "";
     let genre = document.createElement("p");
 
-    // albums.style.top = '0';
-
     if (dataFilter !== 'all') {
       inner.style.height = '300px';
 
       AllWrapper.style.display = 'flex';
 
       const allTitle = document.querySelector('.all-title');
-      // allTitle.textContent = '';
       allTitle.style.display = 'none';
 
       genre.textContent = $(this)[0].outerText;
@@ -962,7 +970,6 @@ $(document).ready(function () {
       inner.style.height = '1800px';
 
       const allTitle = document.querySelector('.all-title');
-      // allTitle.textContent = '';
       allTitle.style.display = 'block';
 
       for (let i = 0; i < swiperSlide.length; i++) {
@@ -994,32 +1001,6 @@ $(document).ready(function () {
       allSlide[2].style.top = '480px';
       allSlide[3].style.top = '720px';
       allSlide[4].style.top = '960px';
-
-      // prev 버튼 위치 재지정
-      const prev1 = document.querySelector('.swiper-button-prev.mainSwiper1');
-      const prev2 = document.querySelector('.swiper-button-prev.mainSwiper2');
-      const prev3 = document.querySelector('.swiper-button-prev.mainSwiper3');
-      const prev4 = document.querySelector('.swiper-button-prev.mainSwiper4');
-      const prev5 =  document.querySelector('.swiper-button-prev.mainSwiper5');
-
-      prev1.style.top = '150px';
-      prev2.style.top = '430px';
-      prev3.style.top = '710px';
-      prev4.style.top = '990px';
-      prev5.style.top = '1270px';
-
-      // next 버튼 위치 재지정
-      const next1 = document.querySelector('.swiper-button-next.mainSwiper1');
-      const next2 = document.querySelector('.swiper-button-next.mainSwiper2');
-      const next3 = document.querySelector('.swiper-button-next.mainSwiper3');
-      const next4 = document.querySelector('.swiper-button-next.mainSwiper4');
-      const next5 =  document.querySelector('.swiper-button-next.mainSwiper5');
-
-      next1.style.top = '150px';
-      next2.style.top = '430px';
-      next3.style.top = '710px';
-      next4.style.top = '990px';
-      next5.style.top = '1270px';
     }
   });
 });
