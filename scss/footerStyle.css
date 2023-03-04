@@ -39,6 +39,10 @@ footer .inner .footer__menus ul {
 footer .inner .footer__menus ul li {
   margin-bottom: 15px;
   font-size: 14px;
+  cursor: pointer;
+}
+footer .inner .footer__menus ul li:hover {
+  text-decoration: underline;
 }
 footer .inner .footer-bottom {
   font-size: 13px;
@@ -70,4 +74,8 @@ footer .inner .dropdown .dropdown-menu li a {
 }
 footer .inner .dropdown .dropdown-menu li a:hover {
   background-color: #2d2d2d !important;
+}
+footer .inner .company_info {
+  font-size: 12px;
+  line-height: 24px;
 }/*# sourceMappingURL=footerStyle.css.map */

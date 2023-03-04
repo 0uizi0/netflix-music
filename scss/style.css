@@ -94,6 +94,31 @@ header img {
   font-size: 15px;
 }
 
+.mobile-menus {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 120px;
+  z-index: 999;
+}
+.mobile-menus .btn.btn-danger {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  border-color: #3c3c3c;
+  font-size: 12px;
+}
+.mobile-menus .mobile-dropDownMenu {
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 300;
+  border-radius: 1px;
+  border: 0.5px solid #3c3c3c;
+}
+.mobile-menus .mobile-dropDownMenu li a {
+  color: #ffffff;
+}
+
 .ex-menu {
   display: flex;
   position: absolute;
@@ -1224,6 +1249,10 @@ footer .inner .footer__menus ul {
 footer .inner .footer__menus ul li {
   margin-bottom: 15px;
   font-size: 14px;
+  cursor: pointer;
+}
+footer .inner .footer__menus ul li:hover {
+  text-decoration: underline;
 }
 footer .inner .footer-bottom {
   font-size: 13px;
@@ -1255,6 +1284,10 @@ footer .inner .dropdown .dropdown-menu li a {
 }
 footer .inner .dropdown .dropdown-menu li a:hover {
   background-color: #2d2d2d !important;
+}
+footer .inner .company_info {
+  font-size: 12px;
+  line-height: 24px;
 }
 
 .login-wrap {
