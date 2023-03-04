@@ -913,6 +913,9 @@ $(document).ready(function () {
 
       AllWrapper.style.display = 'flex';
 
+      const allTitle = document.querySelector('.all-title');
+      allTitle.textContent = '';
+
       genre.textContent = $(this)[0].outerText;
       genre.setAttribute(
         "style",
