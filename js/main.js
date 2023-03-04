@@ -547,25 +547,6 @@ let newArryAlbum = [
       { title: "VACAY", time: "3:33" },
     ],
   },
-  {
-    // { img: "30", name: "SMILEY (Feat. BIBI)", item: "dance" },
-    img: "30",
-    name: "ˣ‿ˣ (SMiLEY)",
-    artist: "YENA (최예나)",
-    date: "2022.01.17",
-    item: "dance",
-    country: "국내",
-    info: "EP(미니)",
-    infoSub:
-      "퍼포먼스, 보컬, 랩, 예능 까지 섭렵한 YENA(최예나)의 솔로 핫데뷔! 홀로서기를 넘어 이제는 아티스트적인 면모까지 선보이며 한층 성장한 YENA를 만날 수 있는 데뷔 앨범 ˣ‿ˣ (SMiLEY) YENA만의 행복 에너지가 가득 담긴 데뷔곡 ‘SMILEY’, 스마일 히어로의 행복 파워가 모두에게 전파된다!",
-    track: [
-      { title: "Before Anyone Else", time: "2:33" },
-      { title: "SMILEY", time: "3:12" },
-      { title: "Lxxk 2 U", time: "4:12" },
-      { title: "PRETTY BOYS", time: "5:01" },
-      { title: "VACAY", time: "3:33" },
-    ],
-  },
 ];
 
 const classicData = newArryAlbum.filter((el) => el.item == "classic");
@@ -846,6 +827,66 @@ for (let i = 0; i< kpopData.length; i++) {
   }
 } 
 
+// dance
+const danceBox = document.createElement('div');
+danceBox.setAttribute('class','album-box');
+
+inner.append(danceBox);
+
+const danceWrapper = document.createElement('div');
+danceWrapper.setAttribute('class','swiper-wrapper');
+danceWrapper.style.marginTop = '30px';
+danceWrapper.style.gap = '50px';
+
+const danceSwiper2 = document.createElement('div');
+danceSwiper2.setAttribute('class','swiper2');
+danceSwiper2.classList.add('albums');
+danceSwiper2.append(danceWrapper);
+
+const danceTitle = document.createElement('p');
+danceTitle.textContent = 'dance';
+danceTitle.style.textAlign = 'left';
+danceTitle.style.font = 'normal normal bold 20px/29px Pretendard';
+danceTitle.style.position = 'relative';
+danceTitle.style.top = '1120px';
+danceTitle.append(danceSwiper2);
+
+albums.append(danceTitle);
+
+for (let i = 0; i< danceData.length; i++) {
+  const swiperSlide = document.createElement("div");
+  swiperSlide.setAttribute("class",'swiper-slide');
+  swiperSlide.style.width = '200px';
+  swiperSlide.style.marginTop = '0';
+  swiperSlide.style.marginRight = '40px';
+  danceWrapper.append(swiperSlide);
+
+  const dance = document.createElement('div');
+  dance.setAttribute('class','album-box');
+  dance.classList.add('dancePic');
+  swiperSlide.append(dance);
+
+  // 사진 부분 일괄 적용
+  const danceSlide = document.querySelectorAll('.dancePic');
+  console.log(danceSlide);
+  const dancePic = danceSlide[i];
+  if (i < 30) {
+    dancePic.setAttribute("data-item", `${danceData[i].item}`);
+    dancePic.setAttribute("name", `${danceData[i].name}`);
+    dancePic.setAttribute("artist", `${danceData[i].artist}`);
+    dancePic.setAttribute("date", `${danceData[i].date}`);
+    dancePic.setAttribute("info", `${danceData[i].info}`);
+    dancePic.setAttribute("info-sub", `${danceData[i].infoSub}`);
+    dancePic.setAttribute("track-len", `${danceData[i].track.length}`);
+    for (let j = 0; j < danceData[i].track.length; j++) {
+      dancePic.setAttribute(`track-title${j}`, `${danceData[i].track[j].title}`);
+      dancePic.setAttribute(`track-time${j}`, `${danceData[i].track[j].time}`);
+    }
+
+    dancePic.style.backgroundImage = `url("../img/main_album/main_album${danceData[i].img}.png")`;
+    dancePic.style.boxShadow = `0px 0px 1px #e6e6e6`;
+  }
+} 
 
 // 문서 로딩이 끝나면 실행되는 구문
 $(document).ready(function () {
