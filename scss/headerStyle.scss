@@ -61,13 +61,16 @@ header {
   transform: translateY(-50%);
   left: 170px;
   display: flex;
-  width: 200px;
+  width: 150px;
   justify-content: space-around;
   margin-left: 70px;
 
   a {
     color: $white;
     font-size: 15px;
+    &:hover {
+      color: #bcbcbc;
+    }
   }
 }
 

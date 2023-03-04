@@ -59,13 +59,16 @@ header img {
   transform: translateY(-50%);
   left: 170px;
   display: flex;
-  width: 200px;
+  width: 150px;
   justify-content: space-around;
   margin-left: 70px;
 }
 .menus a {
   color: #ffffff;
   font-size: 15px;
+}
+.menus a:hover {
+  color: #bcbcbc;
 }
 
 .mobile-menus {
