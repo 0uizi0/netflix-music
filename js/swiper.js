@@ -2,7 +2,7 @@ let albumBoxEL = document.querySelectorAll(".album-box");
 let albumAllSelect = document.querySelectorAll(".albums");
 const rankWrpperEl = document.querySelectorAll(".swiperChart__container");
 
-let swiper = new Swiper(".bannerSwiper", {
+let swiper9 = new Swiper(".bannerSwiper", {
   cssMode: true,
   navigation: {
     nextEl: ".swiper-button-next",
