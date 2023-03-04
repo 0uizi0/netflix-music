@@ -90,14 +90,21 @@
     font-size: 14px;
     padding: 10px 15px;
   }
-  main .section2 .chart{
-    top: 50px;
-  }
   main .section2 .chart .main-title{
     font-size: 30px;
     padding: 0px;
     margin-bottom: 0px;
   }
+  /* main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide{
+    gap: 20px;
+    width: 120px !important;
+  }
+  main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide .album-box{
+    width: 120px !important;
+    min-width: 120px;
+    min-height: 120px;
+    border-radius: 12px;
+  } */
   /* 모달 */
   #modal .modal-window{
     top: 0;

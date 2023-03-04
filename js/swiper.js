@@ -2,6 +2,18 @@ let albumBoxEL = document.querySelectorAll(".album-box");
 let albumAllSelect = document.querySelectorAll(".albums");
 const rankWrpperEl = document.querySelectorAll(".swiperChart__container");
 
+let swiper = new Swiper(".bannerSwiper", {
+  cssMode: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  mousewheel: true,
+  keyboard: true,
+});
 
 for (let i = 0; i < albumAllSelect.length; i += 1) {
   let swiper2 = new Swiper(albumAllSelect[i], {
