@@ -5,6 +5,7 @@
       $(".search").attr("placeholder", "노래제목,  가수,  장르");
       if(matchMedia("screen and (min-width: 360px) and (max-width: 415px)").matches){
         $(".mobile-menus").addClass("on");
+        $(".mobile__check").addClass("on");
       }
     }
   })
@@ -17,8 +18,17 @@
       $(".search").removeAttr("placeholder", "노래제목,  가수,  장르");
       if(matchMedia("screen and (min-width: 360px) and (max-width: 415px)").matches){
         $(".mobile-menus").removeClass("on");
+        $(".mobile__check").removeClass("on");
       }
     }
+  })
+
+  $(".mobile__check").click (() => {
+   $(".mobile-menus").removeClass("on")
+   $(".mobile-check").removeClass("on")
+   $(".search").removeClass("on");
+   $(".search__icon").removeClass("on");
+   $(".search").removeAttr("placeholder", "노래제목,  가수,  장르");
   })
 
 for (let i = 1; i <= 4; i += 1) {
