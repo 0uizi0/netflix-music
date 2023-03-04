@@ -63,8 +63,8 @@ main {
 
             .video_scope {
               position: absolute;
-              top: 0px;
-              width: 100%;
+              top: 3px;
+              width: 1700px;
               z-index: 1;
               left: 50%;
               transform: translate(-50%, -120px);
@@ -153,7 +153,7 @@ main {
               right: 0;
               opacity: 0;
               visibility: hidden;
-              transition: 0.5s;
+              // transition: 0.5s;
               &.on {
                 visibility: visible;
                 opacity: 1;

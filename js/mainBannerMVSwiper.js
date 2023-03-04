@@ -139,7 +139,7 @@ function mvPlayer () {
   replayControlElAll[swiperCurrentIndex].addEventListener("click", () => {
     replayDecoEl[swiperCurrentIndex].setAttribute("style", "transform: rotate(0deg);");
     setTimeout(function(){
-    replayDecoEl[swiperCurrentIndex].setAttribute("style", "transition: 2s; transform: rotate(-90deg); opacity: 0; visibility: hidden;");
+    replayDecoEl[swiperCurrentIndex].setAttribute("style", "transition: 2s !important; transform: rotate(-90deg); opacity: 0; visibility: hidden;");
     }, 500);
     setTimeout(function(){
       replayControlElAll[swiperCurrentIndex].classList.remove("on");

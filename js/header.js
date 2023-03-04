@@ -3,6 +3,9 @@
       $(".search").addClass("on");
       $(".search__icon").addClass("on");
       $(".search").attr("placeholder", "노래제목,  가수,  장르");
+      if(matchMedia("screen and (min-width: 360px) and (max-width: 415px)").matches){
+        $(".mobile-menus").addClass("on");
+      }
     }
   })
 
@@ -12,6 +15,9 @@
       $(".search").removeClass("on");
       $(".search__icon").removeClass("on");
       $(".search").removeAttr("placeholder", "노래제목,  가수,  장르");
+      if(matchMedia("screen and (min-width: 360px) and (max-width: 415px)").matches){
+        $(".mobile-menus").removeClass("on");
+      }
     }
   })
 
