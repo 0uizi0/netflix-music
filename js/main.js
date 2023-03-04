@@ -602,7 +602,6 @@ kpopTitle.textContent = "K-POP";
 kpopTitle.style.textAlign = "left";
 kpopTitle.style.font = "normal normal bold 24px/29px Pretendard";
 kpopTitle.style.position = 'relative';
-kpopTitle.style.top = '90px';
 kpopTitle.append(kpopSwiper2);
 
 const albums = document.querySelector(".albums");
@@ -665,7 +664,6 @@ popTitle.textContent = "POP";
 popTitle.style.textAlign = "left";
 popTitle.style.font = "normal normal bold 24px/29px Pretendard";
 popTitle.style.position = 'relative';
-popTitle.style.top = '340px';
 popTitle.append(popSwiper2);
 
 albums.append(popTitle);
@@ -722,11 +720,15 @@ hiphopSwiper2.classList.add('albums');
 hiphopSwiper2.append(hiphopWrapper);
 
 const hiphopTitle = document.createElement('p');
+const hiphopSpan = document.createElement('span');
+hiphopSpan.textContent = 'Hiphop';
+
+hiphopTitle.append(hiphopSpan);
+
 hiphopTitle.textContent = 'Hip-hop';
 hiphopTitle.style.textAlign = 'left';
 hiphopTitle.style.font = 'normal normal bold 24px/29px Pretendard';
 hiphopTitle.style.position = 'relative';
-hiphopTitle.style.top = '600px';
 hiphopTitle.append(hiphopSwiper2);
 
 albums.append(hiphopTitle);
@@ -782,11 +784,15 @@ classicSwiper2.classList.add('albums');
 classicSwiper2.append(classicWrapper);
 
 const classicTitle = document.createElement('p');
+const classicSpan = document.createElement('span');
+classicSpan.textContent = 'Classic';
+
+classicTitle.append(classicSpan);
+
 classicTitle.textContent = 'Classic';
 classicTitle.style.textAlign = 'left';
 classicTitle.style.font = 'normal normal bold 24px/29px Pretendard';
 classicTitle.style.position = 'relative';
-classicTitle.style.top = '860px';
 classicTitle.append(classicSwiper2);
 
 albums.append(classicTitle);
@@ -842,11 +848,14 @@ danceSwiper2.classList.add('albums');
 danceSwiper2.append(danceWrapper);
 
 const danceTitle = document.createElement('p');
-danceTitle.textContent = 'Dance';
+const danceSpan = document.createElement('span');
+danceSpan.textContent = 'Dance';
+
+danceTitle.append(danceSpan);
+
 danceTitle.style.textAlign = 'left';
 danceTitle.style.font = 'normal normal bold 24px/29px Pretendard';
 danceTitle.style.position = 'relative';
-danceTitle.style.top = '1120px';
 danceTitle.append(danceSwiper2);
 
 albums.append(danceTitle);
@@ -950,7 +959,7 @@ $(document).ready(function () {
         nextBtn.style.display = 'none';
       }
     } else {
-      inner.style.height = '1500px';
+      inner.style.height = '1800px';
 
       const allTitle = document.querySelector('.all-title');
       // allTitle.textContent = '';

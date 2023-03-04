@@ -8,6 +8,7 @@ for (let i = 0; i < albumAllSelect.length; i += 1) {
     cssMode: true,
     direction: "horizontal",
     slidesPerView: 6,
+    // slidesPerView: auto,
     spaceBetween: 5,
     navigation: {
       nextEl: `.swiper-button-next.mainSwiper${i}`,
