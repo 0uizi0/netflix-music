@@ -19,6 +19,7 @@
     width: 20px;
     height: 20px;
   }
+
   header .menus{
     display: none;
   }
@@ -27,6 +28,11 @@
     right: 20px;
     width: 290px;
   }
+
+  header #ex-menu-chart {
+    margin-right: 20px !important;
+  }
+
   header .ex-menu .pop-up{
     right: 65px;
   }
