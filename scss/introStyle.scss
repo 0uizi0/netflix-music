@@ -17,6 +17,7 @@ body {
 }
 
 .introlayout {
+  display: none;
   width: 100vw;
   height: 100vh;
   background-color: black;
@@ -193,84 +194,84 @@ body {
 }
 
 // 여기서부터 주석
-// @for $i from 0 to 11 {
-//   @keyframes random-position#{$i} {
-//     0% {
-//       left: random($limit: 100) + px;
-//     }
+@for $i from 0 to 11 {
+  @keyframes random-position#{$i} {
+    0% {
+      left: random($limit: 100) + px;
+    }
   
-//     10% {
-//       left: random($limit: 100) + px;
-//     }
+    10% {
+      left: random($limit: 100) + px;
+    }
   
-//     20% {
-//       left: random($limit: 100) + px;
-//     }
+    20% {
+      left: random($limit: 100) + px;
+    }
   
-//     30% {
-//       left: random($limit: 50) + px;
-//     }
+    30% {
+      left: random($limit: 50) + px;
+    }
   
-//     40% {
-//       left: random($limit: 100) + px;
-//     }
+    40% {
+      left: random($limit: 100) + px;
+    }
   
-//     50% {
-//       left: random($limit: 100) + px;
-//     }
+    50% {
+      left: random($limit: 100) + px;
+    }
   
-//     60% {
-//       left: random($limit: 100) + px;
-//     }
+    60% {
+      left: random($limit: 100) + px;
+    }
   
-//     70% {
-//       left: random($limit: 100) + px;
-//     }
+    70% {
+      left: random($limit: 100) + px;
+    }
   
-//     80% {
-//       left: random($limit: 100) + px;
-//     }
+    80% {
+      left: random($limit: 100) + px;
+    }
   
-//     90% {
-//       left: random($limit: 100) + px;
-//     }
+    90% {
+      left: random($limit: 100) + px;
+    }
   
-//     100% {
-//       left: random($limit: 100) + px;
-//     }
-//   }
+    100% {
+      left: random($limit: 100) + px;
+    }
+  }
 
-// }
+}
 
-// @keyframes fade-out {
-//   0% {
-//     opacity: 1;
-//   }  
-//   100% {
-//     opacity: 0;
-//   }
-// }
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }  
+  100% {
+    opacity: 0;
+  }
+}
 
-// @keyframes fade-in {
-//   0% {
-//     opacity: 0;
-//   }  
-//   100% {
-//     opacity: 1;
-//   }
-// }
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }  
+  100% {
+    opacity: 1;
+  }
+}
 
-// @keyframes music {
-//   0% {
-//     transform: scale(0.3) rotate(10deg);
-//     opacity: 0;
-//   }
-//   50% {
-//     opacity: 1;
-//     transform: rotate(-10deg);
-//   }
-//   100% {
-//     transform: scale(2) rotate(10deg);
-//     opacity: 0;
-//   }
-// }
+@keyframes music {
+  0% {
+    transform: scale(0.3) rotate(10deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: scale(2) rotate(10deg);
+    opacity: 0;
+  }
+}
