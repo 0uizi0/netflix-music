@@ -1026,11 +1026,3 @@ for (let i = 0; i < albumBox.length; i++) {
     albumBox[i].textContent = "";
   });
 }
-
-for (let i = 0; i < slideBox.length; i++ ) {
-  slideBox[i].addEventListener("mouseover", function(e) {
-    const hoverBox = document.createElement("div");
-    hoverBox.setAttribute("class", "hoverBox");
-    slide[i].append(hoverBox);
-  })
-}
