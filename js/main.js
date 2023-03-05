@@ -1000,13 +1000,6 @@ $(document).ready(function () {
       for (let i = 0; i < allSlide.length; i++) {
         allSlide[i].style.display = 'block';
       }
-      console.log(allSlide);
-      // All에 띄워둔 스와이퍼 슬라이드 영역 위치 재지정
-      allSlide[0].style.top = '0';
-      allSlide[1].style.top = '240px';
-      allSlide[2].style.top = '480px';
-      allSlide[3].style.top = '720px';
-      allSlide[4].style.top = '960px';
     }
   });
 });
