@@ -1,3 +1,5 @@
+$(document).ready(function(){
+
 //MV video DOM
 const bannerMvSlideEl = document.querySelectorAll(".swiper-slide.mvslide");
 const mvEl = document.querySelectorAll(".video_scope.mv");
@@ -30,7 +32,7 @@ let swiper = new Swiper(".bannerSwiper", {
   on: {
     afterInit: setTimeout(function () {
     mvContainer[0].setAttribute("style", "opacity: 1; visibility: visible; transition-delay: 1.5s;")//화면 on
-    mvEl[0].muted = true; //뮤트 조지고(정책 ㅠ)
+    // mvEl[0].muted = true; //뮤트 조지고(정책 ㅠ)
     mvEl[0].play(); //플레이고고
     mvEl[0].classList.remove("stop");//스크롤 이벤트 대비
     mutedControlContainer[0].setAttribute("style", "opacity: 1;")//뮤트컨트롤 소환
@@ -43,10 +45,10 @@ let swiper = new Swiper(".bannerSwiper", {
         mvEl[0].classList.add("stop");//스크롤 대비하는 클래스 추가
         mutedControlContainer[0].setAttribute("style", "opacity: 0; visibility: hidden; transition-delay: 0s;")//뮤트컨트롤 아웃
         replayControlElAll[0].classList.add("on");//리플레이 재생버튼 등장(이놈이 주인공)
-        //만약 뮤트가 안켜져 있으면 on으로 바꿔주는 조건문
-        if(soundUpDecoElAll[0].classList.contains("on")) {
-          soundUpDecoElAll[0].classList.remove("on");
-          soundMutedDecoElAll[0].classList.add("on");
+        //만약 뮤트가 안켜져 있으면 on으로 바꿔주는 조건문 //잠시바꿈
+        if(soundMutedDecoElAll[0].classList.contains("on")) {
+          soundUpDecoElAll[0].classList.add("on");
+          soundMutedDecoElAll[0].classList.remove("on");
          }
         })
       }
@@ -63,7 +65,7 @@ let swiper = new Swiper(".bannerSwiper", {
         }, 3000);//리플레이 버튼 초기화(나중에 또 누를 수 있으니)
         mvContainer[0].setAttribute("style", "opacity: 1; visibility: visible; transition-delay: 1.5s;")//영상화면 소환
         mutedControlContainer[0].setAttribute("style", "opacity: 1;")//뮤트버튼 소환
-        mvEl[0].muted = true;//ㅠㅠ 정책으로 뮤트해야...재생됨
+        // mvEl[0].muted = true;//ㅠㅠ 정책으로 뮤트해야...재생됨
         mvEl[0].load()//첫화면부터 시작할 수 있게 로드 한번 걸어줌
         mvEl[0].play();//영상 고고
         mvEl[0].classList.remove("stop");//스크롤 이벤트 대비
@@ -75,9 +77,9 @@ let swiper = new Swiper(".bannerSwiper", {
         mvEl[0].classList.add("stop");//스크롤 대비하는 클래스 추가
         mutedControlContainer[0].setAttribute("style", "opacity: 0; visibility: hidden; transition-delay: 0s;")
         replayControlElAll[0].classList.add("on");
-        if(soundUpDecoElAll[0].classList.contains("on")) {
-          soundUpDecoElAll[0].classList.remove("on");
-          soundMutedDecoElAll[0].classList.add("on");
+        if(soundMutedDecoElAll[0].classList.contains("on")) {
+          soundUpDecoElAll[0].classList.add("on");
+          soundMutedDecoElAll[0].classList.remove("on");
           }
         })
       }) 
@@ -118,7 +120,7 @@ function mvPlayer () {
   
   //현재 active 화면에서 영상 띄우고, 이하 위와 같음
   mvContainer[swiperCurrentIndex].setAttribute("style", "opacity: 1; visibility: visible; transition-delay: 1.5s;")
-  mvEl[swiperCurrentIndex].muted = true;
+  // mvEl[swiperCurrentIndex].muted = true;
   mvEl[swiperCurrentIndex].play();
   mvEl[swiperCurrentIndex].classList.remove("stop");//스크롤 이벤트 대비
   mutedControlContainer[swiperCurrentIndex].setAttribute("style", "opacity: 1;")
@@ -129,9 +131,9 @@ function mvPlayer () {
     mvEl[swiperCurrentIndex].classList.add("stop");//스크롤 대비하는 클래스 추가
     mutedControlContainer[swiperCurrentIndex].setAttribute("style", "opacity: 0; visibility: hidden; transition-delay: 0s;")
     replayControlElAll[swiperCurrentIndex].classList.add("on");
-    if(soundUpDecoElAll[swiperCurrentIndex].classList.contains("on")) {
-      soundUpDecoElAll[swiperCurrentIndex].classList.remove("on");
-      soundMutedDecoElAll[swiperCurrentIndex].classList.add("on");
+    if(soundMutedDecoElAll[swiperCurrentIndex].classList.contains("on")) {
+      soundUpDecoElAll[swiperCurrentIndex].classList.add("on");
+      soundMutedDecoElAll[swiperCurrentIndex].classList.remove("on");
    }
   })
 
@@ -147,7 +149,7 @@ function mvPlayer () {
     }, 3000);
     mvContainer[swiperCurrentIndex].setAttribute("style", "opacity: 1; visibility: visible; transition-delay: 1.5s;")
     mutedControlContainer[swiperCurrentIndex].setAttribute("style", "opacity: 1;")
-    mvEl[swiperCurrentIndex].muted = true;
+    // mvEl[swiperCurrentIndex].muted = true;
     mvEl[swiperCurrentIndex].load()
     mvEl[swiperCurrentIndex].play();
     mvEl[swiperCurrentIndex].classList.remove("stop");//스크롤 이벤트 대비
@@ -157,9 +159,9 @@ function mvPlayer () {
     mvEl[swiperCurrentIndex].classList.add("stop");//스크롤 대비하는 클래스 추가
     mutedControlContainer[swiperCurrentIndex].setAttribute("style", "opacity: 0; visibility: hidden; transition-delay: 0s;")
     replayControlElAll[swiperCurrentIndex].classList.add("on");
-    if(soundUpDecoElAll[swiperCurrentIndex].classList.contains("on")) {
-      soundUpDecoElAll[swiperCurrentIndex].classList.remove("on");
-      soundMutedDecoElAll[swiperCurrentIndex].classList.add("on");
+    if(soundMutedDecoElAll[swiperCurrentIndex].classList.contains("on")) {
+      soundUpDecoElAll[swiperCurrentIndex].classList.add("on");
+      soundMutedDecoElAll[swiperCurrentIndex].classList.off("on");
       }
     })
   })
@@ -173,8 +175,8 @@ function mvPlayer () {
   mvEl[swiperPreIndex].pause(); //정지 바로 먹여버림
   mvEl[swiperPreIndex].classList.add("stop");//스크롤 대비하는 클래스 추가
   mvContainer[swiperPreIndex].setAttribute("style", "opacity: 0; visibility: hidden; transition-delay: 0s;") //화면숨김
-  soundUpDecoElAll[swiperPreIndex].classList.remove("on"); //사운드 온 버튼 지우기
-  soundMutedDecoElAll[swiperPreIndex].classList.add("on"); //뮤트 버튼 활성화
+  soundUpDecoElAll[swiperPreIndex].classList.add("on"); //사운드 온 버튼 지우기
+  soundMutedDecoElAll[swiperPreIndex].classList.remove("on"); //뮤트 버튼 활성화
   mutedControlContainer[swiperPreIndex].setAttribute("style", "opacity: 0; visibility: hidden; transition-delay: 0s;")//뮤트 컨트롤 모두 숨기기
   replayControlElAll[swiperPreIndex].classList.remove("on");//리플레이버튼도 숨기기
   } else {
@@ -183,8 +185,8 @@ function mvPlayer () {
   mvEl[swiperNextIndex].pause();
   mvEl[swiperNextIndex].classList.add("stop");//스크롤 대비하는 클래스 추가
   mvContainer[swiperNextIndex].setAttribute("style", "opacity: 0; visibility: hidden; transition-delay: 0s;")
-  soundUpDecoElAll[swiperNextIndex].classList.remove("on");
-  soundMutedDecoElAll[swiperNextIndex].classList.add("on");
+  soundUpDecoElAll[swiperNextIndex].classList.add("on");
+  soundMutedDecoElAll[swiperNextIndex].classList.remove("on");
   mutedControlContainer[swiperNextIndex].setAttribute("style", "opacity: 0; visibility: hidden; transition-delay: 0s;")
   replayControlElAll[swiperNextIndex].classList.remove("on");//리플레이버튼도 숨기기
   }
@@ -228,3 +230,5 @@ function mvPlayer () {
 //   console.log(window.scrollX, window.scrollY);
 // });
 // 본코드
+
+})

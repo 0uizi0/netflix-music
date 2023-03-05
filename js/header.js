@@ -55,7 +55,12 @@ window.addEventListener('scroll', () => {
 //로그아웃 dom
 //replace기능은 뒤로 가기가 안되서 로그아웃시에만 사용
 let logoutEl = document.querySelector(".logoout__text");
+let logoutLogoEl = document.querySelector(".logout__logo");
 
 logoutEl.addEventListener("click", () => {
-  location.replace("./login.html");
+  location.replace("./index.html");
+})
+
+logoutLogoEl.addEventListener("click", () => {
+  location.replace("./index.html");
 })

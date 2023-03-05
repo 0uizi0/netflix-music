@@ -1,4 +1,6 @@
-//데이터베이스
+$(document).ready(function(){
+
+  //데이터베이스
 let arryAlbum = [
   { img: "1", name: "나쁜X", item: "dance", artist: "비비(BIBI)" },
   { img: "2", name: "Love or Die", item: "kpop" ,artist: "TNX"},
@@ -251,3 +253,14 @@ for (let i = 0; i < slide.length; i++) {
     slide[i].textContent = "";
   });
 }
+
+logoutEl.addEventListener("click", () => {
+  location.replace("./index.html");
+})
+
+logoutLogoEl.addEventListener("click", () => {
+  location.replace("./index.html");
+})
+
+
+})
