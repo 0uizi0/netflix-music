@@ -1,4 +1,6 @@
-let albumBoxEL = document.querySelectorAll(".album-box");
+$(document).ready(function(){
+
+  let albumBoxEL = document.querySelectorAll(".album-box");
 let albumAllSelect = document.querySelectorAll(".albums");
 const rankWrpperEl = document.querySelectorAll(".swiperChart__container");
 
@@ -85,3 +87,6 @@ for (let i = 0; i < albumBoxEL.length; i += 1) {
     eTarget.classList.remove("on");
   });
 }
+
+
+})

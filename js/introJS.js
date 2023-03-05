@@ -1,15 +1,19 @@
-const divLine = document.querySelector(".lineEffect");
-const containerEl = document.querySelector(".container");
-const introLayoutEl = document.querySelector(".introlayout");
-const intro1El = document.querySelector(".intro1");
-const intro2WrapEl = document.querySelector(".intro2__wrap");
-const intro2El = document.querySelector(".intro2");
-const intro3El = document.querySelector(".intro3");
-
-
-const individualLineEl = containerEl.children;
-
 $(document).ready(function(){
+  
+  const audioEffect = document.querySelector("audio")
+  const divLine = document.querySelector(".lineEffect");
+  const containerEl = document.querySelector(".container");
+  const introLayoutEl = document.querySelector(".introlayout");
+  const intro1El = document.querySelector(".intro1");
+  const intro2WrapEl = document.querySelector(".intro2__wrap");
+  const intro2El = document.querySelector(".intro2");
+  const intro3El = document.querySelector(".intro3");
+
+
+  const individualLineEl = containerEl.children;
+
+    audioEffect.play();
+    audioEffect.volume = 1;
     introLayoutEl.setAttribute("style", "animation: fade-out 1s 8s forwards; display: block;");
     intro1El.setAttribute("style", "animation-name: intro-in, fade-out; animation-duration: 0.15s, 1s; animation-delay: 0s, 2.5s; animation-fill-mode: both, forwards; animation-timing-function: ease-in, ease;");
     intro2El.setAttribute("style", "animation-name: intro-in, intro-reverse; animation-duration: 0.15s, 0.15s; animation-delay: 0.15s, 2.35s; animation-fill-mode: both, forwards; animation-timing-function: linear, linear;");
@@ -33,7 +37,7 @@ $(document).ready(function(){
       introLayoutEl.setAttribute("style", "display: none");
       introLayoutEl.replaceChildren();
 
-      location.href="./index.html";
+      location.replace("./main.html");
     }
     setTimeout(layoutDisplayNone, 9500);
     
@@ -43,8 +47,6 @@ $(document).ready(function(){
   introLayoutEl.removeAttribute("style")
   introLayoutEl.replaceChildren();
   introLayoutEl.style.display = "none";
-
-  location.replace="./index.html"
-  
+  location.replace("./main.html")
   })
 })
