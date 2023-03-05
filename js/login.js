@@ -44,7 +44,7 @@ loginBtn.addEventListener("click", function(e){
             allText.innerText = "비밀번호를 잘못 입력 하였습니다.";
         } else if (id.value === getId && password.value === getPw){
             //아이디가 111이고 비밀번호가 111이면 통과
-            location.href="./index.html";
+            location.replace("./intro.html")
         }
       }
     }
