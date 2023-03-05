@@ -654,7 +654,7 @@ main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide {
 main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide:hover {
   transform: scale(1.5);
   transition: 0.5s;
-  transition-delay: 0.3s;
+  transition-delay: 0.5s;
   z-index: 999;
 }
 main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide.hide {
