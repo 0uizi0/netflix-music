@@ -35,7 +35,7 @@
     
        <form id="join-form">
         <img src="./img/netflix_logo/nav_logo/netflixMusic_logo@2x.png" alt=""/>
-        <input type="text" placeholder="이메일" class="login-id" name="id"/>
+        <input type="email" placeholder="이메일" class="login-id" name="id"/>
         <br/>
         <input type="password" placeholder="비밀번호" class="login-pw" id="password__input" name="password"/>
         <br/>
@@ -64,8 +64,8 @@
     <div class="right"></div>
   </div>
 
-    <!-- modal -->
-    <div id="pw_modal" class="pw__modal">
+    <!-- modal wrong pw -->
+    <div id="pw_modal-wrongPw" class="pw__modal">
       <div class="pw_modal-window">
         <div class="pw_content">
             <div class="info-sub password-miss">
@@ -75,7 +75,48 @@
               <a class="modalTrack-PlayBtn rePassword" href="./join.html">다시 입력</a>
             </div>
         </div>
-        
+      </div>
+    </div>
+
+    <!-- modal empty -->
+    <div id="pw_modal-empty" class="pw__modal">
+      <div class="pw_modal-window">
+        <div class="pw_content">
+            <div class="info-sub password-miss">
+             필수 정보를 모두 입력해 주세요.
+            </div>
+            <div class="detail-button pwMissBtn">
+              <a class="modalTrack-PlayBtn rePassword" href="./join.html">다시 입력</a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal empty -->
+    <div id="pw_modal-wrongEmail" class="pw__modal">
+      <div class="pw_modal-window">
+        <div class="pw_content">
+            <div class="info-sub password-miss">
+             이메일 형식이 잘못 되었습니다.
+            </div>
+            <div class="detail-button pwMissBtn">
+              <a class="modalTrack-PlayBtn rePassword" href="./join.html">다시 입력</a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- modal confirm -->
+     <div id="pw_modal-joinConfirm" class="pw__modal">
+      <div class="pw_modal-window">
+        <div class="pw_content">
+            <div class="info-sub password-miss">
+             가입이 완료되셨습니다.
+            </div>
+            <div class="detail-button pwMissBtn">
+              <a class="modalTrack-PlayBtn rePassword" href="./login.html">로그인</a>
+            </div>
+        </div>
       </div>
     </div>
 
