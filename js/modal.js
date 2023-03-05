@@ -1,3 +1,4 @@
+
 // modal
 const modal = document.getElementById("modal");
 const modalWindow = document.querySelector(".modal-window");
@@ -20,10 +21,14 @@ const mainDetailBtn = document.querySelectorAll("button.btn--detail");
 for(let i=0; i<mainDetailBtn.length; i++){
   mainDetailBtn[i].addEventListener("click", function(e){
     console.log(e.target.parentNode.parentNode.querySelector("h1"));
-    modal.style.display = "flex"
+    
     document.querySelector("main").style.opacity="0.5";
     audioConatiner.style.opacity = "1";
-    audioConatiner.classList.remove("hidden");
+
+
+    modal.style.visibility = "initial";
+    modalWindow.setAttribute("style","transform:scale(1,1);");
+    audioConatiner.setAttribute("style","visibility:initial; transform:scaleX(1);" )
 
     for(let i=0; i<btnModal.length; i++){
         if(btnModal[i].getAttribute("name")===e.target.parentNode.parentNode.querySelector("h1").textContent && btnModal[i].className==="album-box"){
@@ -122,7 +127,7 @@ for(let i=0; i<btnModal.length; i++){
         modal.style.display = "flex"
         document.querySelector("main").style.opacity="0.5";
         audioConatiner.style.opacity = "1";
-        audioConatiner.classList.remove("hidden");
+
         const clickImage = e.target.style.backgroundImage;
         
         const img = document.createElement("img");
@@ -155,6 +160,9 @@ for(let i=0; i<btnModal.length; i++){
         detailTrack.textContent="";
         progress.style.width = "0%";
 
+        modal.style.visibility = "initial";
+        modalWindow.setAttribute("style","transform:scale(1,1);");
+        audioConatiner.setAttribute("style","visibility:initial; transform:scaleX(1);" )
 
         for(let j=0; j<e.target.getAttribute("track-len"); j++){
             const trackInfo = document.createElement("div");
@@ -217,10 +225,13 @@ for(let i=0; i<btnModal.length; i++){
 
 const closeBtn = modal.querySelector(".close-area");
 closeBtn.addEventListener("click", e => {
-    modal.style.display = "none"
+    modal.style.visibility = "hidden"
+    audioConatiner.style.visibility="hidden";
+
     document.querySelector("main").style.opacity="1";
-    audioConatiner.classList.add("hidden");
+    
     albumImg.innerHTML="";
+
     albumTitle.textContent ="";
     albumSubTitle.textContent="";
     audioAlbumImg.textContent = "";
@@ -230,8 +241,10 @@ closeBtn.addEventListener("click", e => {
     
     audioControl.querySelector("li.play").classList.remove("hidden");
     audioControl.querySelector("li.pause").classList.add("hidden");
-    
 
+    
+    modalWindow.setAttribute("style","transform:; transition:0s");
+    audioConatiner.setAttribute("style","transform:; transition:0s" );
 })
 
 

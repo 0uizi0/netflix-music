@@ -80,8 +80,8 @@ let temp ="temp";
 //top30 클릭 시
 for(let i=0; i<albumHoverAll.length; i++){
   albumHoverAll[i].addEventListener("click",function(e){
-    audioPlay.classList.remove("hidden");
-    audioPlay.setAttribute("style","display:block;");
+    
+    audioPlay.setAttribute("style","display:block; visibility:initial; transform:scaleX(1);");
     
     temp=audioPlay.querySelector(".audio-album").querySelector(".--text-box").querySelector(".album-title").textContent;
     audioPlay.querySelector(".audio-album").querySelector(".audio-album-img").textContent ="";
@@ -129,9 +129,10 @@ for(let i=0; i<albumHoverAll.length; i++){
 const btnModal = document.querySelectorAll(".album-box");
 for(let i=0; i<btnModal.length; i++){
   btnModal[i].addEventListener("click", function(e){
-    console.log(e.target);
-    audioPlay.classList.remove("hidden");
-    audioPlay.setAttribute("style","display:block;");
+    
+    
+    audioPlay.setAttribute("style","display:block; visibility:initial; transform:scaleX(1);");
+    
     temp = audioPlay.querySelector(".audio-album").querySelector(".--text-box").querySelector(".album-title").textContent;
     audioPlay.querySelector(".audio-album").querySelector(".audio-album-img").textContent ="";
     audioPlay.querySelector(".audio-album").querySelector(".--text-box").querySelector(".album-title").textContent = "";
