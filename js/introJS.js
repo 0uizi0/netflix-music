@@ -35,9 +35,11 @@ function onload () {
     function layoutDisplayNone () {
       introLayoutEl.setAttribute("style", "display: none");
       introLayoutEl.replaceChildren();
+
+      location.href="./index.html";
     }
     setTimeout(layoutDisplayNone, 9500);
-
+    
   }, 500)
 
   const skipBtnEl = document.querySelector(".btn-secondary");
@@ -45,5 +47,8 @@ function onload () {
   introLayoutEl.removeAttribute("style")
   introLayoutEl.replaceChildren();
   introLayoutEl.style.display = "none";
+
+  location.href="./index.html"
+  
 })
 }
