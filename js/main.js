@@ -1029,10 +1029,7 @@ for (let i = 0; i < albumBox.length; i++) {
 
 for (let i = 0; i < slideBox.length; i++ ) {
   slideBox[i].addEventListener("mouseover", function(e) {
-    slide[i].textContent = "";
-    const hoverBox = document.createElement("div");
     hoverBox.setAttribute("class", "hoverBox");
     slide[i].append(hoverBox);
-    hoverBox.textContent = `${e.target.getAttribute("name")}`;
   })
 }
