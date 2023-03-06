@@ -34,7 +34,7 @@ for(let i=0; i<mainDetailBtn.length; i++){
         if(btnModal[i].getAttribute("name")===e.target.parentNode.parentNode.querySelector("h1").textContent && btnModal[i].className==="album-box"){
             const clickImage = btnModal[i].style.backgroundImage;
         
-            albumImg.setAttribute("style", `background-image:${clickImage}; background-size: cover; background-position: center; background-repeat: no-repeat;`)
+            albumImg.setAttribute("style", `background-image:${clickImage};`)
 
             let nameText = btnModal[i].getAttribute("name");
             const albumName = document.querySelector(".al-name");
@@ -227,10 +227,10 @@ closeBtn.addEventListener("click", e => {
     document.querySelector("main").style.opacity="1";
     
     albumImg.innerHTML="";
-
     albumTitle.textContent ="";
     albumSubTitle.textContent="";
-    audioAlbumImg.textContent = "";
+    audioAlbumImg.style.backgroundImage="";
+
     if(audioConatiner.contains(document.querySelector("audio"))){
         audioConatiner.querySelector("audio").remove();
     }
@@ -311,23 +311,21 @@ function changeProgress(e){
 
 progressContainer.addEventListener("click", changeProgress);
 
-// temp2 = albumTitle.textContent;
+
 //modalTrackPlayBtn
 modalTrackPlayBtn.addEventListener("click", function(e){
    const test =e.target.parentNode.parentNode.querySelector(".detail-track").querySelectorAll(".track-info"); 
    
-   audioAlbumImg.innerHTML="";
+   audioAlbumImg.style.backgroundImage="";
    temp2 =document.querySelector(".album-title").textContent;
    for(let i=0; i<test.length; i++){
     if(test[i].querySelector(".track-check").querySelector(".track-checkBox").checked){
-        // console.log(test[i].querySelector(".track-check").querySelector(".track-checkBox").parentNode.children[1]);
-        // temp2 = test[i].querySelector(".track-check").querySelector(".track-checkBox").parentNode.children[1].textContent;
+        
         albumTitle.textContent = test[i].querySelector(".track-check").querySelector(".track-checkBox").parentNode.children[1].textContent;
         albumSubTitle.textContent = test[i].getAttribute("singer");
         temp = test[i].querySelector(".track-check").querySelector(".track-checkBox").parentNode.children[1].textContent;
-        const audioImg = document.createElement("img");
-        audioAlbumImg.append(audioImg);
-        audioImg.src = albumImg.parentNode.parentNode.children[1].children[0].children[0].getAttribute("src");
+        
+        audioAlbumImg.style.backgroundImage = albumImg.parentNode.parentNode.children[1].children[0].style.backgroundImage;
     }
    }
    
@@ -335,7 +333,6 @@ modalTrackPlayBtn.addEventListener("click", function(e){
     audio.setAttribute("src", `./music/${audioArr[Math.floor(Math.random()*8)]}.mp3`);
     playBtn.parentNode.parentNode.append(audio);  
     audio.play();
-    // temp2 = albumTitle.textContent;
     
     }else if(temp!=temp2){
         console.log("다름");

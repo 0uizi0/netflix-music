@@ -86,16 +86,12 @@ for(let i=0; i<albumHoverAll.length; i++){
     audioPlay.setAttribute("style","display:block; visibility:initial; transform:scaleX(1);");
     
     temp=audioPlay.querySelector(".audio-album").querySelector(".--text-box").querySelector(".album-title").textContent;
-    audioPlay.querySelector(".audio-album").querySelector(".audio-album-img").textContent ="";
+    audioPlay.querySelector(".audio-album").querySelector(".audio-album-img").style.backgroundImage ="";
     audioPlay.querySelector(".audio-album").querySelector(".--text-box").querySelector(".album-title").textContent = "";
     audioPlay.querySelector(".audio-album").querySelector(".--text-box").querySelector(".album-sub-title").textContent="";
     
-    const img = document.createElement("img");
-    img.src= e.target.parentNode.parentNode.children[0].style.backgroundImage;
-    img.src = img.src.substring(32,);
-    img.src = img.src.replace("%22)","");
-    audioPlay.querySelector(".audio-album").querySelector(".audio-album-img").append(img);
-    // console.log(e.target.parentNode.parentNode.querySelector(".--text-box").querySelector(".album-title").textContent);
+    audioPlay.querySelector(".audio-album").querySelector(".audio-album-img").style.backgroundImage=e.target.parentNode.parentNode.children[0].style.backgroundImage;
+    
     audioPlay.querySelector(".audio-album").querySelector(".--text-box").querySelector(".album-title").textContent = e.target.parentNode.parentNode.querySelector(".--text-box").querySelector(".album-title").textContent;
     audioPlay.querySelector(".audio-album").querySelector(".--text-box").querySelector(".album-sub-title").textContent = e.target.parentNode.parentNode.querySelector(".--text-box").querySelector(".album-sub-title").textContent;
     
@@ -136,18 +132,14 @@ for(let i=0; i<btnModal.length; i++){
     audioPlay.setAttribute("style","display:block; visibility:initial; transform:scaleX(1);");
     
     temp = audioPlay.querySelector(".audio-album").querySelector(".--text-box").querySelector(".album-title").textContent;
-    audioPlay.querySelector(".audio-album").querySelector(".audio-album-img").textContent ="";
+    audioPlay.querySelector(".audio-album").querySelector(".audio-album-img").style.backgroundImage ="";
     audioPlay.querySelector(".audio-album").querySelector(".--text-box").querySelector(".album-title").textContent = "";
     audioPlay.querySelector(".audio-album").querySelector(".--text-box").querySelector(".album-sub-title").textContent ="";
 
     audioPlay.querySelector(".audio-album").querySelector(".--text-box").querySelector(".album-title").textContent = e.target.getAttribute("name");
     audioPlay.querySelector(".audio-album").querySelector(".--text-box").querySelector(".album-sub-title").textContent = e.target.getAttribute("artist");
     
-    const img = document.createElement("img");
-    img.src= e.target.style.backgroundImage;
-    img.src = img.src.substring(32,);
-    img.src = img.src.replace("%22)","");
-    audioPlay.querySelector(".audio-album").querySelector(".audio-album-img").append(img);
+    audioPlay.querySelector(".audio-album").querySelector(".audio-album-img").style.backgroundImage=e.target.style.backgroundImage;
 
     if(audioPlay.querySelector("audio")===null){
       audioPlay.append(audio);

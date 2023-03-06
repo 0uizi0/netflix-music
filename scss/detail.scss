@@ -49,6 +49,9 @@
             min-width: 200px;
             height: 200px;  
             border-radius: 10px;
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat;
             // img {
             //   width: 200px;
             //   height: 200px;
@@ -224,14 +227,19 @@
         align-items: center;
         .audio-album-img{
           
-          background-color: #fff;
+          // background-color: #fff;
           border-radius: 4px;
           margin-right: 12px;
-          img{
-            width: 40px;
-            height: 40px;
-            border-radius: 4px;
-          }
+          min-width: 40px;
+          height: 40px;
+          background-size: cover; 
+          background-position: center; 
+          background-repeat: no-repeat;
+          // img{
+          //   width: 40px;
+          //   height: 40px;
+          //   border-radius: 4px;
+          // }
         }
         .album-title{
           margin-bottom: 0px !important;

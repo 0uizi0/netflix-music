@@ -97,6 +97,15 @@
             font-size: 16px;
             font-weight: 400;
           }
+          .audio-album-img{
+            border-radius: 4px;
+            margin-right: 12px;
+            min-width: 40px;
+            height: 40px;
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat;
+          }
           .--text-box {
             .album-title {
               font-size: 16px;

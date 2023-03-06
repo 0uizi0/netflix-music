@@ -45,6 +45,9 @@
   min-width: 200px;
   height: 200px;
   border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 #modal .modal-window .content .content-text {
   color: #D1D1D1;
@@ -201,14 +204,13 @@
   align-items: center;
 }
 .audio-container .audio-album .audio-album-img {
-  background-color: #fff;
   border-radius: 4px;
   margin-right: 12px;
-}
-.audio-container .audio-album .audio-album-img img {
-  width: 40px;
+  min-width: 40px;
   height: 40px;
-  border-radius: 4px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .audio-container .audio-album .album-title {
   margin-bottom: 0px !important;
