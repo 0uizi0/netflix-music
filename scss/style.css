@@ -936,9 +936,7 @@ main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide .album-
 }
 #modal .modal-window .content .content-image {
   margin-right: 40px;
-}
-#modal .modal-window .content .content-image img {
-  width: 200px;
+  min-width: 200px;
   height: 200px;
   border-radius: 10px;
 }

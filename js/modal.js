@@ -34,11 +34,7 @@ for(let i=0; i<mainDetailBtn.length; i++){
         if(btnModal[i].getAttribute("name")===e.target.parentNode.parentNode.querySelector("h1").textContent && btnModal[i].className==="album-box"){
             const clickImage = btnModal[i].style.backgroundImage;
         
-            const img = document.createElement("img");
-            img.src=clickImage;
-            img.src = img.src.substring(32,);
-            img.src = img.src.replace("%22)","");
-            albumImg.append(img);
+            albumImg.setAttribute("style", `background-image:${clickImage}; background-size: cover; background-position: center; background-repeat: no-repeat;`)
 
             let nameText = btnModal[i].getAttribute("name");
             const albumName = document.querySelector(".al-name");
@@ -130,11 +126,11 @@ for(let i=0; i<btnModal.length; i++){
 
         const clickImage = e.target.style.backgroundImage;
         
-        const img = document.createElement("img");
-        img.src=clickImage;
-        img.src = img.src.substring(32,);
-        img.src = img.src.replace("%22)","");
-        albumImg.append(img);
+        // const img = document.createElement("img");
+        albumImg.setAttribute("style", `background-image:${clickImage}; background-size: cover; background-position: center; background-repeat: no-repeat;`)
+        // img.src = img.src.substring(32,);
+        // img.src = img.src.replace("%22)","");
+        // albumImg.append(img);
         
 
         let nameText = e.target.getAttribute("name");

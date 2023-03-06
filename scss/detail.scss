@@ -46,15 +46,18 @@
           margin-bottom: 60px;
           .content-image {
             margin-right: 40px;
-            img {
-              width: 200px;
-              height: 200px;
+            min-width: 200px;
+            height: 200px;  
+            border-radius: 10px;
+            // img {
+            //   width: 200px;
+            //   height: 200px;
               
-              border-radius: 10px;
+            //   border-radius: 10px;
               
   
-            }
-  
+            // }
+            
   
           }
   
